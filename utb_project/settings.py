@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/6.1/ref/settings/
 """
 
 from pathlib import Path
+import os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -141,3 +142,9 @@ AUTH_USER_MODEL = 'workloads.User'
 LOGIN_URL = 'login'
 LOGIN_REDIRECT_URL = 'workloads:lecturer_dashboard'  # Redirects to /dashboard/ after login
 LOGOUT_REDIRECT_URL = 'login'
+
+ALLOWED_HOSTS = ['StevieOwen009.pythonanywhere.com', 'localhost', '127.0.0.1']
+
+# Required for PythonAnywhere to serve your static files
+STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'static_collected')

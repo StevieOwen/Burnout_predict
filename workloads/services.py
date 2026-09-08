@@ -77,7 +77,10 @@ def get_lecturer_dashboard_payload(staff_id: str) -> Dict:
     )
 
     inference = calculate_burnout_risk(fv)
-    top_driver = inference.top_contributing_factors[0]["factor"]
+    if inference.top_contributing_factors:
+        top_driver = inference.top_contributing_factors[0].factor
+    else:
+        top_driver = "Balanced Workload"
 
     status_badge = "Optimal"
     if inference.risk_tier == RiskTier.HIGH:
