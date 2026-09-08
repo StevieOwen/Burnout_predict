@@ -1,0 +1,103 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UTB Workload Optimization - Login</title>
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- UTB Branding Colors Setup -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              utb: {
+                navy: '#0C2340',
+                'navy-dark': '#061325',
+                gold: '#F59E0B',
+                'gold-hover': '#D97706',
+                light: '#F8FAFC',
+              }
+            }
+          }
+        }
+      }
+    </script>
+</head>
+<body class="bg-utb-light min-h-screen font-sans flex flex-col justify-between antialiased">
+
+    <!-- Header -->
+    <header class="bg-utb-navy text-white shadow-md py-4 px-8 border-b-4 border-utb-gold flex justify-between items-center">
+        <div class="flex items-center space-x-3">
+            <div class="bg-white text-utb-navy font-bold rounded-md px-3 py-1 text-lg tracking-wider border border-gray-200">
+                UTB
+            </div>
+            <div>
+                <h1 class="text-base font-semibold leading-none">University of Tourism, Technology and Business Studies</h1>
+                <p class="text-xs text-amber-400 mt-1 font-medium">Workload Optimization & Burnout Risk Engine</p>
+            </div>
+        </div>
+        <span class="text-xs bg-utb-navy-dark px-3 py-1 rounded-full text-gray-300 hidden sm:inline-block">Academic Portal</span>
+    </header>
+
+    <!-- Main Login Card -->
+    <main class="flex-grow flex items-center justify-center px-4 py-12">
+        <div class="w-full max-w-md bg-white rounded-xl shadow-lg border border-gray-100 overflow-hidden">
+            
+            <div class="bg-utb-navy px-6 py-6 text-center text-white relative">
+                <h2 class="text-xl font-bold">Staff Login</h2>
+                <p class="text-xs text-gray-300 mt-1">Access your workload dashboard & logs</p>
+                <div class="absolute bottom-0 left-0 right-0 h-1 bg-utb-gold"></div>
+            </div>
+
+            <form method="post" class="p-6 space-y-5">
+                {% csrf_token %}
+
+                {% if form.errors %}
+                <div class="p-3 text-sm text-red-700 bg-red-50 rounded-lg border border-red-200">
+                    Invalid username or password. Please try again.
+                </div>
+                {% endif %}
+
+                <div>
+                    <label for="id_username" class="block text-xs font-semibold text-gray-700 uppercase tracking-wider mb-1">
+                        Username / Staff ID
+                    </label>
+                    <input type="text" name="username" id="id_username" required
+                           class="w-full px-3.5 py-2.5 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-utb-gold focus:border-utb-navy outline-none transition"
+                           placeholder="Enter your username">
+                </div>
+
+                <div>
+                    <label for="id_password" class="block text-xs font-semibold text-gray-700 uppercase tracking-wider mb-1">
+                        Password
+                    </label>
+                    <input type="password" name="password" id="id_password" required
+                           class="w-full px-3.5 py-2.5 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-utb-gold focus:border-utb-navy outline-none transition"
+                           placeholder="••••••••">
+                </div>
+
+                <button type="submit" 
+                        class="w-full bg-utb-navy hover:bg-utb-navy-dark text-white font-medium py-2.5 rounded-lg shadow transition duration-150 flex justify-center items-center space-x-2">
+                    <span>Sign In</span>
+                    <svg class="w-4 h-4 text-utb-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+                    </svg>
+                </button>
+            </form>
+
+            <div class="bg-gray-50 px-6 py-3 border-t border-gray-100 text-center text-xs text-gray-500">
+                Need access? Contact UTB ICT Support Services.
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-utb-navy text-gray-400 py-4 text-center text-xs border-t border-gray-800">
+        &copy; {% now "Y" %} University of Tourism, Technology and Business Studies (UTB). All rights reserved.
+    </footer>
+
+</body>
+</html>

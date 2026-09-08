@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}UTB Workload & Burnout System{% endblock %}</title>
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Configure UTB Custom Colors -->
+    <script>
+    tailwind.config = {
+        theme: {
+            extend: {
+                colors: {
+                    utb: {
+                        navy: '#0C2340',
+                        'navy-dark': '#061325',
+                        gold: '#F59E0B',
+                        'gold-hover': '#D97706',
+                        light: '#F8FAFC',
+                    }
+                }
+            }
+        }
+    }
+    </script>
+</head>
+<body class="bg-slate-50 min-h-screen flex flex-col font-sans text-slate-800">
+
+    <!-- Navigation Header -->
+    <header class="bg-utb-navy text-white shadow-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-3">
+                <span class="text-xl font-bold tracking-tight">UTB Kigali</span>
+                <span class="text-xs bg-utb-navy-dark text-amber-400 px-2 py-1 rounded-full uppercase font-semibold border border-amber-400/20">
+                    Burnout Prevention System
+                </span>
+            </div>
+            
+            <nav class="flex items-center space-x-6 text-sm font-medium">
+                {% if user.is_authenticated %}
+                    {% if user.profile.role == 'HOD' %}
+                        <a href="{% url 'workloads:hod_dashboard' %}" class="hover:text-amber-400 transition">Dashboard</a>
+                    {% else %}
+                        <a href="{% url 'workloads:lecturer_dashboard' %}" class="hover:text-amber-400 transition">Dashboard</a>
+                        <a href="{% url 'workloads:submit_log' %}" class="bg-utb-gold hover:bg-utb-gold-hover text-utb-navy px-4 py-2 rounded-lg transition font-medium shadow-sm">+ Submit Log</a>
+                    {% endif %}
+
+                    <span class="text-gray-300 border-l border-slate-700 pl-4 flex items-center gap-2">
+                        <span>User: <strong>{{ user.username }}</strong></span>
+                        {% if user.profile %}
+                            <span class="text-xs bg-slate-800 text-slate-300 px-2 py-0.5 rounded">
+                                {{ user.profile.get_role_display|default:user.profile.role }}
+                            </span>
+                        {% endif %}
+                    </span>
+
+                    <form method="post" action="{% url 'logout' %}" class="inline">
+                        {% csrf_token %}
+                        <button type="submit" class="text-xs text-red-400 hover:text-red-300 transition underline ml-2">Logout</button>
+                    </form>
+                {% else %}
+                    <a href="{% url 'login' %}" class="bg-utb-gold hover:bg-utb-gold-hover text-utb-navy px-4 py-2 rounded-lg transition font-medium shadow-sm">Login</a>
+                {% endif %}
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content Area -->
+    <main class="flex-grow max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        
+        <!-- Flash Messages Block -->
+        {% if messages %}
+            <div class="mb-6 space-y-2">
+                {% for message in messages %}
+                    <div class="p-4 rounded-lg text-sm font-medium {% if message.tags == 'error' %}bg-red-100 text-red-800 border border-red-200{% else %}bg-emerald-100 text-emerald-800 border border-emerald-200{% endif %}">
+                        {{ message }}
+                    </div>
+                {% endfor %}
+            </div>
+        {% endif %}
+
+        {% block content %}{% endblock %}
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-white border-t border-slate-200 py-4 text-center text-xs text-slate-500">
+        <p>&copy; {% now "Y" %} University of Tourism, Technology and Business Studies (UTB) — Workload Management Engine</p>
+    </footer>
+
+</body>
+</html>

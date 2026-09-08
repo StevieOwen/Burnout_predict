@@ -1,0 +1,220 @@
+{% extends 'workloads/base.html' %}
+{% block title %}HoD Executive Workload Optimization Panel - UTB{% endblock %}
+
+{% block content %}
+<div class="min-h-screen bg-slate-50 p-6 space-y-6">
+
+  <!-- Header & Department Filter Bar -->
+  <header class="bg-[#0A2540] text-white rounded-xl p-6 shadow-md flex flex-col md:flex-row justify-between items-start md:items-center space-y-4 md:space-y-0">
+    <div>
+      <h1 class="text-2xl font-bold tracking-tight">Executive Departmental Oversight</h1>
+      <p class="text-slate-300 text-sm mt-1">Predictive Burnout Prevention & Resource Allocation Engine</p>
+    </div>
+
+    <div class="flex items-center space-x-4">
+      <!-- View / Department Filter -->
+      <form method="GET" class="flex items-center space-x-2">
+        <select name="department" onchange="this.form.submit()" class="bg-white/10 text-white text-xs font-semibold rounded-lg px-3 py-2 border border-white/20 focus:outline-none focus:ring-2 focus:ring-[#E5A823]">
+          <option value="BIT" {% if department == 'BIT' %}selected{% endif %} class="text-slate-900">Business Information Technology</option>
+          <option value="HTM" {% if department == 'HTM' %}selected{% endif %} class="text-slate-900">Hospitality & Tourism Management</option>
+          <option value="BA" {% if department == 'BA' %}selected{% endif %} class="text-slate-900">Business Administration</option>
+          <option value="ALL" {% if department == 'ALL' %}selected{% endif %} class="text-slate-900">Faculty-Wide Dean View</option>
+        </select>
+      </form>
+
+      <!-- Department Aggregate Burnout Gauge -->
+      <div class="bg-white/10 px-4 py-2 rounded-lg border border-white/10 text-right">
+        <span class="text-xs text-slate-300 uppercase block">Dept. Avg Risk Score</span>
+        <span class="text-lg font-bold text-[#E5A823]">64% (Moderate)</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Top Executive Metric Cards (KPIs) -->
+  <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
+    
+    <!-- Card 1: High-Risk Faculty Count -->
+    <div class="bg-white rounded-xl p-5 border border-slate-200 shadow-sm space-y-2">
+      <div class="flex justify-between items-center text-slate-500 text-sm font-medium">
+        <span>High-Risk Faculty (Red Zone)</span>
+        <span class="flex h-3 w-3 relative">
+          <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"></span>
+          <span class="relative inline-flex rounded-full h-3 w-3 bg-red-500"></span>
+        </span>
+      </div>
+      <div class="text-3xl font-extrabold text-red-600">{{ high_risk_count|default:"3" }}</div>
+      <p class="text-xs text-slate-500">Staff members exceeding 75% BRS</p>
+    </div>
+
+    <!-- Card 2: Workload Imbalance Index -->
+    <div class="bg-white rounded-xl p-5 border border-slate-200 shadow-sm space-y-2">
+      <div class="flex justify-between items-center text-slate-500 text-sm font-medium">
+        <span>Workload Imbalance Index</span>
+        <svg class="w-5 h-5 text-amber-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3"></path></svg>
+      </div>
+      <div class="text-3xl font-extrabold text-slate-900">0.38 <span class="text-xs font-normal text-amber-600">(High Variance)</span></div>
+      <p class="text-xs text-slate-500">Gini coefficient of load distribution</p>
+    </div>
+
+    <!-- Card 3: Unassigned / Pending Hours -->
+    <div class="bg-white rounded-xl p-5 border border-slate-200 shadow-sm space-y-2">
+      <div class="flex justify-between items-center text-slate-500 text-sm font-medium">
+        <span>Unallocated Duties</span>
+        <svg class="w-5 h-5 text-[#0A2540]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path></svg>
+      </div>
+      <div class="text-3xl font-extrabold text-slate-900">14.5 hrs</div>
+      <p class="text-xs text-slate-500">Unassigned exam invigilation & grading</p>
+    </div>
+
+    <!-- Card 4: Pending Assistance Requests -->
+    <div class="bg-white rounded-xl p-5 border border-slate-200 shadow-sm space-y-2">
+      <div class="flex justify-between items-center text-slate-500 text-sm font-medium">
+        <span>Assistance Requests</span>
+        <svg class="w-5 h-5 text-[#E5A823]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v1.341C7.67 7.165 6 9.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"></path></svg>
+      </div>
+      <div class="text-3xl font-extrabold text-[#0A2540]">2</div>
+      <p class="text-xs text-amber-600 font-semibold">Requires HoD actioning</p>
+    </div>
+
+  </section>
+
+  <!-- Graphical Displays -->
+  <section class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+    
+    <!-- Departmental Risk Heatmap (Scatter Grid) -->
+    <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm space-y-4">
+      <h2 class="text-base font-bold text-slate-800">Departmental Risk Heatmap (Load vs. Risk Index)</h2>
+      <div class="relative h-64">
+        <canvas id="riskHeatmap"></canvas>
+      </div>
+    </div>
+
+    <!-- Faculty Workload Comparison Chart -->
+    <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm space-y-4">
+      <h2 class="text-base font-bold text-slate-800">Faculty Workload Comparison vs Dept. Average</h2>
+      <div class="relative h-64">
+        <canvas id="facultyBarChart"></canvas>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- Prescriptive Action & Optimization Control Center -->
+  <section class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm space-y-6">
+    <div class="border-b pb-4 flex justify-between items-center">
+      <div>
+        <h2 class="text-lg font-bold text-[#0A2540]">AI Re-allocation Control Center</h2>
+        <p class="text-xs text-slate-500">Prescriptive optimization engine recommendations for rebalancing faculty workload</p>
+      </div>
+      <span class="text-xs bg-emerald-100 text-emerald-800 font-bold px-3 py-1 rounded-full">AI Active</span>
+    </div>
+
+    <!-- Recommendations Table -->
+    <div class="overflow-x-auto">
+      <table class="w-full text-left text-xs border-collapse">
+        <thead>
+          <tr class="border-b bg-slate-50 text-slate-700 uppercase font-semibold">
+            <th class="p-3">Overburdened Faculty</th>
+            <th class="p-3">Risk Driver</th>
+            <th class="p-3">Prescriptive Shift</th>
+            <th class="p-3">Target Faculty (Available)</th>
+            <th class="p-3 text-center">Action Control</th>
+          </tr>
+        </thead>
+        <tbody class="divide-y text-slate-800">
+          {% for rec in recommendations %}
+          <tr class="hover:bg-slate-50">
+            <td class="p-3 font-bold text-red-600">
+              {{ rec.from_user.get_full_name|default:rec.from_user.username }}
+            </td>
+            <td class="p-3 font-medium text-slate-600">{{ rec.category }}</td>
+            <td class="p-3 text-slate-900 font-semibold">&rarr; Reallocate {{ rec.suggested_hours }} hrs</td>
+            <td class="p-3 font-bold text-emerald-600">
+              {{ rec.to_user.get_full_name|default:rec.to_user.username }}
+            </td>
+            <td class="p-3 flex justify-center space-x-2">
+              <button class="bg-[#0A2540] hover:bg-slate-800 text-white font-semibold px-3 py-1.5 rounded transition">Accept</button>
+              <button class="bg-slate-100 hover:bg-slate-200 text-slate-700 font-semibold px-3 py-1.5 rounded">Modify</button>
+            </td>
+          </tr>
+          {% empty %}
+          <tr>
+            <td colspan="5" class="p-4 text-center text-slate-500">No high-risk workload shifts recommended for this department.</td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+
+    <!-- What-If Scenario Simulator Form -->
+    <div class="bg-slate-50 p-5 rounded-lg border border-slate-200 space-y-4">
+      <h3 class="text-sm font-bold text-[#0A2540] flex items-center space-x-2">
+        <svg class="w-4 h-4 text-[#E5A823]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+        <span>What-If Scenario Simulator</span>
+      </h3>
+      
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-xs">
+        <div>
+          <label class="block font-semibold text-slate-700 mb-1">Student Enrollment Shift (%)</label>
+          <input type="range" min="-20" max="50" value="15" class="w-full accent-[#0A2540]" oninput="this.nextElementSibling.value = this.value + '%'">
+          <output class="font-bold text-[#0A2540] text-xs">15%</output>
+        </div>
+        <div>
+          <label class="block font-semibold text-slate-700 mb-1">Adjunct Hours Addition</label>
+          <input type="number" value="10" class="w-full border-slate-300 rounded p-1.5 bg-white">
+        </div>
+        <div class="flex items-end">
+          <button class="w-full bg-[#E5A823] hover:bg-amber-500 text-[#0A2540] font-bold py-2 rounded transition">Simulate Impact</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+  // Scatter Plot Heatmap: Load vs Risk Index
+  new Chart(document.getElementById('riskHeatmap'), {
+    type: 'scatter',
+    data: {
+      datasets: [{
+        label: 'Faculty Members',
+        data: [
+          { x: 42, y: 88 }, // Red Zone
+          { x: 38, y: 78 }, // Red Zone
+          { x: 28, y: 45 }, // Green Zone
+          { x: 31, y: 55 }  // Amber Zone
+        ],
+        backgroundColor: function(ctx) {
+          var raw = ctx.raw;
+          if (!raw) return '#0A2540';
+          return raw.y > 75 ? '#EF4444' : raw.y > 50 ? '#F59E0B' : '#10B981';
+        },
+        pointRadius: 8
+      }]
+    },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      scales: {
+        x: { title: { display: true, text: 'Total Weekly Workload Hours' } },
+        y: { title: { display: true, text: 'Burnout Risk Score (%)' }, min: 0, max: 100 }
+      }
+    }
+  });
+
+  // Grouped Bar Chart: Faculty Workload Comparison
+  new Chart(document.getElementById('facultyBarChart'), {
+    type: 'bar',
+    data: {
+      labels: ['Dr. Eric', 'Lecturer Jean', 'Dr. Paul', 'Tutor Marie'],
+      datasets: [
+        { label: 'Teaching', data: [18, 12, 14, 8], backgroundColor: '#0A2540' },
+        { label: 'Grading / Admin', data: [12, 6, 8, 4], backgroundColor: '#E5A823' }
+      ]
+    },
+    options: { responsive: true, maintainAspectRatio: false }
+  });
+</script>
+{% endblock %}

@@ -1,0 +1,246 @@
+{% extends 'workloads/base.html' %}
+{% block title %}Lecturer Workload & Well-Being Portal - UTB{% endblock %}
+
+{% block content %}
+<div class="min-h-screen bg-slate-50 p-6 space-y-6">
+
+  <!-- Header / Summary Bar -->
+  <header class="bg-[#0A2540] text-white rounded-xl p-6 shadow-md flex flex-col md:flex-row justify-between items-start md:items-center space-y-4 md:space-y-0">
+    <div>
+      <div class="flex items-center space-x-3">
+        <h1 class="text-2xl font-bold tracking-tight">
+          Welcome back, {{ request.user.get_full_name|default:request.user.username }}
+        </h1>
+        <span class="bg-[#E5A823] text-[#0A2540] text-xs font-semibold px-2.5 py-1 rounded-full uppercase">
+          {{ request.user.profile.get_academic_rank_display }}
+        </span>
+      </div>
+      <p class="text-slate-300 text-sm mt-1">
+        Department of {{ request.user.get_department_display }} &bull; UTB Academic Portal
+      </p>
+    </div>
+
+    <!-- Quick Status Badge -->
+    <div class="flex items-center space-x-3 bg-white/10 px-4 py-2.5 rounded-lg backdrop-blur-sm border border-white/10">
+      <span class="text-xs uppercase text-slate-300 font-medium">Current Status:</span>
+      {% if latest_log.predicted_risk_level == 'HIGH' %}
+        <span class="inline-flex items-center text-xs font-bold px-3 py-1 rounded-full bg-red-500 text-white animate-pulse">
+          &bull; High Burnout Risk
+        </span>
+      {% elif latest_log.predicted_risk_level == 'MODERATE' %}
+        <span class="inline-flex items-center text-xs font-bold px-3 py-1 rounded-full bg-amber-400 text-slate-900">
+          &bull; Moderate Load
+        </span>
+      {% else %}
+        <span class="inline-flex items-center text-xs font-bold px-3 py-1 rounded-full bg-emerald-500 text-white">
+          &bull; Optimal Balance
+        </span>
+      {% endif %}
+    </div>
+  </header>
+
+  <!-- Top Metric Cards (KPIs) -->
+  <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
+    
+    <!-- Card 1: Current Weekly Load -->
+    <div class="bg-white rounded-xl p-5 border border-slate-200 shadow-sm space-y-2">
+      <div class="flex justify-between items-center text-slate-500 text-sm font-medium">
+        <span>Current Weekly Load</span>
+        <svg class="w-5 h-5 text-[#0A2540]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+      </div>
+      <div class="flex items-baseline space-x-2">
+        <span class="text-3xl font-extrabold text-slate-900">{{ latest_log.total_hours|default:"0.0" }}</span>
+        <span class="text-sm font-semibold text-slate-500">/ {{ request.user.profile.contractual_max_hours|default:"20" }} hrs max</span>
+      </div>
+      <div class="w-full bg-slate-100 h-2 rounded-full overflow-hidden mt-2">
+        <div class="bg-[#0A2540] h-full" style="width: {% widthratio latest_log.total_hours|default:0 request.user.profile.contractual_max_hours|default:20 100 %}%;"></div>
+      </div>
+    </div>
+
+    <!-- Card 2: Personal Burnout Risk Score (BRS) -->
+    <div class="bg-white rounded-xl p-5 border border-slate-200 shadow-sm space-y-2">
+      <div class="flex justify-between items-center text-slate-500 text-sm font-medium">
+        <span>Burnout Risk Index (BRS)</span>
+        <svg class="w-5 h-5 text-amber-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+      </div>
+      <div class="flex items-baseline space-x-2">
+        <span class="text-3xl font-extrabold {% if latest_log.burnout_risk_score > 75 %}text-red-600{% elif latest_log.burnout_risk_score > 50 %}text-amber-500{% else %}text-emerald-600{% endif %}">
+          {{ latest_log.burnout_risk_score|default:"12" }}%
+        </span>
+        <span class="text-xs text-slate-500 font-medium">AI Evaluated</span>
+      </div>
+      <div class="w-full bg-slate-100 h-2 rounded-full overflow-hidden mt-2">
+        <div class="h-full {% if latest_log.burnout_risk_score > 75 %}bg-red-500{% elif latest_log.burnout_risk_score > 50 %}bg-amber-400{% else %}bg-emerald-500{% endif %}" style="width: {{ latest_log.burnout_risk_score|default:12 }}%;"></div>
+      </div>
+    </div>
+
+    <!-- Card 3: Active Student Ratio -->
+    <div class="bg-white rounded-xl p-5 border border-slate-200 shadow-sm space-y-2">
+      <div class="flex justify-between items-center text-slate-500 text-sm font-medium">
+        <span>Active Student Ratio</span>
+        <svg class="w-5 h-5 text-[#0A2540]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+      </div>
+      <div class="text-3xl font-extrabold text-slate-900">
+        {{ request.user.profile.active_student_count|default:"145" }}
+      </div>
+      <p class="text-xs text-slate-500">Enrolled across assigned modules</p>
+    </div>
+
+    <!-- Card 4: Grading & Assessment Backlog -->
+    <div class="bg-white rounded-xl p-5 border border-slate-200 shadow-sm space-y-2">
+      <div class="flex justify-between items-center text-slate-500 text-sm font-medium">
+        <span>Assessment Backlog</span>
+        <svg class="w-5 h-5 text-red-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+      </div>
+      <div class="text-3xl font-extrabold text-slate-900">
+        {{ request.user.profile.grading_backlog_count|default:"28" }}
+      </div>
+      <p class="text-xs text-red-500 font-semibold">Pending marking (Upcoming deadline)</p>
+    </div>
+
+  </section>
+
+  <!-- Graphical Displays -->
+  <section class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+    <!-- Workload Distribution Donut Chart -->
+    <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm space-y-4">
+      <h2 class="text-base font-bold text-slate-800">Workload Distribution Breakdown</h2>
+      <div class="relative h-64">
+        <canvas id="workloadDonutChart"></canvas>
+      </div>
+    </div>
+
+    <!-- Off-Hours & Effort Trend Line Chart -->
+    <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm space-y-4">
+      <h2 class="text-base font-bold text-slate-800">Weekly Effort & LMS Off-Hours Activity Trend</h2>
+      <div class="relative h-64">
+        <canvas id="effortTrendChart"></canvas>
+      </div>
+    </div>
+  </section>
+
+  <!-- Panels & Actions -->
+  <section class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+    
+    <!-- Weekly Schedule & Fragmentation View -->
+    <div class="lg:col-span-2 bg-white p-6 rounded-xl border border-slate-200 shadow-sm space-y-4">
+      <div class="flex justify-between items-center">
+        <h2 class="text-base font-bold text-slate-800">Weekly Teaching Schedule & Fragmentation Gaps</h2>
+        <span class="text-xs font-semibold px-2.5 py-1 bg-amber-100 text-amber-800 rounded">2 High-Gap Idle Slots Detected</span>
+      </div>
+      <div class="grid grid-cols-5 gap-2 text-center text-xs font-semibold text-slate-600 border-b pb-2">
+        <div>Mon</div><div>Tue</div><div>Wed</div><div>Thu</div><div>Fri</div>
+      </div>
+      <div class="grid grid-cols-5 gap-2 text-xs">
+        <div class="bg-blue-50 p-2.5 rounded border border-blue-200">
+          <p class="font-bold text-blue-900">BIT 201</p>
+          <p class="text-slate-500">08:00 - 11:00</p>
+        </div>
+        <div class="bg-amber-50 p-2.5 rounded border border-amber-300 border-dashed">
+          <p class="font-bold text-amber-900">Gap (3.5 hrs)</p>
+          <p class="text-amber-700 font-medium">High Fragmentation</p>
+        </div>
+        <div class="bg-blue-50 p-2.5 rounded border border-blue-200">
+          <p class="font-bold text-blue-900">BIT 305</p>
+          <p class="text-slate-500">09:00 - 12:00</p>
+        </div>
+        <div class="bg-slate-50 p-2.5 rounded border border-slate-200 text-slate-400">
+          <p>Office Hours</p>
+          <p>14:00 - 16:00</p>
+        </div>
+        <div class="bg-blue-50 p-2.5 rounded border border-blue-200">
+          <p class="font-bold text-blue-900">BIT 401</p>
+          <p class="text-slate-500">11:00 - 14:00</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- AI Prescriptive Advisor & Trigger Assistance Modal -->
+    <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm space-y-4 flex flex-col justify-between">
+      <div>
+        <div class="flex items-center space-x-2 text-[#0A2540] mb-2">
+          <svg class="w-5 h-5 text-[#E5A823]" fill="currentColor" viewBox="0 0 20 20"><path d="M11 3a1 1 0 10-2 0v1a1 1 0 102 0V3zM15.657 5.757a1 1 0 00-1.414-1.414l-.707.707a1 1 0 001.414 1.414l.707-.707zM18 10a1 1 0 01-1 1h-1a1 1 0 110-2h1a1 1 0 011 1zM5.05 6.464A1 1 0 106.464 5.05l-.707-.707a1 1 0 00-1.414 1.414l.707.707zM5 10a1 1 0 01-1 1H3a1 1 0 110-2h1a1 1 0 011 1zM8 16v-1a1 1 0 10-2 0v1a1 1 0 102 0zM12 14a1 1 0 100-2 1 1 0 000 2z"></path></svg>
+          <h2 class="text-base font-bold text-slate-900">AI Prescriptive Workload Advisor</h2>
+        </div>
+        <div class="bg-slate-50 border-l-4 border-[#0A2540] p-4 rounded-r text-xs text-slate-700 leading-relaxed space-y-2">
+          <p class="font-semibold text-slate-900">Assessment Volume Spike Warning:</p>
+          <p>Your grading volume spikes in Week 8 due to concurrent BIT201 and BIT305 mid-terms. LMS activity indicates late-night work.</p>
+          <p class="text-[#0A2540] font-bold">&rarr; Recommendation: Shift office hours or request temporary marking assistant support.</p>
+        </div>
+      </div>
+
+      <!-- Action Button for Form Modal -->
+      <button onclick="document.getElementById('assistanceModal').classList.remove('hidden')" class="w-full mt-4 bg-[#0A2540] hover:bg-slate-800 text-white font-semibold py-2.5 px-4 rounded-lg text-xs shadow transition flex items-center justify-center space-x-2">
+        <svg class="w-4 h-4 text-[#E5A823]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path></svg>
+        <span>Request Assistance / Flag Fatigue</span>
+      </button>
+    </div>
+
+  </section>
+
+</div>
+
+<!-- Modal Form -->
+<div id="assistanceModal" class="fixed inset-0 bg-slate-900/60 backdrop-blur-sm hidden flex items-center justify-center z-50 p-4">
+  <div class="bg-white rounded-xl shadow-xl max-w-md w-full p-6 space-y-4">
+    <div class="flex justify-between items-center border-b pb-3">
+      <h3 class="font-bold text-slate-900">Submit Assistance Request</h3>
+      <button onclick="document.getElementById('assistanceModal').classList.add('hidden')" class="text-slate-400 hover:text-slate-600">&times;</button>
+    </div>
+    <form method="POST" action="{% url 'workloads:submit_log' %}" class="space-y-4 text-xs">
+      {% csrf_token %}
+      <div>
+        <label class="block font-semibold text-slate-700 mb-1">Request Type</label>
+        <select name="request_type" class="w-full border-slate-300 rounded-lg p-2.5 bg-slate-50 focus:ring-2 focus:ring-[#0A2540]">
+          <option value="MARKING_SUPPORT">Marking / Assessment Support</option>
+          <option value="FATIGUE">Flag High Fatigue / Workload Overload</option>
+          <option value="LEAVE">Temporary Schedule Adjustment</option>
+        </select>
+      </div>
+      <div>
+        <label class="block font-semibold text-slate-700 mb-1">Justification & Context</label>
+        <textarea name="reason" rows="3" class="w-full border-slate-300 rounded-lg p-2.5 bg-slate-50 focus:ring-2 focus:ring-[#0A2540]" placeholder="Explain context..."></textarea>
+      </div>
+      <div class="flex justify-end space-x-2 pt-2">
+        <button type="button" onclick="document.getElementById('assistanceModal').classList.add('hidden')" class="px-4 py-2 bg-slate-100 text-slate-700 rounded-lg font-semibold">Cancel</button>
+        <button type="submit" class="px-4 py-2 bg-[#0A2540] text-white rounded-lg font-semibold">Submit to HoD</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+  // Donut Chart: Workload Distribution
+  new Chart(document.getElementById('workloadDonutChart'), {
+    type: 'doughnut',
+    data: {
+      labels: ['Teaching', 'Module Prep', 'Grading', 'Admin/Committee', 'Research/Supervision'],
+      datasets: [{
+        data: [
+          {{ latest_log.teaching_hours|default:10 }},
+          {{ latest_log.module_prep_hours|default:4 }},
+          {{ latest_log.marking_hours|default:6 }},
+          {{ latest_log.administrative_hours|default:3 }},
+          {{ latest_log.supervisory_hours|default:2 }}
+        ],
+        backgroundColor: ['#0A2540', '#E5A823', '#EF4444', '#3B82F6', '#10B981']
+      }]
+    },
+    options: { responsive: true, maintainAspectRatio: false }
+  });
+
+  // Dual-Axis Line Chart: Effort & LMS Off-Hours Trend
+  new Chart(document.getElementById('effortTrendChart'), {
+    type: 'line',
+    data: {
+      labels: ['Wk 1', 'Wk 2', 'Wk 3', 'Wk 4'],
+      datasets: [
+        { label: 'Scheduled Hours', data: [18, 20, 22, 19], borderColor: '#0A2540', tension: 0.3 },
+        { label: 'LMS Off-Hours Logins', data: [2, 5, 11, 8], borderColor: '#EF4444', borderDash: [5, 5], tension: 0.3 }
+      ]
+    },
+    options: { responsive: true, maintainAspectRatio: false }
+  });
+</script>
+{% endblock %}

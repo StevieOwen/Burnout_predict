@@ -1,0 +1,121 @@
+{% extends 'workloads/base.html' %}
+
+{% block title %}Submit Weekly Workload Log | UTB Workload System{% endblock %}
+
+{% block content %}
+<div class="max-w-3xl mx-auto space-y-6">
+
+    <!-- Header Section -->
+    <div class="flex justify-between items-center bg-white p-6 rounded-xl border border-slate-200 shadow-sm">
+        <div>
+            <h1 class="text-2xl font-bold text-utb-navy">Weekly Workload Entry</h1>
+            <p class="text-slate-500 text-sm mt-1">Submit your academic metrics for automated machine learning risk assessment.</p>
+        </div>
+        <a href="{% url 'workloads:lecturer_dashboard' %}" class="text-sm font-medium text-slate-500 hover:text-utb-navy transition flex items-center gap-1">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path></svg>
+            Back to Dashboard
+        </a>
+    </div>
+
+    <!-- Form Card -->
+    <div class="bg-white p-8 rounded-xl border border-slate-200 shadow-sm">
+        <form method="post" class="space-y-6">
+            {% csrf_token %}
+
+            {% if form.non_field_errors %}
+                <div class="p-4 bg-red-50 border border-red-200 text-red-800 text-sm rounded-lg">
+                    {{ form.non_field_errors }}
+                </div>
+            {% endif %}
+
+            <!-- Workload Inputs Section -->
+            <div class="space-y-4">
+                <h2 class="text-base font-bold text-utb-navy border-b border-slate-100 pb-2">Academic Hours & Commitments</h2>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                        <label for="{{ form.teaching_hours.id_for_label }}" class="block text-xs font-bold uppercase text-slate-700 mb-1">
+                            Teaching Hours / Week
+                        </label>
+                        {{ form.teaching_hours }}
+                        {% if form.teaching_hours.errors %}
+                            <p class="text-xs text-red-600 mt-1">{{ form.teaching_hours.errors.0 }}</p>
+                        {% endif %}
+                    </div>
+
+                    <div>
+                        <label for="{{ form.marking_hours.id_for_label }}" class="block text-xs font-bold uppercase text-slate-700 mb-1">
+                            Marking & Grading Hours
+                        </label>
+                        {{ form.marking_hours }}
+                        {% if form.marking_hours.errors %}
+                            <p class="text-xs text-red-600 mt-1">{{ form.marking_hours.errors.0 }}</p>
+                        {% endif %}
+                    </div>
+
+                    <div>
+                        <label for="{{ form.administrative_hours.id_for_label }}" class="block text-xs font-bold uppercase text-slate-700 mb-1">
+                            Administrative Hours
+                        </label>
+                        {{ form.administrative_hours }}
+                        {% if form.administrative_hours.errors %}
+                            <p class="text-xs text-red-600 mt-1">{{ form.administrative_hours.errors.0 }}</p>
+                        {% endif %}
+                    </div>
+
+                    <div>
+                        <label for="{{ form.meeting_hours.id_for_label }}" class="block text-xs font-bold uppercase text-slate-700 mb-1">
+                            Meetings & Committee Hours
+                        </label>
+                        {{ form.meeting_hours }}
+                        {% if form.meeting_hours.errors %}
+                            <p class="text-xs text-red-600 mt-1">{{ form.meeting_hours.errors.0 }}</p>
+                        {% endif %}
+                    </div>
+
+                    <div class="md:col-span-2">
+                        <label for="{{ form.upcoming_deadlines_count.id_for_label }}" class="block text-xs font-bold uppercase text-slate-700 mb-1">
+                            Upcoming Critical Deadlines (Next 7 Days)
+                        </label>
+                        {{ form.upcoming_deadlines_count }}
+                        {% if form.upcoming_deadlines_count.errors %}
+                            <p class="text-xs text-red-600 mt-1">{{ form.upcoming_deadlines_count.errors.0 }}</p>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+
+            <!-- Privacy & Consent Section -->
+            <div class="pt-4 border-t border-slate-100 space-y-4">
+                <h2 class="text-base font-bold text-utb-navy">Privacy & HOD Consent</h2>
+                
+                <div class="p-4 bg-slate-50 rounded-lg border border-slate-200">
+                    <div class="flex items-start space-x-3">
+                        <div class="flex items-center h-5 mt-0.5">
+                            {{ consent_form.allow_hod_alerting }}
+                        </div>
+                        <div class="text-sm">
+                            <label for="{{ consent_form.allow_hod_alerting.id_for_label }}" class="font-bold text-utb-navy cursor-pointer">
+                                Allow Head of Department (HoD) Alerting
+                            </label>
+                            <p class="text-xs text-slate-500 mt-1">
+                                If enabled, your HoD will receive risk notifications with your identity when high burnout risk is predicted to facilitate support. If unchecked, your entries are processed anonymously.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Action Buttons -->
+            <div class="pt-4 flex justify-end items-center space-x-4 border-t border-slate-100">
+                <a href="{% url 'workloads:lecturer_dashboard' %}" class="px-5 py-2.5 text-sm font-medium text-slate-600 hover:text-slate-800 transition">
+                    Cancel
+                </a>
+                <button type="submit" class="bg-utb-gold hover:bg-utb-gold-hover text-utb-navy font-bold text-sm px-6 py-2.5 rounded-lg shadow-sm transition border border-amber-500/30">
+                    Run ML Risk Assessment
+                </button>
+            </div>
+        </form>
+    </div>
+</div>
+{% endblock %}
