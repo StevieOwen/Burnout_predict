@@ -91,8 +91,9 @@ DATABASES = {
         'PORT': '26715',
         'OPTIONS': {
             'init_command': "SET sql_mode='STRICT_TRANS_TABLES'",
+            'ssl': {'ssl_mode': 'REQUIRED'},
         },
-        'SSL mode': 'REQUIRED'
+        
     }
 }
 
