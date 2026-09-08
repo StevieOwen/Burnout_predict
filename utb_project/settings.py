@@ -78,14 +78,15 @@ WSGI_APPLICATION = 'utb_project.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'utb_burnout_db',
-        'USER': 'root',               
-        'PASSWORD': 'lerd',                 
-        'HOST': '127.0.0.1',
-        'PORT': '3306',
+        'NAME': 'defaultdb',
+        'USER': 'avnadmin',               
+        'PASSWORD': 'AVNS_JX0fZWdjN6o1C4n3c6_',                 
+        'HOST': 'mysql-2ba9040b-dstevieowen-4c59.e.aivencloud.com',
+        'PORT': '26715',
         'OPTIONS': {
             'init_command': "SET sql_mode='STRICT_TRANS_TABLES'",
         },
+        'SSL mode': 'REQUIRED'
     }
 }
 
