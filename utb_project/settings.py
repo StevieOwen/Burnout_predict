@@ -93,7 +93,6 @@ DATABASES = {
             'init_command': "SET sql_mode='STRICT_TRANS_TABLES'",
             'ssl_mode': 'REQUIRED',
         },
-        
     }
 }
 
@@ -101,8 +100,16 @@ DATABASES = {
 if os.environ.get('DATABASE_URL'):
     DATABASES['default'] = dj_database_url.config(
         default=os.environ.get('DATABASE_URL'),
-        conn_max_age=600
+        conn_max_age=600,
+        ssl_require=True
     )
+
+# Fix for MySQLdb TypeError: ensure all OPTIONS keys use underscores instead of hyphens
+if DATABASES['default'].get('ENGINE') == 'django.db.backends.mysql':
+    options = DATABASES['default'].get('OPTIONS', {})
+    if 'ssl-mode' in options:
+        options['ssl_mode'] = options.pop('ssl-mode')
+    DATABASES['default']['OPTIONS'] = options
 
 
 # Password validation
