@@ -16,4 +16,5 @@ urlpatterns = [
     path('api/v1/dashboard/lecturer/<str:staff_id>/', views.lecturer_dashboard_api, name='lecturer_dashboard_api'),
     path('api/v1/dashboard/executive/<str:dept_id>/', views.executive_dashboard_api, name='executive_dashboard_api'),
     path('api/v1/reallocate/accept/', views.accept_reallocation_api, name='accept_reallocation_api'),
+    path('login/', auth_views.LoginView.as_view(), name='login'),
 ]
