@@ -1,0 +1,3845 @@
+{
+  "generated_at": "2026-09-10T11:46:39.983580",
+  "faculty": [
+    {
+      "staff_id": "UTB-FAC-2026-001",
+      "name": "Fatima Kim",
+      "program": "BA Community Development",
+      "academic_rank": "Senior Lecturer",
+      "contractual_max_hours_week": 18.0,
+      "primary_domain": "Social Project Management",
+      "secondary_domains": "Community Leadership",
+      "max_supervision_capacity": 9,
+      "workload_activity": {
+        "log_id": "LOG-2026-0001",
+        "semester_week": 6,
+        "assigned_teaching_hours_week": 6.3,
+        "total_students_enrolled": 220,
+        "module_preparation_count": 2,
+        "assessment_grading_backlog": 83,
+        "committee_admin_hours_week": 2.7,
+        "current_supervised_students": 8
+      },
+      "behavioral_log": {
+        "lms_off_hours_activity_ratio": 0.0,
+        "schedule_fragmentation_index": 0.763,
+        "days_since_last_leave": 49,
+        "average_response_latency_hours": 2.3
+      },
+      "burnout_ground_truth": {
+        "snapshot_date": "2026-09-10",
+        "calculated_swu_total": 29.91,
+        "burnout_risk_score": 70.74,
+        "risk_tier": "MODERATE"
+      }
+    },
+    {
+      "staff_id": "UTB-FAC-2026-002",
+      "name": "Sarah Wilson",
+      "program": "BA Community Development",
+      "academic_rank": "Tutorial Assistant",
+      "contractual_max_hours_week": 24.0,
+      "primary_domain": "Community Leadership",
+      "secondary_domains": "Rural Development",
+      "max_supervision_capacity": 8,
+      "workload_activity": {
+        "log_id": "LOG-2026-0002",
+        "semester_week": 5,
+        "assigned_teaching_hours_week": 8.4,
+        "total_students_enrolled": 156,
+        "module_preparation_count": 3,
+        "assessment_grading_backlog": 19,
+        "committee_admin_hours_week": 3.3,
+        "current_supervised_students": 4
+      },
+      "behavioral_log": {
+        "lms_off_hours_activity_ratio": 0.0,
+        "schedule_fragmentation_index": 0.21,
+        "days_since_last_leave": 31,
+        "average_response_latency_hours": 0.79
+      },
+      "burnout_ground_truth": {
+        "snapshot_date": "2026-09-10",
+        "calculated_swu_total": 23.39,
+        "burnout_risk_score": 40.98,
+        "risk_tier": "LOW"
+      }
+    },
+    {
+      "staff_id": "UTB-FAC-2026-003",
+      "name": "Yvonne Twagirayezu",
+      "program": "Bachelor of Business Management",
+      "academic_rank": "Senior Lecturer",
+      "contractual_max_hours_week": 18.0,
+      "primary_domain": "Marketing",
+      "secondary_domains": "Financial Accounting, Strategic Management",
+      "max_supervision_capacity": 10,
+      "workload_activity": {
+        "log_id": "LOG-2026-0003",
+        "semester_week": 4,
+        "assigned_teaching_hours_week": 17.7,
+        "total_students_enrolled": 274,
+        "module_preparation_count": 3,
+        "assessment_grading_backlog": 145,
+        "committee_admin_hours_week": 2.0,
+        "current_supervised_students": 6
+      },
+      "behavioral_log": {
+        "lms_off_hours_activity_ratio": 0.294,
+        "schedule_fragmentation_index": 0.305,
+        "days_since_last_leave": 74,
+        "average_response_latency_hours": 0.18
+      },
+      "burnout_ground_truth": {
+        "snapshot_date": "2026-09-10",
+        "calculated_swu_total": 51.55,
+        "burnout_risk_score": 98.0,
+        "risk_tier": "HIGH"
+      }
+    },
+    {
+      "staff_id": "UTB-FAC-2026-004",
+      "name": "John Anderson",
+      "program": "BA Hotel & Restaurant Management",
+      "academic_rank": "Senior Lecturer",
+      "contractual_max_hours_week": 18.0,
+      "primary_domain": "Event Operations",
+      "secondary_domains": "Food & Beverage Services",
+      "max_supervision_capacity": 8,
+      "workload_activity": {
+        "log_id": "LOG-2026-0004",
+        "semester_week": 8,
+        "assigned_teaching_hours_week": 6.3,
+        "total_students_enrolled": 143,
+        "module_preparation_count": 2,
+        "assessment_grading_backlog": 73,
+        "committee_admin_hours_week": 1.4,
+        "current_supervised_students": 2
+      },
+      "behavioral_log": {
+        "lms_off_hours_activity_ratio": 0.0,
+        "schedule_fragmentation_index": 0.181,
+        "days_since_last_leave": 27,
+        "average_response_latency_hours": 2.73
+      },
+      "burnout_ground_truth": {
+        "snapshot_date": "2026-09-10",
+        "calculated_swu_total": 24.37,
+        "burnout_risk_score": 49.34,
+        "risk_tier": "LOW"
+      }
+    },
+    {
+      "staff_id": "UTB-FAC-2026-005",
+      "name": "Sandrine Uwase",
+      "program": "BSc Information Technology",
+      "academic_rank": "Senior Lecturer",
+      "contractual_max_hours_week": 17.7,
+      "primary_domain": "Database Systems",
+      "secondary_domains": "Network Administration, Information Systems",
+      "max_supervision_capacity": 10,
+      "workload_activity": {
+        "log_id": "LOG-2026-0005",
+        "semester_week": 9,
+        "assigned_teaching_hours_week": 18.1,
+        "total_students_enrolled": 123,
+        "module_preparation_count": 2,
+        "assessment_grading_backlog": 20,
+        "committee_admin_hours_week": 7.3,
+        "current_supervised_students": 5
+      },
+      "behavioral_log": {
+        "lms_off_hours_activity_ratio": 0.213,
+        "schedule_fragmentation_index": 0.458,
+        "days_since_last_leave": 95,
+        "average_response_latency_hours": 0.05
+      },
+      "burnout_ground_truth": {
+        "snapshot_date": "2026-09-10",
+        "calculated_swu_total": 34.44,
+        "burnout_risk_score": 85.01,
+        "risk_tier": "HIGH"
+      }
+    },
+    {
+      "staff_id": "UTB-FAC-2026-006",
+      "name": "Diane Uwizeyimana",
+      "program": "Bachelor of Business Management",
+      "academic_rank": "Lecturer",
+      "contractual_max_hours_week": 20.0,
+      "primary_domain": "Marketing",
+      "secondary_domains": "Financial Accounting, Strategic Management",
+      "max_supervision_capacity": 6,
+      "workload_activity": {
+        "log_id": "LOG-2026-0006",
+        "semester_week": 8,
+        "assigned_teaching_hours_week": 12.2,
+        "total_students_enrolled": 258,
+        "module_preparation_count": 1,
+        "assessment_grading_backlog": 39,
+        "committee_admin_hours_week": 1.3,
+        "current_supervised_students": 1
+      },
+      "behavioral_log": {
+        "lms_off_hours_activity_ratio": 0.27,
+        "schedule_fragmentation_index": 0.353,
+        "days_since_last_leave": 124,
+        "average_response_latency_hours": 2.77
+      },
+      "burnout_ground_truth": {
+        "snapshot_date": "2026-09-10",
+        "calculated_swu_total": 22.09,
+        "burnout_risk_score": 58.68,
+        "risk_tier": "MODERATE"
+      }
+    },
+    {
+      "staff_id": "UTB-FAC-2026-007",
+      "name": "Innocent Kayitesi",
+      "program": "BSc Transport & Logistics Management",
+      "academic_rank": "Senior Lecturer",
+      "contractual_max_hours_week": 17.6,
+      "primary_domain": "Freight Operations",
+      "secondary_domains": "Supply Chain Analytics, Transport Economics",
+      "max_supervision_capacity": 8,
+      "workload_activity": {
+        "log_id": "LOG-2026-0007",
+        "semester_week": 6,
+        "assigned_teaching_hours_week": 10.6,
+        "total_students_enrolled": 150,
+        "module_preparation_count": 1,
+        "assessment_grading_backlog": 72,
+        "committee_admin_hours_week": 2.0,
+        "current_supervised_students": 6
+      },
+      "behavioral_log": {
+        "lms_off_hours_activity_ratio": 0.17,
+        "schedule_fragmentation_index": 0.698,
+        "days_since_last_leave": 26,
+        "average_response_latency_hours": 3.11
+      },
+      "burnout_ground_truth": {
+        "snapshot_date": "2026-09-10",
+        "calculated_swu_total": 28.5,
+        "burnout_risk_score": 72.53,
+        "risk_tier": "MODERATE"
+      }
+    },
+    {
+      "staff_id": "UTB-FAC-2026-008",
+      "name": "Immaculee Ndayisenga",
+      "program": "BA Hotel & Restaurant Management",
+      "academic_rank": "Tutorial Assistant",
+      "contractual_max_hours_week": 23.5,
+      "primary_domain": "Food & Beverage Services",
+      "secondary_domains": "Hospitality Operations, Event Operations",
+      "max_supervision_capacity": 6,
+      "workload_activity": {
+        "log_id": "LOG-2026-0008",
+        "semester_week": 7,
+        "assigned_teaching_hours_week": 21.9,
+        "total_students_enrolled": 98,
+        "module_preparation_count": 2,
+        "assessment_grading_backlog": 43,
+        "committee_admin_hours_week": 1.6,
+        "current_supervised_students": 1
+      },
+      "behavioral_log": {
+        "lms_off_hours_activity_ratio": 0.209,
+        "schedule_fragmentation_index": 0.573,
+        "days_since_last_leave": 40,
+        "average_response_latency_hours": 1.37
+      },
+      "burnout_ground_truth": {
+        "snapshot_date": "2026-09-10",
+        "calculated_swu_total": 35.13,
+        "burnout_risk_score": 62.67,
+        "risk_tier": "MODERATE"
+      }
+    },
+    {
+      "staff_id": "UTB-FAC-2026-009",
+      "name": "Bosco Habimana",
+      "program": "BA Hotel & Restaurant Management",
+      "academic_rank": "Associate Professor",
+      "contractual_max_hours_week": 13.1,
+      "primary_domain": "Food & Beverage Services",
+      "secondary_domains": "Event Operations",
+      "max_supervision_capacity": 15,
+      "workload_activity": {
+        "log_id": "LOG-2026-0009",
+        "semester_week": 5,
+        "assigned_teaching_hours_week": 6.9,
+        "total_students_enrolled": 194,
+        "module_preparation_count": 2,
+        "assessment_grading_backlog": 95,
+        "committee_admin_hours_week": 7.4,
+        "current_supervised_students": 7
+      },
+      "behavioral_log": {
+        "lms_off_hours_activity_ratio": 0.182,
+        "schedule_fragmentation_index": 0.43,
+        "days_since_last_leave": 129,
+        "average_response_latency_hours": 3.32
+      },
+      "burnout_ground_truth": {
+        "snapshot_date": "2026-09-10",
+        "calculated_swu_total": 35.57,
+        "burnout_risk_score": 98.0,
+        "risk_tier": "HIGH"
+      }
+    },
+    {
+      "staff_id": "UTB-FAC-2026-010",
+      "name": "Laura Mensah",
+      "program": "BSc Transport & Logistics Management",
+      "academic_rank": "Lecturer",
+      "contractual_max_hours_week": 20.0,
+      "primary_domain": "Freight Operations",
+      "secondary_domains": "Fleet Management",
+      "max_supervision_capacity": 6,
+      "workload_activity": {
+        "log_id": "LOG-2026-0010",
+        "semester_week": 2,
+        "assigned_teaching_hours_week": 20.3,
+        "total_students_enrolled": 177,
+        "module_preparation_count": 2,
+        "assessment_grading_backlog": 23,
+        "committee_admin_hours_week": 7.1,
+        "current_supervised_students": 6
+      },
+      "behavioral_log": {
+        "lms_off_hours_activity_ratio": 0.136,
+        "schedule_fragmentation_index": 0.157,
+        "days_since_last_leave": 76,
+        "average_response_latency_hours": 0.95
+      },
+      "burnout_ground_truth": {
+        "snapshot_date": "2026-09-10",
+        "calculated_swu_total": 37.43,
+        "burnout_risk_score": 66.96,
+        "risk_tier": "MODERATE"
+      }
+    },
+    {
+      "staff_id": "UTB-FAC-2026-011",
+      "name": "John Chen",
+      "program": "BSc Transport & Logistics Management",
+      "academic_rank": "Senior Lecturer",
+      "contractual_max_hours_week": 17.3,
+      "primary_domain": "Transport Economics",
+      "secondary_domains": "Freight Operations",
+      "max_supervision_capacity": 12,
+      "workload_activity": {
+        "log_id": "LOG-2026-0011",
+        "semester_week": 8,
+        "assigned_teaching_hours_week": 7.7,
+        "total_students_enrolled": 196,
+        "module_preparation_count": 1,
+        "assessment_grading_backlog": 49,
+        "committee_admin_hours_week": 4.8,
+        "current_supervised_students": 11
+      },
+      "behavioral_log": {
+        "lms_off_hours_activity_ratio": 0.196,
+        "schedule_fragmentation_index": 0.257,
+        "days_since_last_leave": 47,
+        "average_response_latency_hours": 0.63
+      },
+      "burnout_ground_truth": {
+        "snapshot_date": "2026-09-10",
+        "calculated_swu_total": 26.89,
+        "burnout_risk_score": 63.47,
+        "risk_tier": "MODERATE"
+      }
+    },
+    {
+      "staff_id": "UTB-FAC-2026-012",
+      "name": "Robert Lee",
+      "program": "BSc Travel & Tourism Management",
+      "academic_rank": "Senior Lecturer",
+      "contractual_max_hours_week": 18.0,
+      "primary_domain": "Destination Management",
+      "secondary_domains": "Sustainable Tourism",
+      "max_supervision_capacity": 13,
+      "workload_activity": {
+        "log_id": "LOG-2026-0012",
+        "semester_week": 6,
+        "assigned_teaching_hours_week": 10.7,
+        "total_students_enrolled": 140,
+        "module_preparation_count": 2,
+        "assessment_grading_backlog": 75,
+        "committee_admin_hours_week": 2.5,
+        "current_supervised_students": 4
+      },
+      "behavioral_log": {
+        "lms_off_hours_activity_ratio": 0.183,
+        "schedule_fragmentation_index": 0.122,
+        "days_since_last_leave": 38,
+        "average_response_latency_hours": 1.35
+      },
+      "burnout_ground_truth": {
+        "snapshot_date": "2026-09-10",
+        "calculated_swu_total": 30.95,
+        "burnout_risk_score": 69.3,
+        "risk_tier": "MODERATE"
+      }
+    },
+    {
+      "staff_id": "UTB-FAC-2026-013",
+      "name": "Elena Kumar",
+      "program": "BSc Computer Engineering",
+      "academic_rank": "Senior Lecturer",
+      "contractual_max_hours_week": 16.5,
+      "primary_domain": "Algorithms",
+      "secondary_domains": "Software Engineering",
+      "max_supervision_capacity": 13,
+      "workload_activity": {
+        "log_id": "LOG-2026-0013",
+        "semester_week": 6,
+        "assigned_teaching_hours_week": 13.4,
+        "total_students_enrolled": 247,
+        "module_preparation_count": 1,
+        "assessment_grading_backlog": 61,
+        "committee_admin_hours_week": 1.9,
+        "current_supervised_students": 7
+      },
+      "behavioral_log": {
+        "lms_off_hours_activity_ratio": 0.188,
+        "schedule_fragmentation_index": 0.357,
+        "days_since_last_leave": 65,
+        "average_response_latency_hours": 0.28
+      },
+      "burnout_ground_truth": {
+        "snapshot_date": "2026-09-10",
+        "calculated_swu_total": 30.07,
+        "burnout_risk_score": 75.86,
+        "risk_tier": "HIGH"
+      }
+    },
+    {
+      "staff_id": "UTB-FAC-2026-014",
+      "name": "Theogene Uwimana",
+      "program": "BSc Transport & Logistics Management",
+      "academic_rank": "Senior Lecturer",
+      "contractual_max_hours_week": 18.0,
+      "primary_domain": "Supply Chain Analytics",
+      "secondary_domains": "Fleet Management",
+      "max_supervision_capacity": 11,
+      "workload_activity": {
+        "log_id": "LOG-2026-0014",
+        "semester_week": 3,
+        "assigned_teaching_hours_week": 15.0,
+        "total_students_enrolled": 171,
+        "module_preparation_count": 1,
+        "assessment_grading_backlog": 34,
+        "committee_admin_hours_week": 1.1,
+        "current_supervised_students": 8
+      },
+      "behavioral_log": {
+        "lms_off_hours_activity_ratio": 0.206,
+        "schedule_fragmentation_index": 0.861,
+        "days_since_last_leave": 75,
+        "average_response_latency_hours": 4.22
+      },
+      "burnout_ground_truth": {
+        "snapshot_date": "2026-09-10",
+        "calculated_swu_total": 27.48,
+        "burnout_risk_score": 78.0,
+        "risk_tier": "HIGH"
+      }
+    },
+    {
+      "staff_id": "UTB-FAC-2026-015",
+      "name": "Emile Nkurunziza",
+      "program": "BA Hotel & Restaurant Management",
+      "academic_rank": "Senior Lecturer",
+      "contractual_max_hours_week": 17.1,
+      "primary_domain": "Food & Beverage Services",
+      "secondary_domains": "Hotel Asset Management",
+      "max_supervision_capacity": 12,
+      "workload_activity": {
+        "log_id": "LOG-2026-0015",
+        "semester_week": 3,
+        "assigned_teaching_hours_week": 20.0,
+        "total_students_enrolled": 60,
+        "module_preparation_count": 2,
+        "assessment_grading_backlog": 17,
+        "committee_admin_hours_week": 3.1,
+        "current_supervised_students": 4
+      },
+      "behavioral_log": {
+        "lms_off_hours_activity_ratio": 0.288,
+        "schedule_fragmentation_index": 0.447,
+        "days_since_last_leave": 125,
+        "average_response_latency_hours": 0.0
+      },
+      "burnout_ground_truth": {
+        "snapshot_date": "2026-09-10",
+        "calculated_swu_total": 32.03,
+        "burnout_risk_score": 78.04,
+        "risk_tier": "HIGH"
+      }
+    },
+    {
+      "staff_id": "UTB-FAC-2026-016",
+      "name": "Jean Claude Twagirayezu",
+      "program": "BA Community Development",
+      "academic_rank": "Lecturer",
+      "contractual_max_hours_week": 20.0,
+      "primary_domain": "Community Leadership",
+      "secondary_domains": "Rural Development",
+      "max_supervision_capacity": 7,
+      "workload_activity": {
+        "log_id": "LOG-2026-0016",
+        "semester_week": 1,
+        "assigned_teaching_hours_week": 12.4,
+        "total_students_enrolled": 166,
+        "module_preparation_count": 3,
+        "assessment_grading_backlog": 39,
+        "committee_admin_hours_week": 6.7,
+        "current_supervised_students": 2
+      },
+      "behavioral_log": {
+        "lms_off_hours_activity_ratio": 0.027,
+        "schedule_fragmentation_index": 0.322,
+        "days_since_last_leave": 250,
+        "average_response_latency_hours": 1.93
+      },
+      "burnout_ground_truth": {
+        "snapshot_date": "2026-09-10",
+        "calculated_swu_total": 32.11,
+        "burnout_risk_score": 73.8,
+        "risk_tier": "MODERATE"
+      }
+    },
+    {
+      "staff_id": "UTB-FAC-2026-017",
+      "name": "Valentine Ingabire",
+      "program": "BA Community Development",
+      "academic_rank": "Lecturer",
+      "contractual_max_hours_week": 18.6,
+      "primary_domain": "Social Project Management",
+      "secondary_domains": "Rural Development, Public Policy",
+      "max_supervision_capacity": 8,
+      "workload_activity": {
+        "log_id": "LOG-2026-0017",
+        "semester_week": 12,
+        "assigned_teaching_hours_week": 20.9,
+        "total_students_enrolled": 60,
+        "module_preparation_count": 1,
+        "assessment_grading_backlog": 12,
+        "committee_admin_hours_week": 2.8,
+        "current_supervised_students": 8
+      },
+      "behavioral_log": {
+        "lms_off_hours_activity_ratio": 0.225,
+        "schedule_fragmentation_index": 0.886,
+        "days_since_last_leave": 6,
+        "average_response_latency_hours": 4.01
+      },
+      "burnout_ground_truth": {
+        "snapshot_date": "2026-09-10",
+        "calculated_swu_total": 31.44,
+        "burnout_risk_score": 67.56,
+        "risk_tier": "MODERATE"
+      }
+    },
+    {
+      "staff_id": "UTB-FAC-2026-018",
+      "name": "Gloria Mukamana",
+      "program": "BSc Information Technology",
+      "academic_rank": "Tutorial Assistant",
+      "contractual_max_hours_week": 24.0,
+      "primary_domain": "Information Systems",
+      "secondary_domains": "Database Systems, E-Commerce",
+      "max_supervision_capacity": 6,
+      "workload_activity": {
+        "log_id": "LOG-2026-0018",
+        "semester_week": 6,
+        "assigned_teaching_hours_week": 24.2,
+        "total_students_enrolled": 67,
+        "module_preparation_count": 3,
+        "assessment_grading_backlog": 24,
+        "committee_admin_hours_week": 4.2,
+        "current_supervised_students": 3
+      },
+      "behavioral_log": {
+        "lms_off_hours_activity_ratio": 0.235,
+        "schedule_fragmentation_index": 0.715,
+        "days_since_last_leave": 24,
+        "average_response_latency_hours": 3.34
+      },
+      "burnout_ground_truth": {
+        "snapshot_date": "2026-09-10",
+        "calculated_swu_total": 40.16,
+        "burnout_risk_score": 68.15,
+        "risk_tier": "MODERATE"
+      }
+    },
+    {
+      "staff_id": "UTB-FAC-2026-019",
+      "name": "Alexis Uwase",
+      "program": "BSc Information Technology",
+      "academic_rank": "Lecturer",
+      "contractual_max_hours_week": 19.7,
+      "primary_domain": "Network Administration",
+      "secondary_domains": "E-Commerce",
+      "max_supervision_capacity": 6,
+      "workload_activity": {
+        "log_id": "LOG-2026-0019",
+        "semester_week": 16,
+        "assigned_teaching_hours_week": 15.4,
+        "total_students_enrolled": 183,
+        "module_preparation_count": 3,
+        "assessment_grading_backlog": 97,
+        "committee_admin_hours_week": 8.0,
+        "current_supervised_students": 6
+      },
+      "behavioral_log": {
+        "lms_off_hours_activity_ratio": 0.16,
+        "schedule_fragmentation_index": 0.719,
+        "days_since_last_leave": 145,
+        "average_response_latency_hours": 2.81
+      },
+      "burnout_ground_truth": {
+        "snapshot_date": "2026-09-10",
+        "calculated_swu_total": 46.85,
+        "burnout_risk_score": 98.0,
+        "risk_tier": "HIGH"
+      }
+    },
+    {
+      "staff_id": "UTB-FAC-2026-020",
+      "name": "Vincent Nkurunziza",
+      "program": "BSc Information Technology",
+      "academic_rank": "Lecturer",
+      "contractual_max_hours_week": 20.0,
+      "primary_domain": "E-Commerce",
+      "secondary_domains": "Network Administration, Database Systems",
+      "max_supervision_capacity": 8,
+      "workload_activity": {
+        "log_id": "LOG-2026-0020",
+        "semester_week": 5,
+        "assigned_teaching_hours_week": 7.0,
+        "total_students_enrolled": 125,
+        "module_preparation_count": 1,
+        "assessment_grading_backlog": 49,
+        "committee_admin_hours_week": 4.3,
+        "current_supervised_students": 5
+      },
+      "behavioral_log": {
+        "lms_off_hours_activity_ratio": 0.0,
+        "schedule_fragmentation_index": 0.473,
+        "days_since_last_leave": 17,
+        "average_response_latency_hours": 0.2
+      },
+      "burnout_ground_truth": {
+        "snapshot_date": "2026-09-10",
+        "calculated_swu_total": 22.79,
+        "burnout_risk_score": 44.47,
+        "risk_tier": "LOW"
+      }
+    },
+    {
+      "staff_id": "UTB-FAC-2026-021",
+      "name": "Emmanuel Kayitesi",
+      "program": "BA Hotel & Restaurant Management",
+      "academic_rank": "Tutorial Assistant",
+      "contractual_max_hours_week": 23.7,
+      "primary_domain": "Hotel Asset Management",
+      "secondary_domains": "Hospitality Operations",
+      "max_supervision_capacity": 5,
+      "workload_activity": {
+        "log_id": "LOG-2026-0021",
+        "semester_week": 3,
+        "assigned_teaching_hours_week": 27.6,
+        "total_students_enrolled": 237,
+        "module_preparation_count": 4,
+        "assessment_grading_backlog": 92,
+        "committee_admin_hours_week": 2.0,
+        "current_supervised_students": 2
+      },
+      "behavioral_log": {
+        "lms_off_hours_activity_ratio": 0.289,
+        "schedule_fragmentation_index": 0.382,
+        "days_since_last_leave": 38,
+        "average_response_latency_hours": 1.28
+      },
+      "burnout_ground_truth": {
+        "snapshot_date": "2026-09-10",
+        "calculated_swu_total": 54.0,
+        "burnout_risk_score": 89.38,
+        "risk_tier": "HIGH"
+      }
+    },
+    {
+      "staff_id": "UTB-FAC-2026-022",
+      "name": "Claudine Mugisha",
+      "program": "BSc Travel & Tourism Management",
+      "academic_rank": "Lecturer",
+      "contractual_max_hours_week": 20.0,
+      "primary_domain": "Sustainable Tourism",
+      "secondary_domains": "Eco-Tourism, Destination Management",
+      "max_supervision_capacity": 7,
+      "workload_activity": {
+        "log_id": "LOG-2026-0022",
+        "semester_week": 3,
+        "assigned_teaching_hours_week": 7.0,
+        "total_students_enrolled": 216,
+        "module_preparation_count": 2,
+        "assessment_grading_backlog": 63,
+        "committee_admin_hours_week": 3.0,
+        "current_supervised_students": 2
+      },
+      "behavioral_log": {
+        "lms_off_hours_activity_ratio": 0.0,
+        "schedule_fragmentation_index": 0.259,
+        "days_since_last_leave": 54,
+        "average_response_latency_hours": 5.23
+      },
+      "burnout_ground_truth": {
+        "snapshot_date": "2026-09-10",
+        "calculated_swu_total": 24.85,
+        "burnout_risk_score": 42.03,
+        "risk_tier": "LOW"
+      }
+    },
+    {
+      "staff_id": "UTB-FAC-2026-023",
+      "name": "Robert Anderson",
+      "program": "BSc Information Technology",
+      "academic_rank": "Lecturer",
+      "contractual_max_hours_week": 20.0,
+      "primary_domain": "Network Administration",
+      "secondary_domains": "Information Systems",
+      "max_supervision_capacity": 12,
+      "workload_activity": {
+        "log_id": "LOG-2026-0023",
+        "semester_week": 5,
+        "assigned_teaching_hours_week": 16.8,
+        "total_students_enrolled": 174,
+        "module_preparation_count": 3,
+        "assessment_grading_backlog": 31,
+        "committee_admin_hours_week": 6.1,
+        "current_supervised_students": 8
+      },
+      "behavioral_log": {
+        "lms_off_hours_activity_ratio": 0.214,
+        "schedule_fragmentation_index": 0.791,
+        "days_since_last_leave": 17,
+        "average_response_latency_hours": 4.63
+      },
+      "burnout_ground_truth": {
+        "snapshot_date": "2026-09-10",
+        "calculated_swu_total": 37.83,
+        "burnout_risk_score": 75.64,
+        "risk_tier": "HIGH"
+      }
+    },
+    {
+      "staff_id": "UTB-FAC-2026-024",
+      "name": "Bosco Rukundo",
+      "program": "BSc Travel & Tourism Management",
+      "academic_rank": "Lecturer",
+      "contractual_max_hours_week": 20.0,
+      "primary_domain": "Destination Management",
+      "secondary_domains": "Eco-Tourism, Sustainable Tourism",
+      "max_supervision_capacity": 11,
+      "workload_activity": {
+        "log_id": "LOG-2026-0024",
+        "semester_week": 11,
+        "assigned_teaching_hours_week": 16.2,
+        "total_students_enrolled": 189,
+        "module_preparation_count": 2,
+        "assessment_grading_backlog": 24,
+        "committee_admin_hours_week": 1.8,
+        "current_supervised_students": 8
+      },
+      "behavioral_log": {
+        "lms_off_hours_activity_ratio": 0.181,
+        "schedule_fragmentation_index": 0.55,
+        "days_since_last_leave": 63,
+        "average_response_latency_hours": 1.49
+      },
+      "burnout_ground_truth": {
+        "snapshot_date": "2026-09-10",
+        "calculated_swu_total": 30.24,
+        "burnout_risk_score": 64.32,
+        "risk_tier": "MODERATE"
+      }
+    },
+    {
+      "staff_id": "UTB-FAC-2026-025",
+      "name": "Marie Claire Niyonzima",
+      "program": "BA Community Development",
+      "academic_rank": "Senior Lecturer",
+      "contractual_max_hours_week": 17.2,
+      "primary_domain": "Rural Development",
+      "secondary_domains": "Community Leadership, Public Policy",
+      "max_supervision_capacity": 12,
+      "workload_activity": {
+        "log_id": "LOG-2026-0025",
+        "semester_week": 2,
+        "assigned_teaching_hours_week": 6.9,
+        "total_students_enrolled": 224,
+        "module_preparation_count": 1,
+        "assessment_grading_backlog": 107,
+        "committee_admin_hours_week": 8.0,
+        "current_supervised_students": 10
+      },
+      "behavioral_log": {
+        "lms_off_hours_activity_ratio": 0.0,
+        "schedule_fragmentation_index": 0.502,
+        "days_since_last_leave": 74,
+        "average_response_latency_hours": 3.37
+      },
+      "burnout_ground_truth": {
+        "snapshot_date": "2026-09-10",
+        "calculated_swu_total": 36.85,
+        "burnout_risk_score": 80.01,
+        "risk_tier": "HIGH"
+      }
+    },
+    {
+      "staff_id": "UTB-FAC-2026-026",
+      "name": "Placide Uwimana",
+      "program": "Bachelor of Business Management",
+      "academic_rank": "Lecturer",
+      "contractual_max_hours_week": 19.1,
+      "primary_domain": "Financial Accounting",
+      "secondary_domains": "Strategic Management",
+      "max_supervision_capacity": 8,
+      "workload_activity": {
+        "log_id": "LOG-2026-0026",
+        "semester_week": 13,
+        "assigned_teaching_hours_week": 12.0,
+        "total_students_enrolled": 133,
+        "module_preparation_count": 1,
+        "assessment_grading_backlog": 68,
+        "committee_admin_hours_week": 1.3,
+        "current_supervised_students": 4
+      },
+      "behavioral_log": {
+        "lms_off_hours_activity_ratio": 0.127,
+        "schedule_fragmentation_index": 0.507,
+        "days_since_last_leave": 94,
+        "average_response_latency_hours": 0.46
+      },
+      "burnout_ground_truth": {
+        "snapshot_date": "2026-09-10",
+        "calculated_swu_total": 27.74,
+        "burnout_risk_score": 65.43,
+        "risk_tier": "MODERATE"
+      }
+    },
+    {
+      "staff_id": "UTB-FAC-2026-027",
+      "name": "Elena Mensah",
+      "program": "BSc Transport & Logistics Management",
+      "academic_rank": "Senior Lecturer",
+      "contractual_max_hours_week": 16.9,
+      "primary_domain": "Freight Operations",
+      "secondary_domains": "Fleet Management",
+      "max_supervision_capacity": 9,
+      "workload_activity": {
+        "log_id": "LOG-2026-0027",
+        "semester_week": 9,
+        "assigned_teaching_hours_week": 15.1,
+        "total_students_enrolled": 77,
+        "module_preparation_count": 2,
+        "assessment_grading_backlog": 36,
+        "committee_admin_hours_week": 1.6,
+        "current_supervised_students": 6
+      },
+      "behavioral_log": {
+        "lms_off_hours_activity_ratio": 0.264,
+        "schedule_fragmentation_index": 0.353,
+        "days_since_last_leave": 6,
+        "average_response_latency_hours": 0.5
+      },
+      "burnout_ground_truth": {
+        "snapshot_date": "2026-09-10",
+        "calculated_swu_total": 29.78,
+        "burnout_risk_score": 73.63,
+        "risk_tier": "MODERATE"
+      }
+    },
+    {
+      "staff_id": "UTB-FAC-2026-028",
+      "name": "Olivier Karenzi",
+      "program": "BSc Computer Engineering",
+      "academic_rank": "Lecturer",
+      "contractual_max_hours_week": 20.0,
+      "primary_domain": "Algorithms",
+      "secondary_domains": "Software Engineering",
+      "max_supervision_capacity": 6,
+      "workload_activity": {
+        "log_id": "LOG-2026-0028",
+        "semester_week": 5,
+        "assigned_teaching_hours_week": 10.6,
+        "total_students_enrolled": 125,
+        "module_preparation_count": 3,
+        "assessment_grading_backlog": 28,
+        "committee_admin_hours_week": 3.5,
+        "current_supervised_students": 5
+      },
+      "behavioral_log": {
+        "lms_off_hours_activity_ratio": 0.049,
+        "schedule_fragmentation_index": 0.255,
+        "days_since_last_leave": 225,
+        "average_response_latency_hours": 2.55
+      },
+      "burnout_ground_truth": {
+        "snapshot_date": "2026-09-10",
+        "calculated_swu_total": 27.6,
+        "burnout_risk_score": 61.32,
+        "risk_tier": "MODERATE"
+      }
+    },
+    {
+      "staff_id": "UTB-FAC-2026-029",
+      "name": "Yvonne Mutesi",
+      "program": "BSc Travel & Tourism Management",
+      "academic_rank": "Senior Lecturer",
+      "contractual_max_hours_week": 17.2,
+      "primary_domain": "Travel Operations",
+      "secondary_domains": "Sustainable Tourism, Eco-Tourism",
+      "max_supervision_capacity": 12,
+      "workload_activity": {
+        "log_id": "LOG-2026-0029",
+        "semester_week": 7,
+        "assigned_teaching_hours_week": 19.1,
+        "total_students_enrolled": 195,
+        "module_preparation_count": 2,
+        "assessment_grading_backlog": 88,
+        "committee_admin_hours_week": 2.4,
+        "current_supervised_students": 2
+      },
+      "behavioral_log": {
+        "lms_off_hours_activity_ratio": 0.304,
+        "schedule_fragmentation_index": 0.489,
+        "days_since_last_leave": 31,
+        "average_response_latency_hours": 2.8
+      },
+      "burnout_ground_truth": {
+        "snapshot_date": "2026-09-10",
+        "calculated_swu_total": 40.22,
+        "burnout_risk_score": 91.97,
+        "risk_tier": "HIGH"
+      }
+    },
+    {
+      "staff_id": "UTB-FAC-2026-030",
+      "name": "Aline Niyonzima",
+      "program": "BA Community Development",
+      "academic_rank": "Senior Lecturer",
+      "contractual_max_hours_week": 18.0,
+      "primary_domain": "Community Leadership",
+      "secondary_domains": "Rural Development",
+      "max_supervision_capacity": 13,
+      "workload_activity": {
+        "log_id": "LOG-2026-0030",
+        "semester_week": 12,
+        "assigned_teaching_hours_week": 14.8,
+        "total_students_enrolled": 166,
+        "module_preparation_count": 1,
+        "assessment_grading_backlog": 79,
+        "committee_admin_hours_week": 2.4,
+        "current_supervised_students": 4
+      },
+      "behavioral_log": {
+        "lms_off_hours_activity_ratio": 0.25,
+        "schedule_fragmentation_index": 0.202,
+        "days_since_last_leave": 164,
+        "average_response_latency_hours": 5.3
+      },
+      "burnout_ground_truth": {
+        "snapshot_date": "2026-09-10",
+        "calculated_swu_total": 33.07,
+        "burnout_risk_score": 78.57,
+        "risk_tier": "HIGH"
+      }
+    },
+    {
+      "staff_id": "UTB-FAC-2026-031",
+      "name": "Marie Claire Uwase",
+      "program": "BA Hotel & Restaurant Management",
+      "academic_rank": "Senior Lecturer",
+      "contractual_max_hours_week": 18.0,
+      "primary_domain": "Hospitality Operations",
+      "secondary_domains": "Hotel Asset Management",
+      "max_supervision_capacity": 12,
+      "workload_activity": {
+        "log_id": "LOG-2026-0031",
+        "semester_week": 1,
+        "assigned_teaching_hours_week": 17.8,
+        "total_students_enrolled": 270,
+        "module_preparation_count": 4,
+        "assessment_grading_backlog": 78,
+        "committee_admin_hours_week": 8.0,
+        "current_supervised_students": 6
+      },
+      "behavioral_log": {
+        "lms_off_hours_activity_ratio": 0.274,
+        "schedule_fragmentation_index": 0.76,
+        "days_since_last_leave": 81,
+        "average_response_latency_hours": 0.39
+      },
+      "burnout_ground_truth": {
+        "snapshot_date": "2026-09-10",
+        "calculated_swu_total": 48.9,
+        "burnout_risk_score": 98.0,
+        "risk_tier": "HIGH"
+      }
+    },
+    {
+      "staff_id": "UTB-FAC-2026-032",
+      "name": "Claudine Karenzi",
+      "program": "BSc Information Technology",
+      "academic_rank": "Senior Lecturer",
+      "contractual_max_hours_week": 18.0,
+      "primary_domain": "Information Systems",
+      "secondary_domains": "E-Commerce",
+      "max_supervision_capacity": 10,
+      "workload_activity": {
+        "log_id": "LOG-2026-0032",
+        "semester_week": 5,
+        "assigned_teaching_hours_week": 6.3,
+        "total_students_enrolled": 172,
+        "module_preparation_count": 2,
+        "assessment_grading_backlog": 32,
+        "committee_admin_hours_week": 5.6,
+        "current_supervised_students": 1
+      },
+      "behavioral_log": {
+        "lms_off_hours_activity_ratio": 0.018,
+        "schedule_fragmentation_index": 0.45,
+        "days_since_last_leave": 54,
+        "average_response_latency_hours": 0.79
+      },
+      "burnout_ground_truth": {
+        "snapshot_date": "2026-09-10",
+        "calculated_swu_total": 21.08,
+        "burnout_risk_score": 50.3,
+        "risk_tier": "MODERATE"
+      }
+    },
+    {
+      "staff_id": "UTB-FAC-2026-033",
+      "name": "Vincent Mutesi",
+      "program": "BSc Computer Engineering",
+      "academic_rank": "Senior Lecturer",
+      "contractual_max_hours_week": 18.0,
+      "primary_domain": "Software Engineering",
+      "secondary_domains": "Embedded Systems, Algorithms",
+      "max_supervision_capacity": 9,
+      "workload_activity": {
+        "log_id": "LOG-2026-0033",
+        "semester_week": 14,
+        "assigned_teaching_hours_week": 11.6,
+        "total_students_enrolled": 317,
+        "module_preparation_count": 2,
+        "assessment_grading_backlog": 85,
+        "committee_admin_hours_week": 2.3,
+        "current_supervised_students": 8
+      },
+      "behavioral_log": {
+        "lms_off_hours_activity_ratio": 0.15,
+        "schedule_fragmentation_index": 0.831,
+        "days_since_last_leave": 151,
+        "average_response_latency_hours": 0.98
+      },
+      "burnout_ground_truth": {
+        "snapshot_date": "2026-09-10",
+        "calculated_swu_total": 35.19,
+        "burnout_risk_score": 92.23,
+        "risk_tier": "HIGH"
+      }
+    },
+    {
+      "staff_id": "UTB-FAC-2026-034",
+      "name": "Gloria Mugisha",
+      "program": "Bachelor of Business Management",
+      "academic_rank": "Senior Lecturer",
+      "contractual_max_hours_week": 16.8,
+      "primary_domain": "Financial Accounting",
+      "secondary_domains": "Human Resources, Marketing",
+      "max_supervision_capacity": 12,
+      "workload_activity": {
+        "log_id": "LOG-2026-0034",
+        "semester_week": 10,
+        "assigned_teaching_hours_week": 9.4,
+        "total_students_enrolled": 175,
+        "module_preparation_count": 1,
+        "assessment_grading_backlog": 21,
+        "committee_admin_hours_week": 8.0,
+        "current_supervised_students": 6
+      },
+      "behavioral_log": {
+        "lms_off_hours_activity_ratio": 0.023,
+        "schedule_fragmentation_index": 0.759,
+        "days_since_last_leave": 5,
+        "average_response_latency_hours": 0.05
+      },
+      "burnout_ground_truth": {
+        "snapshot_date": "2026-09-10",
+        "calculated_swu_total": 24.45,
+        "burnout_risk_score": 60.99,
+        "risk_tier": "MODERATE"
+      }
+    },
+    {
+      "staff_id": "UTB-FAC-2026-035",
+      "name": "Jean Claude Nsengimana",
+      "program": "BSc Transport & Logistics Management",
+      "academic_rank": "Tutorial Assistant",
+      "contractual_max_hours_week": 24.0,
+      "primary_domain": "Fleet Management",
+      "secondary_domains": "Transport Economics",
+      "max_supervision_capacity": 5,
+      "workload_activity": {
+        "log_id": "LOG-2026-0035",
+        "semester_week": 2,
+        "assigned_teaching_hours_week": 16.7,
+        "total_students_enrolled": 140,
+        "module_preparation_count": 3,
+        "assessment_grading_backlog": 74,
+        "committee_admin_hours_week": 4.9,
+        "current_supervised_students": 1
+      },
+      "behavioral_log": {
+        "lms_off_hours_activity_ratio": 0.016,
+        "schedule_fragmentation_index": 0.394,
+        "days_since_last_leave": 63,
+        "average_response_latency_hours": 0.64
+      },
+      "burnout_ground_truth": {
+        "snapshot_date": "2026-09-10",
+        "calculated_swu_total": 39.72,
+        "burnout_risk_score": 72.86,
+        "risk_tier": "MODERATE"
+      }
+    },
+    {
+      "staff_id": "UTB-FAC-2026-036",
+      "name": "Olivier Nsengimana",
+      "program": "BSc Computer Engineering",
+      "academic_rank": "Lecturer",
+      "contractual_max_hours_week": 18.7,
+      "primary_domain": "Embedded Systems",
+      "secondary_domains": "Algorithms, Software Engineering",
+      "max_supervision_capacity": 9,
+      "workload_activity": {
+        "log_id": "LOG-2026-0036",
+        "semester_week": 7,
+        "assigned_teaching_hours_week": 10.0,
+        "total_students_enrolled": 182,
+        "module_preparation_count": 4,
+        "assessment_grading_backlog": 81,
+        "committee_admin_hours_week": 3.5,
+        "current_supervised_students": 1
+      },
+      "behavioral_log": {
+        "lms_off_hours_activity_ratio": 0.193,
+        "schedule_fragmentation_index": 0.246,
+        "days_since_last_leave": 51,
+        "average_response_latency_hours": 4.21
+      },
+      "burnout_ground_truth": {
+        "snapshot_date": "2026-09-10",
+        "calculated_swu_total": 35.45,
+        "burnout_risk_score": 69.42,
+        "risk_tier": "MODERATE"
+      }
+    },
+    {
+      "staff_id": "UTB-FAC-2026-037",
+      "name": "David Kumar",
+      "program": "BSc Information Technology",
+      "academic_rank": "Senior Lecturer",
+      "contractual_max_hours_week": 18.0,
+      "primary_domain": "Network Administration",
+      "secondary_domains": "Database Systems",
+      "max_supervision_capacity": 12,
+      "workload_activity": {
+        "log_id": "LOG-2026-0037",
+        "semester_week": 7,
+        "assigned_teaching_hours_week": 18.3,
+        "total_students_enrolled": 262,
+        "module_preparation_count": 4,
+        "assessment_grading_backlog": 133,
+        "committee_admin_hours_week": 3.6,
+        "current_supervised_students": 11
+      },
+      "behavioral_log": {
+        "lms_off_hours_activity_ratio": 0.141,
+        "schedule_fragmentation_index": 0.445,
+        "days_since_last_leave": 18,
+        "average_response_latency_hours": 0.23
+      },
+      "burnout_ground_truth": {
+        "snapshot_date": "2026-09-10",
+        "calculated_swu_total": 56.63,
+        "burnout_risk_score": 98.0,
+        "risk_tier": "HIGH"
+      }
+    },
+    {
+      "staff_id": "UTB-FAC-2026-038",
+      "name": "Sandrine Rukundo",
+      "program": "BSc Travel & Tourism Management",
+      "academic_rank": "Tutorial Assistant",
+      "contractual_max_hours_week": 23.0,
+      "primary_domain": "Travel Operations",
+      "secondary_domains": "Sustainable Tourism, Destination Management",
+      "max_supervision_capacity": 7,
+      "workload_activity": {
+        "log_id": "LOG-2026-0038",
+        "semester_week": 10,
+        "assigned_teaching_hours_week": 18.9,
+        "total_students_enrolled": 157,
+        "module_preparation_count": 1,
+        "assessment_grading_backlog": 58,
+        "committee_admin_hours_week": 8.0,
+        "current_supervised_students": 2
+      },
+      "behavioral_log": {
+        "lms_off_hours_activity_ratio": 0.263,
+        "schedule_fragmentation_index": 0.717,
+        "days_since_last_leave": 26,
+        "average_response_latency_hours": 0.59
+      },
+      "burnout_ground_truth": {
+        "snapshot_date": "2026-09-10",
+        "calculated_swu_total": 37.5,
+        "burnout_risk_score": 69.73,
+        "risk_tier": "MODERATE"
+      }
+    },
+    {
+      "staff_id": "UTB-FAC-2026-039",
+      "name": "Immaculee Nkurunziza",
+      "program": "BSc Travel & Tourism Management",
+      "academic_rank": "Associate Professor",
+      "contractual_max_hours_week": 12.2,
+      "primary_domain": "Destination Management",
+      "secondary_domains": "Travel Operations",
+      "max_supervision_capacity": 12,
+      "workload_activity": {
+        "log_id": "LOG-2026-0039",
+        "semester_week": 5,
+        "assigned_teaching_hours_week": 4.3,
+        "total_students_enrolled": 163,
+        "module_preparation_count": 1,
+        "assessment_grading_backlog": 70,
+        "committee_admin_hours_week": 1.5,
+        "current_supervised_students": 8
+      },
+      "behavioral_log": {
+        "lms_off_hours_activity_ratio": 0.103,
+        "schedule_fragmentation_index": 0.574,
+        "days_since_last_leave": 23,
+        "average_response_latency_hours": 0.79
+      },
+      "burnout_ground_truth": {
+        "snapshot_date": "2026-09-10",
+        "calculated_swu_total": 22.5,
+        "burnout_risk_score": 76.57,
+        "risk_tier": "HIGH"
+      }
+    },
+    {
+      "staff_id": "UTB-FAC-2026-040",
+      "name": "Yvonne Karenzi",
+      "program": "BSc Transport & Logistics Management",
+      "academic_rank": "Lecturer",
+      "contractual_max_hours_week": 19.5,
+      "primary_domain": "Supply Chain Analytics",
+      "secondary_domains": "Fleet Management, Freight Operations",
+      "max_supervision_capacity": 9,
+      "workload_activity": {
+        "log_id": "LOG-2026-0040",
+        "semester_week": 2,
+        "assigned_teaching_hours_week": 22.6,
+        "total_students_enrolled": 158,
+        "module_preparation_count": 3,
+        "assessment_grading_backlog": 22,
+        "committee_admin_hours_week": 2.5,
+        "current_supervised_students": 7
+      },
+      "behavioral_log": {
+        "lms_off_hours_activity_ratio": 0.432,
+        "schedule_fragmentation_index": 0.285,
+        "days_since_last_leave": 18,
+        "average_response_latency_hours": 3.2
+      },
+      "burnout_ground_truth": {
+        "snapshot_date": "2026-09-10",
+        "calculated_swu_total": 38.9,
+        "burnout_risk_score": 78.98,
+        "risk_tier": "HIGH"
+      }
+    },
+    {
+      "staff_id": "UTB-FAC-2026-041",
+      "name": "Innocent Nsengimana",
+      "program": "BSc Information Technology",
+      "academic_rank": "Tutorial Assistant",
+      "contractual_max_hours_week": 24.0,
+      "primary_domain": "Network Administration",
+      "secondary_domains": "Database Systems",
+      "max_supervision_capacity": 6,
+      "workload_activity": {
+        "log_id": "LOG-2026-0041",
+        "semester_week": 1,
+        "assigned_teaching_hours_week": 10.2,
+        "total_students_enrolled": 264,
+        "module_preparation_count": 2,
+        "assessment_grading_backlog": 86,
+        "committee_admin_hours_week": 6.4,
+        "current_supervised_students": 3
+      },
+      "behavioral_log": {
+        "lms_off_hours_activity_ratio": 0.091,
+        "schedule_fragmentation_index": 0.705,
+        "days_since_last_leave": 41,
+        "average_response_latency_hours": 3.18
+      },
+      "burnout_ground_truth": {
+        "snapshot_date": "2026-09-10",
+        "calculated_swu_total": 34.72,
+        "burnout_risk_score": 65.98,
+        "risk_tier": "MODERATE"
+      }
+    },
+    {
+      "staff_id": "UTB-FAC-2026-042",
+      "name": "James Williams",
+      "program": "Bachelor of Business Management",
+      "academic_rank": "Lecturer",
+      "contractual_max_hours_week": 20.0,
+      "primary_domain": "Financial Accounting",
+      "secondary_domains": "Marketing, Human Resources",
+      "max_supervision_capacity": 8,
+      "workload_activity": {
+        "log_id": "LOG-2026-0042",
+        "semester_week": 8,
+        "assigned_teaching_hours_week": 7.0,
+        "total_students_enrolled": 102,
+        "module_preparation_count": 2,
+        "assessment_grading_backlog": 47,
+        "committee_admin_hours_week": 2.9,
+        "current_supervised_students": 6
+      },
+      "behavioral_log": {
+        "lms_off_hours_activity_ratio": 0.086,
+        "schedule_fragmentation_index": 0.351,
+        "days_since_last_leave": 57,
+        "average_response_latency_hours": 1.97
+      },
+      "burnout_ground_truth": {
+        "snapshot_date": "2026-09-10",
+        "calculated_swu_total": 24.37,
+        "burnout_risk_score": 47.23,
+        "risk_tier": "LOW"
+      }
+    },
+    {
+      "staff_id": "UTB-FAC-2026-043",
+      "name": "Alice Habimana",
+      "program": "BSc Information Technology",
+      "academic_rank": "Senior Lecturer",
+      "contractual_max_hours_week": 16.2,
+      "primary_domain": "Network Administration",
+      "secondary_domains": "Information Systems",
+      "max_supervision_capacity": 11,
+      "workload_activity": {
+        "log_id": "LOG-2026-0043",
+        "semester_week": 9,
+        "assigned_teaching_hours_week": 13.3,
+        "total_students_enrolled": 282,
+        "module_preparation_count": 2,
+        "assessment_grading_backlog": 140,
+        "committee_admin_hours_week": 2.4,
+        "current_supervised_students": 3
+      },
+      "behavioral_log": {
+        "lms_off_hours_activity_ratio": 0.16,
+        "schedule_fragmentation_index": 0.862,
+        "days_since_last_leave": 25,
+        "average_response_latency_hours": 0.43
+      },
+      "burnout_ground_truth": {
+        "snapshot_date": "2026-09-10",
+        "calculated_swu_total": 42.72,
+        "burnout_risk_score": 98.0,
+        "risk_tier": "HIGH"
+      }
+    },
+    {
+      "staff_id": "UTB-FAC-2026-044",
+      "name": "Alexis Uwase",
+      "program": "BSc Transport & Logistics Management",
+      "academic_rank": "Tutorial Assistant",
+      "contractual_max_hours_week": 23.4,
+      "primary_domain": "Fleet Management",
+      "secondary_domains": "Supply Chain Analytics",
+      "max_supervision_capacity": 5,
+      "workload_activity": {
+        "log_id": "LOG-2026-0044",
+        "semester_week": 10,
+        "assigned_teaching_hours_week": 15.4,
+        "total_students_enrolled": 108,
+        "module_preparation_count": 4,
+        "assessment_grading_backlog": 16,
+        "committee_admin_hours_week": 1.0,
+        "current_supervised_students": 5
+      },
+      "behavioral_log": {
+        "lms_off_hours_activity_ratio": 0.042,
+        "schedule_fragmentation_index": 0.418,
+        "days_since_last_leave": 114,
+        "average_response_latency_hours": 2.62
+      },
+      "burnout_ground_truth": {
+        "snapshot_date": "2026-09-10",
+        "calculated_swu_total": 31.1,
+        "burnout_risk_score": 56.52,
+        "risk_tier": "MODERATE"
+      }
+    },
+    {
+      "staff_id": "UTB-FAC-2026-045",
+      "name": "Valentine Bizimana",
+      "program": "Bachelor of Business Management",
+      "academic_rank": "Tutorial Assistant",
+      "contractual_max_hours_week": 23.5,
+      "primary_domain": "Financial Accounting",
+      "secondary_domains": "Strategic Management, Marketing",
+      "max_supervision_capacity": 6,
+      "workload_activity": {
+        "log_id": "LOG-2026-0045",
+        "semester_week": 14,
+        "assigned_teaching_hours_week": 31.7,
+        "total_students_enrolled": 140,
+        "module_preparation_count": 1,
+        "assessment_grading_backlog": 40,
+        "committee_admin_hours_week": 1.2,
+        "current_supervised_students": 4
+      },
+      "behavioral_log": {
+        "lms_off_hours_activity_ratio": 0.298,
+        "schedule_fragmentation_index": 0.613,
+        "days_since_last_leave": 32,
+        "average_response_latency_hours": 5.39
+      },
+      "burnout_ground_truth": {
+        "snapshot_date": "2026-09-10",
+        "calculated_swu_total": 43.16,
+        "burnout_risk_score": 83.11,
+        "risk_tier": "HIGH"
+      }
+    },
+    {
+      "staff_id": "UTB-FAC-2026-046",
+      "name": "Theogene Nkurunziza",
+      "program": "BSc Transport & Logistics Management",
+      "academic_rank": "Senior Lecturer",
+      "contractual_max_hours_week": 17.6,
+      "primary_domain": "Freight Operations",
+      "secondary_domains": "Supply Chain Analytics, Fleet Management",
+      "max_supervision_capacity": 12,
+      "workload_activity": {
+        "log_id": "LOG-2026-0046",
+        "semester_week": 5,
+        "assigned_teaching_hours_week": 6.2,
+        "total_students_enrolled": 162,
+        "module_preparation_count": 3,
+        "assessment_grading_backlog": 69,
+        "committee_admin_hours_week": 3.2,
+        "current_supervised_students": 1
+      },
+      "behavioral_log": {
+        "lms_off_hours_activity_ratio": 0.075,
+        "schedule_fragmentation_index": 0.571,
+        "days_since_last_leave": 20,
+        "average_response_latency_hours": 0.2
+      },
+      "burnout_ground_truth": {
+        "snapshot_date": "2026-09-10",
+        "calculated_swu_total": 27.11,
+        "burnout_risk_score": 60.75,
+        "risk_tier": "MODERATE"
+      }
+    },
+    {
+      "staff_id": "UTB-FAC-2026-047",
+      "name": "Emmanuel Ingabire",
+      "program": "BSc Information Technology",
+      "academic_rank": "Tutorial Assistant",
+      "contractual_max_hours_week": 24.0,
+      "primary_domain": "Information Systems",
+      "secondary_domains": "Network Administration, E-Commerce",
+      "max_supervision_capacity": 6,
+      "workload_activity": {
+        "log_id": "LOG-2026-0047",
+        "semester_week": 5,
+        "assigned_teaching_hours_week": 18.5,
+        "total_students_enrolled": 194,
+        "module_preparation_count": 2,
+        "assessment_grading_backlog": 79,
+        "committee_admin_hours_week": 1.6,
+        "current_supervised_students": 2
+      },
+      "behavioral_log": {
+        "lms_off_hours_activity_ratio": 0.165,
+        "schedule_fragmentation_index": 0.301,
+        "days_since_last_leave": 77,
+        "average_response_latency_hours": 2.08
+      },
+      "burnout_ground_truth": {
+        "snapshot_date": "2026-09-10",
+        "calculated_swu_total": 37.63,
+        "burnout_risk_score": 65.63,
+        "risk_tier": "MODERATE"
+      }
+    },
+    {
+      "staff_id": "UTB-FAC-2026-048",
+      "name": "Alexis Hakizimana",
+      "program": "BSc Computer Engineering",
+      "academic_rank": "Senior Lecturer",
+      "contractual_max_hours_week": 17.6,
+      "primary_domain": "Hardware Architecture",
+      "secondary_domains": "Algorithms",
+      "max_supervision_capacity": 8,
+      "workload_activity": {
+        "log_id": "LOG-2026-0048",
+        "semester_week": 5,
+        "assigned_teaching_hours_week": 18.6,
+        "total_students_enrolled": 167,
+        "module_preparation_count": 4,
+        "assessment_grading_backlog": 53,
+        "committee_admin_hours_week": 3.4,
+        "current_supervised_students": 1
+      },
+      "behavioral_log": {
+        "lms_off_hours_activity_ratio": 0.24,
+        "schedule_fragmentation_index": 0.316,
+        "days_since_last_leave": 16,
+        "average_response_latency_hours": 0.41
+      },
+      "burnout_ground_truth": {
+        "snapshot_date": "2026-09-10",
+        "calculated_swu_total": 39.77,
+        "burnout_risk_score": 88.08,
+        "risk_tier": "HIGH"
+      }
+    },
+    {
+      "staff_id": "UTB-FAC-2026-049",
+      "name": "Damascene Habimana",
+      "program": "BSc Computer Engineering",
+      "academic_rank": "Senior Lecturer",
+      "contractual_max_hours_week": 17.9,
+      "primary_domain": "Hardware Architecture",
+      "secondary_domains": "Algorithms, Software Engineering",
+      "max_supervision_capacity": 10,
+      "workload_activity": {
+        "log_id": "LOG-2026-0049",
+        "semester_week": 7,
+        "assigned_teaching_hours_week": 14.8,
+        "total_students_enrolled": 209,
+        "module_preparation_count": 2,
+        "assessment_grading_backlog": 71,
+        "committee_admin_hours_week": 1.7,
+        "current_supervised_students": 2
+      },
+      "behavioral_log": {
+        "lms_off_hours_activity_ratio": 0.163,
+        "schedule_fragmentation_index": 0.613,
+        "days_since_last_leave": 121,
+        "average_response_latency_hours": 2.86
+      },
+      "burnout_ground_truth": {
+        "snapshot_date": "2026-09-10",
+        "calculated_swu_total": 32.81,
+        "burnout_risk_score": 79.46,
+        "risk_tier": "HIGH"
+      }
+    },
+    {
+      "staff_id": "UTB-FAC-2026-050",
+      "name": "Jean Claude Twagirayezu",
+      "program": "Bachelor of Business Management",
+      "academic_rank": "Tutorial Assistant",
+      "contractual_max_hours_week": 23.2,
+      "primary_domain": "Strategic Management",
+      "secondary_domains": "Marketing, Human Resources",
+      "max_supervision_capacity": 9,
+      "workload_activity": {
+        "log_id": "LOG-2026-0050",
+        "semester_week": 9,
+        "assigned_teaching_hours_week": 14.0,
+        "total_students_enrolled": 146,
+        "module_preparation_count": 3,
+        "assessment_grading_backlog": 39,
+        "committee_admin_hours_week": 1.1,
+        "current_supervised_students": 7
+      },
+      "behavioral_log": {
+        "lms_off_hours_activity_ratio": 0.161,
+        "schedule_fragmentation_index": 0.768,
+        "days_since_last_leave": 39,
+        "average_response_latency_hours": 9.39
+      },
+      "burnout_ground_truth": {
+        "snapshot_date": "2026-09-10",
+        "calculated_swu_total": 31.73,
+        "burnout_risk_score": 66.9,
+        "risk_tier": "MODERATE"
+      }
+    },
+    {
+      "staff_id": "UTB-FAC-2026-051",
+      "name": "Anna Wilson",
+      "program": "Bachelor of Business Management",
+      "academic_rank": "Tutorial Assistant",
+      "contractual_max_hours_week": 24.0,
+      "primary_domain": "Financial Accounting",
+      "secondary_domains": "Marketing",
+      "max_supervision_capacity": 7,
+      "workload_activity": {
+        "log_id": "LOG-2026-0051",
+        "semester_week": 1,
+        "assigned_teaching_hours_week": 32.4,
+        "total_students_enrolled": 208,
+        "module_preparation_count": 2,
+        "assessment_grading_backlog": 48,
+        "committee_admin_hours_week": 2.8,
+        "current_supervised_students": 2
+      },
+      "behavioral_log": {
+        "lms_off_hours_activity_ratio": 0.415,
+        "schedule_fragmentation_index": 0.765,
+        "days_since_last_leave": 10,
+        "average_response_latency_hours": 0.98
+      },
+      "burnout_ground_truth": {
+        "snapshot_date": "2026-09-10",
+        "calculated_swu_total": 47.84,
+        "burnout_risk_score": 87.96,
+        "risk_tier": "HIGH"
+      }
+    },
+    {
+      "staff_id": "UTB-FAC-2026-052",
+      "name": "Emile Twagirayezu",
+      "program": "BA Hotel & Restaurant Management",
+      "academic_rank": "Senior Lecturer",
+      "contractual_max_hours_week": 18.0,
+      "primary_domain": "Hotel Asset Management",
+      "secondary_domains": "Event Operations",
+      "max_supervision_capacity": 9,
+      "workload_activity": {
+        "log_id": "LOG-2026-0052",
+        "semester_week": 14,
+        "assigned_teaching_hours_week": 24.3,
+        "total_students_enrolled": 140,
+        "module_preparation_count": 3,
+        "assessment_grading_backlog": 18,
+        "committee_admin_hours_week": 6.6,
+        "current_supervised_students": 5
+      },
+      "behavioral_log": {
+        "lms_off_hours_activity_ratio": 0.391,
+        "schedule_fragmentation_index": 0.862,
+        "days_since_last_leave": 25,
+        "average_response_latency_hours": 4.56
+      },
+      "burnout_ground_truth": {
+        "snapshot_date": "2026-09-10",
+        "calculated_swu_total": 42.28,
+        "burnout_risk_score": 98.0,
+        "risk_tier": "HIGH"
+      }
+    },
+    {
+      "staff_id": "UTB-FAC-2026-053",
+      "name": "Laura Wilson",
+      "program": "BSc Transport & Logistics Management",
+      "academic_rank": "Tutorial Assistant",
+      "contractual_max_hours_week": 24.0,
+      "primary_domain": "Transport Economics",
+      "secondary_domains": "Supply Chain Analytics, Fleet Management",
+      "max_supervision_capacity": 7,
+      "workload_activity": {
+        "log_id": "LOG-2026-0053",
+        "semester_week": 2,
+        "assigned_teaching_hours_week": 8.4,
+        "total_students_enrolled": 127,
+        "module_preparation_count": 1,
+        "assessment_grading_backlog": 41,
+        "committee_admin_hours_week": 1.1,
+        "current_supervised_students": 2
+      },
+      "behavioral_log": {
+        "lms_off_hours_activity_ratio": 0.026,
+        "schedule_fragmentation_index": 0.377,
+        "days_since_last_leave": 46,
+        "average_response_latency_hours": 0.77
+      },
+      "burnout_ground_truth": {
+        "snapshot_date": "2026-09-10",
+        "calculated_swu_total": 18.93,
+        "burnout_risk_score": 37.53,
+        "risk_tier": "LOW"
+      }
+    },
+    {
+      "staff_id": "UTB-FAC-2026-054",
+      "name": "Emile Rukundo",
+      "program": "BSc Transport & Logistics Management",
+      "academic_rank": "Lecturer",
+      "contractual_max_hours_week": 19.7,
+      "primary_domain": "Fleet Management",
+      "secondary_domains": "Supply Chain Analytics, Transport Economics",
+      "max_supervision_capacity": 5,
+      "workload_activity": {
+        "log_id": "LOG-2026-0054",
+        "semester_week": 12,
+        "assigned_teaching_hours_week": 15.0,
+        "total_students_enrolled": 168,
+        "module_preparation_count": 4,
+        "assessment_grading_backlog": 73,
+        "committee_admin_hours_week": 1.8,
+        "current_supervised_students": 4
+      },
+      "behavioral_log": {
+        "lms_off_hours_activity_ratio": 0.276,
+        "schedule_fragmentation_index": 0.8,
+        "days_since_last_leave": 46,
+        "average_response_latency_hours": 6.42
+      },
+      "burnout_ground_truth": {
+        "snapshot_date": "2026-09-10",
+        "calculated_swu_total": 39.39,
+        "burnout_risk_score": 86.65,
+        "risk_tier": "HIGH"
+      }
+    },
+    {
+      "staff_id": "UTB-FAC-2026-055",
+      "name": "Immaculee Uwizeyimana",
+      "program": "BSc Transport & Logistics Management",
+      "academic_rank": "Senior Lecturer",
+      "contractual_max_hours_week": 18.0,
+      "primary_domain": "Transport Economics",
+      "secondary_domains": "Fleet Management",
+      "max_supervision_capacity": 12,
+      "workload_activity": {
+        "log_id": "LOG-2026-0055",
+        "semester_week": 15,
+        "assigned_teaching_hours_week": 14.3,
+        "total_students_enrolled": 142,
+        "module_preparation_count": 4,
+        "assessment_grading_backlog": 23,
+        "committee_admin_hours_week": 6.6,
+        "current_supervised_students": 1
+      },
+      "behavioral_log": {
+        "lms_off_hours_activity_ratio": 0.135,
+        "schedule_fragmentation_index": 0.12,
+        "days_since_last_leave": 100,
+        "average_response_latency_hours": 3.23
+      },
+      "burnout_ground_truth": {
+        "snapshot_date": "2026-09-10",
+        "calculated_swu_total": 33.53,
+        "burnout_risk_score": 71.49,
+        "risk_tier": "MODERATE"
+      }
+    },
+    {
+      "staff_id": "UTB-FAC-2026-056",
+      "name": "Beatrice Ndayisenga",
+      "program": "BA Community Development",
+      "academic_rank": "Associate Professor",
+      "contractual_max_hours_week": 14.0,
+      "primary_domain": "Community Leadership",
+      "secondary_domains": "Rural Development, Social Project Management",
+      "max_supervision_capacity": 14,
+      "workload_activity": {
+        "log_id": "LOG-2026-0056",
+        "semester_week": 2,
+        "assigned_teaching_hours_week": 4.9,
+        "total_students_enrolled": 127,
+        "module_preparation_count": 2,
+        "assessment_grading_backlog": 60,
+        "committee_admin_hours_week": 2.1,
+        "current_supervised_students": 2
+      },
+      "behavioral_log": {
+        "lms_off_hours_activity_ratio": 0.021,
+        "schedule_fragmentation_index": 0.709,
+        "days_since_last_leave": 12,
+        "average_response_latency_hours": 0.11
+      },
+      "burnout_ground_truth": {
+        "snapshot_date": "2026-09-10",
+        "calculated_swu_total": 21.58,
+        "burnout_risk_score": 60.1,
+        "risk_tier": "MODERATE"
+      }
+    },
+    {
+      "staff_id": "UTB-FAC-2026-057",
+      "name": "Placide Mutesi",
+      "program": "BSc Computer Engineering",
+      "academic_rank": "Tutorial Assistant",
+      "contractual_max_hours_week": 24.0,
+      "primary_domain": "Algorithms",
+      "secondary_domains": "Embedded Systems",
+      "max_supervision_capacity": 6,
+      "workload_activity": {
+        "log_id": "LOG-2026-0057",
+        "semester_week": 8,
+        "assigned_teaching_hours_week": 8.4,
+        "total_students_enrolled": 207,
+        "module_preparation_count": 3,
+        "assessment_grading_backlog": 95,
+        "committee_admin_hours_week": 3.7,
+        "current_supervised_students": 1
+      },
+      "behavioral_log": {
+        "lms_off_hours_activity_ratio": 0.0,
+        "schedule_fragmentation_index": 0.437,
+        "days_since_last_leave": 250,
+        "average_response_latency_hours": 10.6
+      },
+      "burnout_ground_truth": {
+        "snapshot_date": "2026-09-10",
+        "calculated_swu_total": 33.61,
+        "burnout_risk_score": 70.6,
+        "risk_tier": "MODERATE"
+      }
+    },
+    {
+      "staff_id": "UTB-FAC-2026-058",
+      "name": "Immaculee Ntawuruhunga",
+      "program": "Bachelor of Business Management",
+      "academic_rank": "Tutorial Assistant",
+      "contractual_max_hours_week": 23.1,
+      "primary_domain": "Strategic Management",
+      "secondary_domains": "Marketing, Human Resources",
+      "max_supervision_capacity": 5,
+      "workload_activity": {
+        "log_id": "LOG-2026-0058",
+        "semester_week": 11,
+        "assigned_teaching_hours_week": 20.6,
+        "total_students_enrolled": 222,
+        "module_preparation_count": 3,
+        "assessment_grading_backlog": 93,
+        "committee_admin_hours_week": 3.8,
+        "current_supervised_students": 3
+      },
+      "behavioral_log": {
+        "lms_off_hours_activity_ratio": 0.232,
+        "schedule_fragmentation_index": 0.848,
+        "days_since_last_leave": 112,
+        "average_response_latency_hours": 1.31
+      },
+      "burnout_ground_truth": {
+        "snapshot_date": "2026-09-10",
+        "calculated_swu_total": 46.59,
+        "burnout_risk_score": 96.58,
+        "risk_tier": "HIGH"
+      }
+    },
+    {
+      "staff_id": "UTB-FAC-2026-059",
+      "name": "Anna Wilson",
+      "program": "Bachelor of Business Management",
+      "academic_rank": "Senior Lecturer",
+      "contractual_max_hours_week": 17.8,
+      "primary_domain": "Strategic Management",
+      "secondary_domains": "Financial Accounting, Human Resources",
+      "max_supervision_capacity": 10,
+      "workload_activity": {
+        "log_id": "LOG-2026-0059",
+        "semester_week": 6,
+        "assigned_teaching_hours_week": 14.9,
+        "total_students_enrolled": 170,
+        "module_preparation_count": 4,
+        "assessment_grading_backlog": 54,
+        "committee_admin_hours_week": 6.3,
+        "current_supervised_students": 10
+      },
+      "behavioral_log": {
+        "lms_off_hours_activity_ratio": 0.298,
+        "schedule_fragmentation_index": 0.756,
+        "days_since_last_leave": 9,
+        "average_response_latency_hours": 1.66
+      },
+      "burnout_ground_truth": {
+        "snapshot_date": "2026-09-10",
+        "calculated_swu_total": 43.04,
+        "burnout_risk_score": 98.0,
+        "risk_tier": "HIGH"
+      }
+    },
+    {
+      "staff_id": "UTB-FAC-2026-060",
+      "name": "Chantal Hakizimana",
+      "program": "Bachelor of Business Management",
+      "academic_rank": "Tutorial Assistant",
+      "contractual_max_hours_week": 24.0,
+      "primary_domain": "Strategic Management",
+      "secondary_domains": "Marketing",
+      "max_supervision_capacity": 5,
+      "workload_activity": {
+        "log_id": "LOG-2026-0060",
+        "semester_week": 10,
+        "assigned_teaching_hours_week": 15.1,
+        "total_students_enrolled": 218,
+        "module_preparation_count": 4,
+        "assessment_grading_backlog": 26,
+        "committee_admin_hours_week": 3.0,
+        "current_supervised_students": 5
+      },
+      "behavioral_log": {
+        "lms_off_hours_activity_ratio": 0.0,
+        "schedule_fragmentation_index": 0.148,
+        "days_since_last_leave": 55,
+        "average_response_latency_hours": 6.87
+      },
+      "burnout_ground_truth": {
+        "snapshot_date": "2026-09-10",
+        "calculated_swu_total": 33.9,
+        "burnout_risk_score": 49.95,
+        "risk_tier": "LOW"
+      }
+    },
+    {
+      "staff_id": "UTB-FAC-2026-061",
+      "name": "Claudine Hakizimana",
+      "program": "BSc Computer Engineering",
+      "academic_rank": "Lecturer",
+      "contractual_max_hours_week": 20.0,
+      "primary_domain": "Software Engineering",
+      "secondary_domains": "Hardware Architecture",
+      "max_supervision_capacity": 8,
+      "workload_activity": {
+        "log_id": "LOG-2026-0061",
+        "semester_week": 13,
+        "assigned_teaching_hours_week": 11.2,
+        "total_students_enrolled": 143,
+        "module_preparation_count": 1,
+        "assessment_grading_backlog": 37,
+        "committee_admin_hours_week": 3.1,
+        "current_supervised_students": 8
+      },
+      "behavioral_log": {
+        "lms_off_hours_activity_ratio": 0.046,
+        "schedule_fragmentation_index": 0.859,
+        "days_since_last_leave": 82,
+        "average_response_latency_hours": 0.03
+      },
+      "burnout_ground_truth": {
+        "snapshot_date": "2026-09-10",
+        "calculated_swu_total": 25.73,
+        "burnout_risk_score": 56.7,
+        "risk_tier": "MODERATE"
+      }
+    },
+    {
+      "staff_id": "UTB-FAC-2026-062",
+      "name": "Emile Nsengimana",
+      "program": "BSc Information Technology",
+      "academic_rank": "Lecturer",
+      "contractual_max_hours_week": 20.0,
+      "primary_domain": "Information Systems",
+      "secondary_domains": "Database Systems",
+      "max_supervision_capacity": 6,
+      "workload_activity": {
+        "log_id": "LOG-2026-0062",
+        "semester_week": 15,
+        "assigned_teaching_hours_week": 14.4,
+        "total_students_enrolled": 191,
+        "module_preparation_count": 1,
+        "assessment_grading_backlog": 24,
+        "committee_admin_hours_week": 2.4,
+        "current_supervised_students": 2
+      },
+      "behavioral_log": {
+        "lms_off_hours_activity_ratio": 0.214,
+        "schedule_fragmentation_index": 0.29,
+        "days_since_last_leave": 26,
+        "average_response_latency_hours": 0.22
+      },
+      "burnout_ground_truth": {
+        "snapshot_date": "2026-09-10",
+        "calculated_swu_total": 23.42,
+        "burnout_risk_score": 45.9,
+        "risk_tier": "LOW"
+      }
+    },
+    {
+      "staff_id": "UTB-FAC-2026-063",
+      "name": "Diane Uwase",
+      "program": "BSc Transport & Logistics Management",
+      "academic_rank": "Tutorial Assistant",
+      "contractual_max_hours_week": 24.0,
+      "primary_domain": "Fleet Management",
+      "secondary_domains": "Transport Economics",
+      "max_supervision_capacity": 7,
+      "workload_activity": {
+        "log_id": "LOG-2026-0063",
+        "semester_week": 15,
+        "assigned_teaching_hours_week": 10.8,
+        "total_students_enrolled": 156,
+        "module_preparation_count": 3,
+        "assessment_grading_backlog": 71,
+        "committee_admin_hours_week": 1.5,
+        "current_supervised_students": 4
+      },
+      "behavioral_log": {
+        "lms_off_hours_activity_ratio": 0.06,
+        "schedule_fragmentation_index": 0.789,
+        "days_since_last_leave": 32,
+        "average_response_latency_hours": 0.4
+      },
+      "burnout_ground_truth": {
+        "snapshot_date": "2026-09-10",
+        "calculated_swu_total": 32.15,
+        "burnout_risk_score": 62.25,
+        "risk_tier": "MODERATE"
+      }
+    },
+    {
+      "staff_id": "UTB-FAC-2026-064",
+      "name": "Marie Claire Niyonzima",
+      "program": "BSc Travel & Tourism Management",
+      "academic_rank": "Lecturer",
+      "contractual_max_hours_week": 19.5,
+      "primary_domain": "Travel Operations",
+      "secondary_domains": "Sustainable Tourism",
+      "max_supervision_capacity": 9,
+      "workload_activity": {
+        "log_id": "LOG-2026-0064",
+        "semester_week": 2,
+        "assigned_teaching_hours_week": 19.3,
+        "total_students_enrolled": 238,
+        "module_preparation_count": 2,
+        "assessment_grading_backlog": 34,
+        "committee_admin_hours_week": 1.2,
+        "current_supervised_students": 2
+      },
+      "behavioral_log": {
+        "lms_off_hours_activity_ratio": 0.297,
+        "schedule_fragmentation_index": 0.479,
+        "days_since_last_leave": 13,
+        "average_response_latency_hours": 2.0
+      },
+      "burnout_ground_truth": {
+        "snapshot_date": "2026-09-10",
+        "calculated_swu_total": 31.36,
+        "burnout_risk_score": 70.32,
+        "risk_tier": "MODERATE"
+      }
+    },
+    {
+      "staff_id": "UTB-FAC-2026-065",
+      "name": "Diane Mutesi",
+      "program": "BSc Computer Engineering",
+      "academic_rank": "Associate Professor",
+      "contractual_max_hours_week": 13.6,
+      "primary_domain": "Algorithms",
+      "secondary_domains": "Software Engineering, Embedded Systems",
+      "max_supervision_capacity": 14,
+      "workload_activity": {
+        "log_id": "LOG-2026-0065",
+        "semester_week": 2,
+        "assigned_teaching_hours_week": 18.3,
+        "total_students_enrolled": 135,
+        "module_preparation_count": 2,
+        "assessment_grading_backlog": 38,
+        "committee_admin_hours_week": 1.2,
+        "current_supervised_students": 1
+      },
+      "behavioral_log": {
+        "lms_off_hours_activity_ratio": 0.379,
+        "schedule_fragmentation_index": 0.61,
+        "days_since_last_leave": 16,
+        "average_response_latency_hours": 0.13
+      },
+      "burnout_ground_truth": {
+        "snapshot_date": "2026-09-10",
+        "calculated_swu_total": 30.46,
+        "burnout_risk_score": 87.74,
+        "risk_tier": "HIGH"
+      }
+    },
+    {
+      "staff_id": "UTB-FAC-2026-066",
+      "name": "Olivier Uwizeyimana",
+      "program": "BSc Computer Engineering",
+      "academic_rank": "Lecturer",
+      "contractual_max_hours_week": 19.2,
+      "primary_domain": "Hardware Architecture",
+      "secondary_domains": "Algorithms, Embedded Systems",
+      "max_supervision_capacity": 12,
+      "workload_activity": {
+        "log_id": "LOG-2026-0066",
+        "semester_week": 6,
+        "assigned_teaching_hours_week": 21.1,
+        "total_students_enrolled": 152,
+        "module_preparation_count": 1,
+        "assessment_grading_backlog": 18,
+        "committee_admin_hours_week": 1.4,
+        "current_supervised_students": 2
+      },
+      "behavioral_log": {
+        "lms_off_hours_activity_ratio": 0.356,
+        "schedule_fragmentation_index": 0.194,
+        "days_since_last_leave": 68,
+        "average_response_latency_hours": 0.3
+      },
+      "burnout_ground_truth": {
+        "snapshot_date": "2026-09-10",
+        "calculated_swu_total": 28.42,
+        "burnout_risk_score": 60.94,
+        "risk_tier": "MODERATE"
+      }
+    },
+    {
+      "staff_id": "UTB-FAC-2026-067",
+      "name": "Immaculee Mugisha",
+      "program": "BSc Information Technology",
+      "academic_rank": "Tutorial Assistant",
+      "contractual_max_hours_week": 24.0,
+      "primary_domain": "E-Commerce",
+      "secondary_domains": "Information Systems, Network Administration",
+      "max_supervision_capacity": 6,
+      "workload_activity": {
+        "log_id": "LOG-2026-0067",
+        "semester_week": 13,
+        "assigned_teaching_hours_week": 19.3,
+        "total_students_enrolled": 249,
+        "module_preparation_count": 3,
+        "assessment_grading_backlog": 61,
+        "committee_admin_hours_week": 5.6,
+        "current_supervised_students": 6
+      },
+      "behavioral_log": {
+        "lms_off_hours_activity_ratio": 0.255,
+        "schedule_fragmentation_index": 0.401,
+        "days_since_last_leave": 17,
+        "average_response_latency_hours": 0.96
+      },
+      "burnout_ground_truth": {
+        "snapshot_date": "2026-09-10",
+        "calculated_swu_total": 43.43,
+        "burnout_risk_score": 74.13,
+        "risk_tier": "MODERATE"
+      }
+    },
+    {
+      "staff_id": "UTB-FAC-2026-068",
+      "name": "Olivier Uwimana",
+      "program": "Bachelor of Business Management",
+      "academic_rank": "Lecturer",
+      "contractual_max_hours_week": 19.6,
+      "primary_domain": "Strategic Management",
+      "secondary_domains": "Financial Accounting",
+      "max_supervision_capacity": 8,
+      "workload_activity": {
+        "log_id": "LOG-2026-0068",
+        "semester_week": 4,
+        "assigned_teaching_hours_week": 8.3,
+        "total_students_enrolled": 232,
+        "module_preparation_count": 4,
+        "assessment_grading_backlog": 42,
+        "committee_admin_hours_week": 2.4,
+        "current_supervised_students": 5
+      },
+      "behavioral_log": {
+        "lms_off_hours_activity_ratio": 0.0,
+        "schedule_fragmentation_index": 0.814,
+        "days_since_last_leave": 83,
+        "average_response_latency_hours": 2.06
+      },
+      "burnout_ground_truth": {
+        "snapshot_date": "2026-09-10",
+        "calculated_swu_total": 29.02,
+        "burnout_risk_score": 65.71,
+        "risk_tier": "MODERATE"
+      }
+    },
+    {
+      "staff_id": "UTB-FAC-2026-069",
+      "name": "Robert Kim",
+      "program": "BSc Transport & Logistics Management",
+      "academic_rank": "Lecturer",
+      "contractual_max_hours_week": 20.0,
+      "primary_domain": "Supply Chain Analytics",
+      "secondary_domains": "Freight Operations",
+      "max_supervision_capacity": 5,
+      "workload_activity": {
+        "log_id": "LOG-2026-0069",
+        "semester_week": 15,
+        "assigned_teaching_hours_week": 25.9,
+        "total_students_enrolled": 115,
+        "module_preparation_count": 2,
+        "assessment_grading_backlog": 27,
+        "committee_admin_hours_week": 8.0,
+        "current_supervised_students": 1
+      },
+      "behavioral_log": {
+        "lms_off_hours_activity_ratio": 0.261,
+        "schedule_fragmentation_index": 0.818,
+        "days_since_last_leave": 25,
+        "average_response_latency_hours": 2.36
+      },
+      "burnout_ground_truth": {
+        "snapshot_date": "2026-09-10",
+        "calculated_swu_total": 41.85,
+        "burnout_risk_score": 80.88,
+        "risk_tier": "HIGH"
+      }
+    },
+    {
+      "staff_id": "UTB-FAC-2026-070",
+      "name": "Sarah Johnson",
+      "program": "BSc Travel & Tourism Management",
+      "academic_rank": "Associate Professor",
+      "contractual_max_hours_week": 13.3,
+      "primary_domain": "Eco-Tourism",
+      "secondary_domains": "Sustainable Tourism, Destination Management",
+      "max_supervision_capacity": 12,
+      "workload_activity": {
+        "log_id": "LOG-2026-0070",
+        "semester_week": 10,
+        "assigned_teaching_hours_week": 9.5,
+        "total_students_enrolled": 201,
+        "module_preparation_count": 1,
+        "assessment_grading_backlog": 26,
+        "committee_admin_hours_week": 3.6,
+        "current_supervised_students": 12
+      },
+      "behavioral_log": {
+        "lms_off_hours_activity_ratio": 0.246,
+        "schedule_fragmentation_index": 0.595,
+        "days_since_last_leave": 22,
+        "average_response_latency_hours": 11.5
+      },
+      "burnout_ground_truth": {
+        "snapshot_date": "2026-09-10",
+        "calculated_swu_total": 24.78,
+        "burnout_risk_score": 76.18,
+        "risk_tier": "HIGH"
+      }
+    },
+    {
+      "staff_id": "UTB-FAC-2026-071",
+      "name": "Alexis Uwase",
+      "program": "BSc Information Technology",
+      "academic_rank": "Tutorial Assistant",
+      "contractual_max_hours_week": 23.3,
+      "primary_domain": "Database Systems",
+      "secondary_domains": "Network Administration",
+      "max_supervision_capacity": 5,
+      "workload_activity": {
+        "log_id": "LOG-2026-0071",
+        "semester_week": 2,
+        "assigned_teaching_hours_week": 17.6,
+        "total_students_enrolled": 247,
+        "module_preparation_count": 4,
+        "assessment_grading_backlog": 49,
+        "committee_admin_hours_week": 6.1,
+        "current_supervised_students": 5
+      },
+      "behavioral_log": {
+        "lms_off_hours_activity_ratio": 0.199,
+        "schedule_fragmentation_index": 0.232,
+        "days_since_last_leave": 8,
+        "average_response_latency_hours": 1.16
+      },
+      "burnout_ground_truth": {
+        "snapshot_date": "2026-09-10",
+        "calculated_swu_total": 42.33,
+        "burnout_risk_score": 66.07,
+        "risk_tier": "MODERATE"
+      }
+    },
+    {
+      "staff_id": "UTB-FAC-2026-072",
+      "name": "Grace Garcia",
+      "program": "BA Hotel & Restaurant Management",
+      "academic_rank": "Tutorial Assistant",
+      "contractual_max_hours_week": 24.0,
+      "primary_domain": "Hospitality Operations",
+      "secondary_domains": "Event Operations, Food & Beverage Services",
+      "max_supervision_capacity": 7,
+      "workload_activity": {
+        "log_id": "LOG-2026-0072",
+        "semester_week": 8,
+        "assigned_teaching_hours_week": 22.5,
+        "total_students_enrolled": 206,
+        "module_preparation_count": 3,
+        "assessment_grading_backlog": 80,
+        "committee_admin_hours_week": 1.4,
+        "current_supervised_students": 5
+      },
+      "behavioral_log": {
+        "lms_off_hours_activity_ratio": 0.361,
+        "schedule_fragmentation_index": 0.699,
+        "days_since_last_leave": 26,
+        "average_response_latency_hours": 2.33
+      },
+      "burnout_ground_truth": {
+        "snapshot_date": "2026-09-10",
+        "calculated_swu_total": 45.62,
+        "burnout_risk_score": 91.82,
+        "risk_tier": "HIGH"
+      }
+    },
+    {
+      "staff_id": "UTB-FAC-2026-073",
+      "name": "Placide Rukundo",
+      "program": "BA Community Development",
+      "academic_rank": "Lecturer",
+      "contractual_max_hours_week": 20.0,
+      "primary_domain": "Social Project Management",
+      "secondary_domains": "Public Policy, Community Leadership",
+      "max_supervision_capacity": 6,
+      "workload_activity": {
+        "log_id": "LOG-2026-0073",
+        "semester_week": 8,
+        "assigned_teaching_hours_week": 16.7,
+        "total_students_enrolled": 222,
+        "module_preparation_count": 3,
+        "assessment_grading_backlog": 72,
+        "committee_admin_hours_week": 1.3,
+        "current_supervised_students": 1
+      },
+      "behavioral_log": {
+        "lms_off_hours_activity_ratio": 0.154,
+        "schedule_fragmentation_index": 0.64,
+        "days_since_last_leave": 11,
+        "average_response_latency_hours": 10.07
+      },
+      "burnout_ground_truth": {
+        "snapshot_date": "2026-09-10",
+        "calculated_swu_total": 36.54,
+        "burnout_risk_score": 76.04,
+        "risk_tier": "HIGH"
+      }
+    },
+    {
+      "staff_id": "UTB-FAC-2026-074",
+      "name": "Vincent Bizimana",
+      "program": "BSc Transport & Logistics Management",
+      "academic_rank": "Associate Professor",
+      "contractual_max_hours_week": 14.0,
+      "primary_domain": "Supply Chain Analytics",
+      "secondary_domains": "Fleet Management, Freight Operations",
+      "max_supervision_capacity": 13,
+      "workload_activity": {
+        "log_id": "LOG-2026-0074",
+        "semester_week": 14,
+        "assigned_teaching_hours_week": 8.3,
+        "total_students_enrolled": 288,
+        "module_preparation_count": 1,
+        "assessment_grading_backlog": 95,
+        "committee_admin_hours_week": 1.2,
+        "current_supervised_students": 6
+      },
+      "behavioral_log": {
+        "lms_off_hours_activity_ratio": 0.138,
+        "schedule_fragmentation_index": 0.47,
+        "days_since_last_leave": 16,
+        "average_response_latency_hours": 1.26
+      },
+      "burnout_ground_truth": {
+        "snapshot_date": "2026-09-10",
+        "calculated_swu_total": 29.01,
+        "burnout_risk_score": 83.02,
+        "risk_tier": "HIGH"
+      }
+    },
+    {
+      "staff_id": "UTB-FAC-2026-075",
+      "name": "Olivier Uwimana",
+      "program": "BSc Computer Engineering",
+      "academic_rank": "Tutorial Assistant",
+      "contractual_max_hours_week": 23.5,
+      "primary_domain": "Hardware Architecture",
+      "secondary_domains": "Embedded Systems",
+      "max_supervision_capacity": 5,
+      "workload_activity": {
+        "log_id": "LOG-2026-0075",
+        "semester_week": 5,
+        "assigned_teaching_hours_week": 23.9,
+        "total_students_enrolled": 140,
+        "module_preparation_count": 2,
+        "assessment_grading_backlog": 44,
+        "committee_admin_hours_week": 1.0,
+        "current_supervised_students": 2
+      },
+      "behavioral_log": {
+        "lms_off_hours_activity_ratio": 0.379,
+        "schedule_fragmentation_index": 0.696,
+        "days_since_last_leave": 71,
+        "average_response_latency_hours": 0.34
+      },
+      "burnout_ground_truth": {
+        "snapshot_date": "2026-09-10",
+        "calculated_swu_total": 37.3,
+        "burnout_risk_score": 79.03,
+        "risk_tier": "HIGH"
+      }
+    },
+    {
+      "staff_id": "UTB-FAC-2026-076",
+      "name": "David Lee",
+      "program": "BA Hotel & Restaurant Management",
+      "academic_rank": "Lecturer",
+      "contractual_max_hours_week": 19.9,
+      "primary_domain": "Event Operations",
+      "secondary_domains": "Hospitality Operations",
+      "max_supervision_capacity": 9,
+      "workload_activity": {
+        "log_id": "LOG-2026-0076",
+        "semester_week": 14,
+        "assigned_teaching_hours_week": 13.0,
+        "total_students_enrolled": 60,
+        "module_preparation_count": 2,
+        "assessment_grading_backlog": 14,
+        "committee_admin_hours_week": 4.0,
+        "current_supervised_students": 1
+      },
+      "behavioral_log": {
+        "lms_off_hours_activity_ratio": 0.094,
+        "schedule_fragmentation_index": 0.204,
+        "days_since_last_leave": 11,
+        "average_response_latency_hours": 2.58
+      },
+      "burnout_ground_truth": {
+        "snapshot_date": "2026-09-10",
+        "calculated_swu_total": 23.8,
+        "burnout_risk_score": 39.29,
+        "risk_tier": "LOW"
+      }
+    },
+    {
+      "staff_id": "UTB-FAC-2026-077",
+      "name": "Chantal Mutesi",
+      "program": "BSc Computer Engineering",
+      "academic_rank": "Lecturer",
+      "contractual_max_hours_week": 20.0,
+      "primary_domain": "Algorithms",
+      "secondary_domains": "Hardware Architecture",
+      "max_supervision_capacity": 5,
+      "workload_activity": {
+        "log_id": "LOG-2026-0077",
+        "semester_week": 12,
+        "assigned_teaching_hours_week": 10.2,
+        "total_students_enrolled": 177,
+        "module_preparation_count": 1,
+        "assessment_grading_backlog": 96,
+        "committee_admin_hours_week": 1.4,
+        "current_supervised_students": 4
+      },
+      "behavioral_log": {
+        "lms_off_hours_activity_ratio": 0.069,
+        "schedule_fragmentation_index": 0.204,
+        "days_since_last_leave": 62,
+        "average_response_latency_hours": 5.01
+      },
+      "burnout_ground_truth": {
+        "snapshot_date": "2026-09-10",
+        "calculated_swu_total": 30.22,
+        "burnout_risk_score": 68.6,
+        "risk_tier": "MODERATE"
+      }
+    },
+    {
+      "staff_id": "UTB-FAC-2026-078",
+      "name": "Marie Claire Nkurunziza",
+      "program": "BSc Information Technology",
+      "academic_rank": "Senior Lecturer",
+      "contractual_max_hours_week": 16.1,
+      "primary_domain": "Information Systems",
+      "secondary_domains": "Network Administration",
+      "max_supervision_capacity": 11,
+      "workload_activity": {
+        "log_id": "LOG-2026-0078",
+        "semester_week": 4,
+        "assigned_teaching_hours_week": 17.9,
+        "total_students_enrolled": 140,
+        "module_preparation_count": 4,
+        "assessment_grading_backlog": 21,
+        "committee_admin_hours_week": 2.9,
+        "current_supervised_students": 9
+      },
+      "behavioral_log": {
+        "lms_off_hours_activity_ratio": 0.376,
+        "schedule_fragmentation_index": 0.699,
+        "days_since_last_leave": 154,
+        "average_response_latency_hours": 0.98
+      },
+      "burnout_ground_truth": {
+        "snapshot_date": "2026-09-10",
+        "calculated_swu_total": 37.87,
+        "burnout_risk_score": 98.0,
+        "risk_tier": "HIGH"
+      }
+    },
+    {
+      "staff_id": "UTB-FAC-2026-079",
+      "name": "Aline Nkurunziza",
+      "program": "BA Hotel & Restaurant Management",
+      "academic_rank": "Tutorial Assistant",
+      "contractual_max_hours_week": 23.9,
+      "primary_domain": "Hospitality Operations",
+      "secondary_domains": "Event Operations",
+      "max_supervision_capacity": 7,
+      "workload_activity": {
+        "log_id": "LOG-2026-0079",
+        "semester_week": 13,
+        "assigned_teaching_hours_week": 9.4,
+        "total_students_enrolled": 113,
+        "module_preparation_count": 4,
+        "assessment_grading_backlog": 23,
+        "committee_admin_hours_week": 4.0,
+        "current_supervised_students": 7
+      },
+      "behavioral_log": {
+        "lms_off_hours_activity_ratio": 0.062,
+        "schedule_fragmentation_index": 0.596,
+        "days_since_last_leave": 31,
+        "average_response_latency_hours": 4.07
+      },
+      "burnout_ground_truth": {
+        "snapshot_date": "2026-09-10",
+        "calculated_swu_total": 29.55,
+        "burnout_risk_score": 54.47,
+        "risk_tier": "MODERATE"
+      }
+    },
+    {
+      "staff_id": "UTB-FAC-2026-080",
+      "name": "Damascene Karenzi",
+      "program": "Bachelor of Business Management",
+      "academic_rank": "Associate Professor",
+      "contractual_max_hours_week": 13.9,
+      "primary_domain": "Financial Accounting",
+      "secondary_domains": "Marketing, Strategic Management",
+      "max_supervision_capacity": 12,
+      "workload_activity": {
+        "log_id": "LOG-2026-0080",
+        "semester_week": 2,
+        "assigned_teaching_hours_week": 11.2,
+        "total_students_enrolled": 163,
+        "module_preparation_count": 4,
+        "assessment_grading_backlog": 28,
+        "committee_admin_hours_week": 6.7,
+        "current_supervised_students": 9
+      },
+      "behavioral_log": {
+        "lms_off_hours_activity_ratio": 0.171,
+        "schedule_fragmentation_index": 0.742,
+        "days_since_last_leave": 71,
+        "average_response_latency_hours": 3.49
+      },
+      "burnout_ground_truth": {
+        "snapshot_date": "2026-09-10",
+        "calculated_swu_total": 35.26,
+        "burnout_risk_score": 98.0,
+        "risk_tier": "HIGH"
+      }
+    },
+    {
+      "staff_id": "UTB-FAC-2026-081",
+      "name": "Fabrice Uwizeyimana",
+      "program": "BSc Information Technology",
+      "academic_rank": "Lecturer",
+      "contractual_max_hours_week": 20.0,
+      "primary_domain": "E-Commerce",
+      "secondary_domains": "Network Administration",
+      "max_supervision_capacity": 7,
+      "workload_activity": {
+        "log_id": "LOG-2026-0081",
+        "semester_week": 6,
+        "assigned_teaching_hours_week": 23.9,
+        "total_students_enrolled": 271,
+        "module_preparation_count": 1,
+        "assessment_grading_backlog": 141,
+        "committee_admin_hours_week": 8.0,
+        "current_supervised_students": 4
+      },
+      "behavioral_log": {
+        "lms_off_hours_activity_ratio": 0.378,
+        "schedule_fragmentation_index": 0.529,
+        "days_since_last_leave": 136,
+        "average_response_latency_hours": 5.5
+      },
+      "burnout_ground_truth": {
+        "snapshot_date": "2026-09-10",
+        "calculated_swu_total": 55.95,
+        "burnout_risk_score": 98.0,
+        "risk_tier": "HIGH"
+      }
+    },
+    {
+      "staff_id": "UTB-FAC-2026-082",
+      "name": "Aline Uwimana",
+      "program": "Bachelor of Business Management",
+      "academic_rank": "Tutorial Assistant",
+      "contractual_max_hours_week": 24.0,
+      "primary_domain": "Financial Accounting",
+      "secondary_domains": "Human Resources",
+      "max_supervision_capacity": 5,
+      "workload_activity": {
+        "log_id": "LOG-2026-0082",
+        "semester_week": 14,
+        "assigned_teaching_hours_week": 22.2,
+        "total_students_enrolled": 258,
+        "module_preparation_count": 2,
+        "assessment_grading_backlog": 104,
+        "committee_admin_hours_week": 3.0,
+        "current_supervised_students": 2
+      },
+      "behavioral_log": {
+        "lms_off_hours_activity_ratio": 0.052,
+        "schedule_fragmentation_index": 0.762,
+        "days_since_last_leave": 5,
+        "average_response_latency_hours": 4.15
+      },
+      "burnout_ground_truth": {
+        "snapshot_date": "2026-09-10",
+        "calculated_swu_total": 46.2,
+        "burnout_risk_score": 81.21,
+        "risk_tier": "HIGH"
+      }
+    },
+    {
+      "staff_id": "UTB-FAC-2026-083",
+      "name": "Vincent Ingabire",
+      "program": "BSc Information Technology",
+      "academic_rank": "Lecturer",
+      "contractual_max_hours_week": 19.5,
+      "primary_domain": "Network Administration",
+      "secondary_domains": "Information Systems",
+      "max_supervision_capacity": 9,
+      "workload_activity": {
+        "log_id": "LOG-2026-0083",
+        "semester_week": 6,
+        "assigned_teaching_hours_week": 26.3,
+        "total_students_enrolled": 138,
+        "module_preparation_count": 2,
+        "assessment_grading_backlog": 59,
+        "committee_admin_hours_week": 1.2,
+        "current_supervised_students": 6
+      },
+      "behavioral_log": {
+        "lms_off_hours_activity_ratio": 0.439,
+        "schedule_fragmentation_index": 0.722,
+        "days_since_last_leave": 134,
+        "average_response_latency_hours": 1.91
+      },
+      "burnout_ground_truth": {
+        "snapshot_date": "2026-09-10",
+        "calculated_swu_total": 44.11,
+        "burnout_risk_score": 98.0,
+        "risk_tier": "HIGH"
+      }
+    },
+    {
+      "staff_id": "UTB-FAC-2026-084",
+      "name": "Anna Anderson",
+      "program": "BSc Information Technology",
+      "academic_rank": "Tutorial Assistant",
+      "contractual_max_hours_week": 24.0,
+      "primary_domain": "Information Systems",
+      "secondary_domains": "Database Systems, E-Commerce",
+      "max_supervision_capacity": 5,
+      "workload_activity": {
+        "log_id": "LOG-2026-0084",
+        "semester_week": 12,
+        "assigned_teaching_hours_week": 14.3,
+        "total_students_enrolled": 150,
+        "module_preparation_count": 3,
+        "assessment_grading_backlog": 32,
+        "committee_admin_hours_week": 8.0,
+        "current_supervised_students": 4
+      },
+      "behavioral_log": {
+        "lms_off_hours_activity_ratio": 0.203,
+        "schedule_fragmentation_index": 0.481,
+        "days_since_last_leave": 14,
+        "average_response_latency_hours": 1.46
+      },
+      "burnout_ground_truth": {
+        "snapshot_date": "2026-09-10",
+        "calculated_swu_total": 35.0,
+        "burnout_risk_score": 58.02,
+        "risk_tier": "MODERATE"
+      }
+    },
+    {
+      "staff_id": "UTB-FAC-2026-085",
+      "name": "Patrick Twagirayezu",
+      "program": "BA Community Development",
+      "academic_rank": "Tutorial Assistant",
+      "contractual_max_hours_week": 24.0,
+      "primary_domain": "Public Policy",
+      "secondary_domains": "Social Project Management",
+      "max_supervision_capacity": 10,
+      "workload_activity": {
+        "log_id": "LOG-2026-0085",
+        "semester_week": 13,
+        "assigned_teaching_hours_week": 22.2,
+        "total_students_enrolled": 145,
+        "module_preparation_count": 2,
+        "assessment_grading_backlog": 48,
+        "committee_admin_hours_week": 3.0,
+        "current_supervised_students": 2
+      },
+      "behavioral_log": {
+        "lms_off_hours_activity_ratio": 0.326,
+        "schedule_fragmentation_index": 0.27,
+        "days_since_last_leave": 15,
+        "average_response_latency_hours": 3.26
+      },
+      "burnout_ground_truth": {
+        "snapshot_date": "2026-09-10",
+        "calculated_swu_total": 37.8,
+        "burnout_risk_score": 67.32,
+        "risk_tier": "MODERATE"
+      }
+    },
+    {
+      "staff_id": "UTB-FAC-2026-086",
+      "name": "Fabrice Bizimana",
+      "program": "BSc Computer Engineering",
+      "academic_rank": "Senior Lecturer",
+      "contractual_max_hours_week": 18.0,
+      "primary_domain": "Hardware Architecture",
+      "secondary_domains": "Embedded Systems",
+      "max_supervision_capacity": 13,
+      "workload_activity": {
+        "log_id": "LOG-2026-0086",
+        "semester_week": 3,
+        "assigned_teaching_hours_week": 14.2,
+        "total_students_enrolled": 187,
+        "module_preparation_count": 1,
+        "assessment_grading_backlog": 77,
+        "committee_admin_hours_week": 1.2,
+        "current_supervised_students": 1
+      },
+      "behavioral_log": {
+        "lms_off_hours_activity_ratio": 0.231,
+        "schedule_fragmentation_index": 0.1,
+        "days_since_last_leave": 18,
+        "average_response_latency_hours": 0.09
+      },
+      "burnout_ground_truth": {
+        "snapshot_date": "2026-09-10",
+        "calculated_swu_total": 29.71,
+        "burnout_risk_score": 61.4,
+        "risk_tier": "MODERATE"
+      }
+    },
+    {
+      "staff_id": "UTB-FAC-2026-087",
+      "name": "Grace Uwizeyimana",
+      "program": "BSc Transport & Logistics Management",
+      "academic_rank": "Lecturer",
+      "contractual_max_hours_week": 19.0,
+      "primary_domain": "Freight Operations",
+      "secondary_domains": "Supply Chain Analytics, Transport Economics",
+      "max_supervision_capacity": 9,
+      "workload_activity": {
+        "log_id": "LOG-2026-0087",
+        "semester_week": 7,
+        "assigned_teaching_hours_week": 20.6,
+        "total_students_enrolled": 173,
+        "module_preparation_count": 3,
+        "assessment_grading_backlog": 76,
+        "committee_admin_hours_week": 2.4,
+        "current_supervised_students": 4
+      },
+      "behavioral_log": {
+        "lms_off_hours_activity_ratio": 0.253,
+        "schedule_fragmentation_index": 0.414,
+        "days_since_last_leave": 41,
+        "average_response_latency_hours": 6.22
+      },
+      "burnout_ground_truth": {
+        "snapshot_date": "2026-09-10",
+        "calculated_swu_total": 43.42,
+        "burnout_risk_score": 90.01,
+        "risk_tier": "HIGH"
+      }
+    },
+    {
+      "staff_id": "UTB-FAC-2026-088",
+      "name": "Yvonne Uwimana",
+      "program": "Bachelor of Business Management",
+      "academic_rank": "Lecturer",
+      "contractual_max_hours_week": 18.8,
+      "primary_domain": "Marketing",
+      "secondary_domains": "Human Resources, Strategic Management",
+      "max_supervision_capacity": 5,
+      "workload_activity": {
+        "log_id": "LOG-2026-0088",
+        "semester_week": 12,
+        "assigned_teaching_hours_week": 6.6,
+        "total_students_enrolled": 300,
+        "module_preparation_count": 3,
+        "assessment_grading_backlog": 98,
+        "committee_admin_hours_week": 6.2,
+        "current_supervised_students": 2
+      },
+      "behavioral_log": {
+        "lms_off_hours_activity_ratio": 0.0,
+        "schedule_fragmentation_index": 0.476,
+        "days_since_last_leave": 94,
+        "average_response_latency_hours": 0.33
+      },
+      "burnout_ground_truth": {
+        "snapshot_date": "2026-09-10",
+        "calculated_swu_total": 34.76,
+        "burnout_risk_score": 74.15,
+        "risk_tier": "MODERATE"
+      }
+    },
+    {
+      "staff_id": "UTB-FAC-2026-089",
+      "name": "Grace Twagirayezu",
+      "program": "BSc Travel & Tourism Management",
+      "academic_rank": "Senior Lecturer",
+      "contractual_max_hours_week": 18.0,
+      "primary_domain": "Travel Operations",
+      "secondary_domains": "Destination Management",
+      "max_supervision_capacity": 8,
+      "workload_activity": {
+        "log_id": "LOG-2026-0089",
+        "semester_week": 4,
+        "assigned_teaching_hours_week": 6.3,
+        "total_students_enrolled": 145,
+        "module_preparation_count": 2,
+        "assessment_grading_backlog": 74,
+        "committee_admin_hours_week": 1.6,
+        "current_supervised_students": 5
+      },
+      "behavioral_log": {
+        "lms_off_hours_activity_ratio": 0.086,
+        "schedule_fragmentation_index": 0.11,
+        "days_since_last_leave": 51,
+        "average_response_latency_hours": 2.74
+      },
+      "burnout_ground_truth": {
+        "snapshot_date": "2026-09-10",
+        "calculated_swu_total": 26.18,
+        "burnout_risk_score": 55.64,
+        "risk_tier": "MODERATE"
+      }
+    },
+    {
+      "staff_id": "UTB-FAC-2026-090",
+      "name": "Sarah Wilson",
+      "program": "BSc Computer Engineering",
+      "academic_rank": "Lecturer",
+      "contractual_max_hours_week": 20.0,
+      "primary_domain": "Algorithms",
+      "secondary_domains": "Hardware Architecture, Embedded Systems",
+      "max_supervision_capacity": 9,
+      "workload_activity": {
+        "log_id": "LOG-2026-0090",
+        "semester_week": 2,
+        "assigned_teaching_hours_week": 23.3,
+        "total_students_enrolled": 226,
+        "module_preparation_count": 1,
+        "assessment_grading_backlog": 96,
+        "committee_admin_hours_week": 7.0,
+        "current_supervised_students": 7
+      },
+      "behavioral_log": {
+        "lms_off_hours_activity_ratio": 0.233,
+        "schedule_fragmentation_index": 0.59,
+        "days_since_last_leave": 6,
+        "average_response_latency_hours": 1.17
+      },
+      "burnout_ground_truth": {
+        "snapshot_date": "2026-09-10",
+        "calculated_swu_total": 49.3,
+        "burnout_risk_score": 98.0,
+        "risk_tier": "HIGH"
+      }
+    },
+    {
+      "staff_id": "UTB-FAC-2026-091",
+      "name": "Daniel Lee",
+      "program": "BA Hotel & Restaurant Management",
+      "academic_rank": "Lecturer",
+      "contractual_max_hours_week": 20.0,
+      "primary_domain": "Event Operations",
+      "secondary_domains": "Food & Beverage Services",
+      "max_supervision_capacity": 5,
+      "workload_activity": {
+        "log_id": "LOG-2026-0091",
+        "semester_week": 10,
+        "assigned_teaching_hours_week": 17.4,
+        "total_students_enrolled": 162,
+        "module_preparation_count": 2,
+        "assessment_grading_backlog": 36,
+        "committee_admin_hours_week": 6.1,
+        "current_supervised_students": 1
+      },
+      "behavioral_log": {
+        "lms_off_hours_activity_ratio": 0.13,
+        "schedule_fragmentation_index": 0.65,
+        "days_since_last_leave": 100,
+        "average_response_latency_hours": 12.05
+      },
+      "burnout_ground_truth": {
+        "snapshot_date": "2026-09-10",
+        "calculated_swu_total": 33.18,
+        "burnout_risk_score": 70.71,
+        "risk_tier": "MODERATE"
+      }
+    },
+    {
+      "staff_id": "UTB-FAC-2026-092",
+      "name": "Theogene Mugisha",
+      "program": "BSc Travel & Tourism Management",
+      "academic_rank": "Lecturer",
+      "contractual_max_hours_week": 18.2,
+      "primary_domain": "Sustainable Tourism",
+      "secondary_domains": "Destination Management, Travel Operations",
+      "max_supervision_capacity": 10,
+      "workload_activity": {
+        "log_id": "LOG-2026-0092",
+        "semester_week": 4,
+        "assigned_teaching_hours_week": 8.3,
+        "total_students_enrolled": 199,
+        "module_preparation_count": 2,
+        "assessment_grading_backlog": 106,
+        "committee_admin_hours_week": 1.7,
+        "current_supervised_students": 5
+      },
+      "behavioral_log": {
+        "lms_off_hours_activity_ratio": 0.095,
+        "schedule_fragmentation_index": 0.241,
+        "days_since_last_leave": 127,
+        "average_response_latency_hours": 2.2
+      },
+      "burnout_ground_truth": {
+        "snapshot_date": "2026-09-10",
+        "calculated_swu_total": 33.06,
+        "burnout_risk_score": 76.7,
+        "risk_tier": "HIGH"
+      }
+    },
+    {
+      "staff_id": "UTB-FAC-2026-093",
+      "name": "James Mensah",
+      "program": "BSc Information Technology",
+      "academic_rank": "Lecturer",
+      "contractual_max_hours_week": 20.0,
+      "primary_domain": "E-Commerce",
+      "secondary_domains": "Network Administration",
+      "max_supervision_capacity": 8,
+      "workload_activity": {
+        "log_id": "LOG-2026-0093",
+        "semester_week": 5,
+        "assigned_teaching_hours_week": 21.8,
+        "total_students_enrolled": 137,
+        "module_preparation_count": 1,
+        "assessment_grading_backlog": 73,
+        "committee_admin_hours_week": 2.5,
+        "current_supervised_students": 3
+      },
+      "behavioral_log": {
+        "lms_off_hours_activity_ratio": 0.214,
+        "schedule_fragmentation_index": 0.693,
+        "days_since_last_leave": 23,
+        "average_response_latency_hours": 1.39
+      },
+      "burnout_ground_truth": {
+        "snapshot_date": "2026-09-10",
+        "calculated_swu_total": 38.75,
+        "burnout_risk_score": 80.19,
+        "risk_tier": "HIGH"
+      }
+    },
+    {
+      "staff_id": "UTB-FAC-2026-094",
+      "name": "Bosco Habimana",
+      "program": "Bachelor of Business Management",
+      "academic_rank": "Tutorial Assistant",
+      "contractual_max_hours_week": 23.9,
+      "primary_domain": "Strategic Management",
+      "secondary_domains": "Human Resources, Financial Accounting",
+      "max_supervision_capacity": 5,
+      "workload_activity": {
+        "log_id": "LOG-2026-0094",
+        "semester_week": 10,
+        "assigned_teaching_hours_week": 8.4,
+        "total_students_enrolled": 195,
+        "module_preparation_count": 3,
+        "assessment_grading_backlog": 59,
+        "committee_admin_hours_week": 1.7,
+        "current_supervised_students": 3
+      },
+      "behavioral_log": {
+        "lms_off_hours_activity_ratio": 0.004,
+        "schedule_fragmentation_index": 0.118,
+        "days_since_last_leave": 118,
+        "average_response_latency_hours": 4.36
+      },
+      "burnout_ground_truth": {
+        "snapshot_date": "2026-09-10",
+        "calculated_swu_total": 27.61,
+        "burnout_risk_score": 53.89,
+        "risk_tier": "MODERATE"
+      }
+    },
+    {
+      "staff_id": "UTB-FAC-2026-095",
+      "name": "Solange Rukundo",
+      "program": "BA Hotel & Restaurant Management",
+      "academic_rank": "Lecturer",
+      "contractual_max_hours_week": 19.4,
+      "primary_domain": "Hotel Asset Management",
+      "secondary_domains": "Event Operations",
+      "max_supervision_capacity": 7,
+      "workload_activity": {
+        "log_id": "LOG-2026-0095",
+        "semester_week": 12,
+        "assigned_teaching_hours_week": 10.6,
+        "total_students_enrolled": 211,
+        "module_preparation_count": 1,
+        "assessment_grading_backlog": 28,
+        "committee_admin_hours_week": 4.3,
+        "current_supervised_students": 5
+      },
+      "behavioral_log": {
+        "lms_off_hours_activity_ratio": 0.024,
+        "schedule_fragmentation_index": 0.216,
+        "days_since_last_leave": 76,
+        "average_response_latency_hours": 2.06
+      },
+      "burnout_ground_truth": {
+        "snapshot_date": "2026-09-10",
+        "calculated_swu_total": 23.24,
+        "burnout_risk_score": 48.26,
+        "risk_tier": "LOW"
+      }
+    },
+    {
+      "staff_id": "UTB-FAC-2026-096",
+      "name": "George Kumar",
+      "program": "BA Hotel & Restaurant Management",
+      "academic_rank": "Tutorial Assistant",
+      "contractual_max_hours_week": 24.0,
+      "primary_domain": "Hotel Asset Management",
+      "secondary_domains": "Hospitality Operations",
+      "max_supervision_capacity": 6,
+      "workload_activity": {
+        "log_id": "LOG-2026-0096",
+        "semester_week": 12,
+        "assigned_teaching_hours_week": 26.9,
+        "total_students_enrolled": 174,
+        "module_preparation_count": 3,
+        "assessment_grading_backlog": 64,
+        "committee_admin_hours_week": 6.1,
+        "current_supervised_students": 4
+      },
+      "behavioral_log": {
+        "lms_off_hours_activity_ratio": 0.382,
+        "schedule_fragmentation_index": 0.249,
+        "days_since_last_leave": 86,
+        "average_response_latency_hours": 14.17
+      },
+      "burnout_ground_truth": {
+        "snapshot_date": "2026-09-10",
+        "calculated_swu_total": 50.88,
+        "burnout_risk_score": 90.1,
+        "risk_tier": "HIGH"
+      }
+    },
+    {
+      "staff_id": "UTB-FAC-2026-097",
+      "name": "Claudine Kayitesi",
+      "program": "Bachelor of Business Management",
+      "academic_rank": "Senior Lecturer",
+      "contractual_max_hours_week": 18.0,
+      "primary_domain": "Strategic Management",
+      "secondary_domains": "Financial Accounting, Marketing",
+      "max_supervision_capacity": 11,
+      "workload_activity": {
+        "log_id": "LOG-2026-0097",
+        "semester_week": 11,
+        "assigned_teaching_hours_week": 12.4,
+        "total_students_enrolled": 146,
+        "module_preparation_count": 1,
+        "assessment_grading_backlog": 50,
+        "committee_admin_hours_week": 7.9,
+        "current_supervised_students": 1
+      },
+      "behavioral_log": {
+        "lms_off_hours_activity_ratio": 0.214,
+        "schedule_fragmentation_index": 0.845,
+        "days_since_last_leave": 20,
+        "average_response_latency_hours": 2.5
+      },
+      "burnout_ground_truth": {
+        "snapshot_date": "2026-09-10",
+        "calculated_swu_total": 29.22,
+        "burnout_risk_score": 75.27,
+        "risk_tier": "HIGH"
+      }
+    },
+    {
+      "staff_id": "UTB-FAC-2026-098",
+      "name": "Emile Mukamana",
+      "program": "BSc Information Technology",
+      "academic_rank": "Senior Lecturer",
+      "contractual_max_hours_week": 18.0,
+      "primary_domain": "E-Commerce",
+      "secondary_domains": "Information Systems, Network Administration",
+      "max_supervision_capacity": 12,
+      "workload_activity": {
+        "log_id": "LOG-2026-0098",
+        "semester_week": 7,
+        "assigned_teaching_hours_week": 10.9,
+        "total_students_enrolled": 147,
+        "module_preparation_count": 1,
+        "assessment_grading_backlog": 24,
+        "committee_admin_hours_week": 3.2,
+        "current_supervised_students": 12
+      },
+      "behavioral_log": {
+        "lms_off_hours_activity_ratio": 0.187,
+        "schedule_fragmentation_index": 0.864,
+        "days_since_last_leave": 17,
+        "average_response_latency_hours": 3.61
+      },
+      "burnout_ground_truth": {
+        "snapshot_date": "2026-09-10",
+        "calculated_swu_total": 25.56,
+        "burnout_risk_score": 62.02,
+        "risk_tier": "MODERATE"
+      }
+    },
+    {
+      "staff_id": "UTB-FAC-2026-099",
+      "name": "Beatrice Ntawuruhunga",
+      "program": "Bachelor of Business Management",
+      "academic_rank": "Lecturer",
+      "contractual_max_hours_week": 19.1,
+      "primary_domain": "Marketing",
+      "secondary_domains": "Human Resources",
+      "max_supervision_capacity": 7,
+      "workload_activity": {
+        "log_id": "LOG-2026-0099",
+        "semester_week": 10,
+        "assigned_teaching_hours_week": 12.3,
+        "total_students_enrolled": 60,
+        "module_preparation_count": 2,
+        "assessment_grading_backlog": 10,
+        "committee_admin_hours_week": 2.0,
+        "current_supervised_students": 5
+      },
+      "behavioral_log": {
+        "lms_off_hours_activity_ratio": 0.265,
+        "schedule_fragmentation_index": 0.64,
+        "days_since_last_leave": 190,
+        "average_response_latency_hours": 4.58
+      },
+      "burnout_ground_truth": {
+        "snapshot_date": "2026-09-10",
+        "calculated_swu_total": 22.9,
+        "burnout_risk_score": 69.94,
+        "risk_tier": "MODERATE"
+      }
+    },
+    {
+      "staff_id": "UTB-FAC-2026-100",
+      "name": "Olivier Mugisha",
+      "program": "BSc Travel & Tourism Management",
+      "academic_rank": "Senior Lecturer",
+      "contractual_max_hours_week": 18.0,
+      "primary_domain": "Eco-Tourism",
+      "secondary_domains": "Sustainable Tourism",
+      "max_supervision_capacity": 9,
+      "workload_activity": {
+        "log_id": "LOG-2026-0100",
+        "semester_week": 9,
+        "assigned_teaching_hours_week": 6.3,
+        "total_students_enrolled": 210,
+        "module_preparation_count": 2,
+        "assessment_grading_backlog": 56,
+        "committee_admin_hours_week": 2.9,
+        "current_supervised_students": 7
+      },
+      "behavioral_log": {
+        "lms_off_hours_activity_ratio": 0.161,
+        "schedule_fragmentation_index": 0.112,
+        "days_since_last_leave": 139,
+        "average_response_latency_hours": 0.77
+      },
+      "burnout_ground_truth": {
+        "snapshot_date": "2026-09-10",
+        "calculated_swu_total": 25.52,
+        "burnout_risk_score": 63.72,
+        "risk_tier": "MODERATE"
+      }
+    },
+    {
+      "staff_id": "UTB-FAC-2026-101",
+      "name": "James Martin",
+      "program": "BSc Travel & Tourism Management",
+      "academic_rank": "Senior Lecturer",
+      "contractual_max_hours_week": 18.0,
+      "primary_domain": "Travel Operations",
+      "secondary_domains": "Eco-Tourism, Destination Management",
+      "max_supervision_capacity": 13,
+      "workload_activity": {
+        "log_id": "LOG-2026-0101",
+        "semester_week": 16,
+        "assigned_teaching_hours_week": 14.4,
+        "total_students_enrolled": 187,
+        "module_preparation_count": 1,
+        "assessment_grading_backlog": 37,
+        "committee_admin_hours_week": 4.3,
+        "current_supervised_students": 13
+      },
+      "behavioral_log": {
+        "lms_off_hours_activity_ratio": 0.13,
+        "schedule_fragmentation_index": 0.475,
+        "days_since_last_leave": 44,
+        "average_response_latency_hours": 8.31
+      },
+      "burnout_ground_truth": {
+        "snapshot_date": "2026-09-10",
+        "calculated_swu_total": 32.39,
+        "burnout_risk_score": 65.25,
+        "risk_tier": "MODERATE"
+      }
+    },
+    {
+      "staff_id": "UTB-FAC-2026-102",
+      "name": "Immaculee Niyonzima",
+      "program": "Bachelor of Business Management",
+      "academic_rank": "Lecturer",
+      "contractual_max_hours_week": 20.0,
+      "primary_domain": "Strategic Management",
+      "secondary_domains": "Human Resources",
+      "max_supervision_capacity": 11,
+      "workload_activity": {
+        "log_id": "LOG-2026-0102",
+        "semester_week": 16,
+        "assigned_teaching_hours_week": 20.1,
+        "total_students_enrolled": 106,
+        "module_preparation_count": 4,
+        "assessment_grading_backlog": 29,
+        "committee_admin_hours_week": 1.0,
+        "current_supervised_students": 2
+      },
+      "behavioral_log": {
+        "lms_off_hours_activity_ratio": 0.079,
+        "schedule_fragmentation_index": 0.665,
+        "days_since_last_leave": 74,
+        "average_response_latency_hours": 0.15
+      },
+      "burnout_ground_truth": {
+        "snapshot_date": "2026-09-10",
+        "calculated_swu_total": 36.25,
+        "burnout_risk_score": 68.83,
+        "risk_tier": "MODERATE"
+      }
+    },
+    {
+      "staff_id": "UTB-FAC-2026-103",
+      "name": "Diane Ndayisenga",
+      "program": "BSc Computer Engineering",
+      "academic_rank": "Lecturer",
+      "contractual_max_hours_week": 18.1,
+      "primary_domain": "Software Engineering",
+      "secondary_domains": "Hardware Architecture, Algorithms",
+      "max_supervision_capacity": 9,
+      "workload_activity": {
+        "log_id": "LOG-2026-0103",
+        "semester_week": 1,
+        "assigned_teaching_hours_week": 15.0,
+        "total_students_enrolled": 190,
+        "module_preparation_count": 3,
+        "assessment_grading_backlog": 32,
+        "committee_admin_hours_week": 5.0,
+        "current_supervised_students": 4
+      },
+      "behavioral_log": {
+        "lms_off_hours_activity_ratio": 0.173,
+        "schedule_fragmentation_index": 0.83,
+        "days_since_last_leave": 49,
+        "average_response_latency_hours": 0.04
+      },
+      "burnout_ground_truth": {
+        "snapshot_date": "2026-09-10",
+        "calculated_swu_total": 33.3,
+        "burnout_risk_score": 76.5,
+        "risk_tier": "HIGH"
+      }
+    },
+    {
+      "staff_id": "UTB-FAC-2026-104",
+      "name": "Jean Nkurunziza",
+      "program": "BSc Travel & Tourism Management",
+      "academic_rank": "Tutorial Assistant",
+      "contractual_max_hours_week": 23.4,
+      "primary_domain": "Sustainable Tourism",
+      "secondary_domains": "Travel Operations, Eco-Tourism",
+      "max_supervision_capacity": 5,
+      "workload_activity": {
+        "log_id": "LOG-2026-0104",
+        "semester_week": 1,
+        "assigned_teaching_hours_week": 22.3,
+        "total_students_enrolled": 188,
+        "module_preparation_count": 3,
+        "assessment_grading_backlog": 76,
+        "committee_admin_hours_week": 3.2,
+        "current_supervised_students": 4
+      },
+      "behavioral_log": {
+        "lms_off_hours_activity_ratio": 0.159,
+        "schedule_fragmentation_index": 0.324,
+        "days_since_last_leave": 8,
+        "average_response_latency_hours": 0.11
+      },
+      "burnout_ground_truth": {
+        "snapshot_date": "2026-09-10",
+        "calculated_swu_total": 45.76,
+        "burnout_risk_score": 69.91,
+        "risk_tier": "MODERATE"
+      }
+    },
+    {
+      "staff_id": "UTB-FAC-2026-105",
+      "name": "Olivier Bizimana",
+      "program": "BA Hotel & Restaurant Management",
+      "academic_rank": "Tutorial Assistant",
+      "contractual_max_hours_week": 24.0,
+      "primary_domain": "Event Operations",
+      "secondary_domains": "Hospitality Operations",
+      "max_supervision_capacity": 5,
+      "workload_activity": {
+        "log_id": "LOG-2026-0105",
+        "semester_week": 2,
+        "assigned_teaching_hours_week": 18.3,
+        "total_students_enrolled": 199,
+        "module_preparation_count": 3,
+        "assessment_grading_backlog": 90,
+        "committee_admin_hours_week": 3.1,
+        "current_supervised_students": 1
+      },
+      "behavioral_log": {
+        "lms_off_hours_activity_ratio": 0.096,
+        "schedule_fragmentation_index": 0.718,
+        "days_since_last_leave": 250,
+        "average_response_latency_hours": 1.39
+      },
+      "burnout_ground_truth": {
+        "snapshot_date": "2026-09-10",
+        "calculated_swu_total": 42.28,
+        "burnout_risk_score": 89.08,
+        "risk_tier": "HIGH"
+      }
+    },
+    {
+      "staff_id": "UTB-FAC-2026-106",
+      "name": "Emile Mutesi",
+      "program": "Bachelor of Business Management",
+      "academic_rank": "Lecturer",
+      "contractual_max_hours_week": 20.0,
+      "primary_domain": "Strategic Management",
+      "secondary_domains": "Human Resources",
+      "max_supervision_capacity": 8,
+      "workload_activity": {
+        "log_id": "LOG-2026-0106",
+        "semester_week": 11,
+        "assigned_teaching_hours_week": 14.2,
+        "total_students_enrolled": 237,
+        "module_preparation_count": 2,
+        "assessment_grading_backlog": 96,
+        "committee_admin_hours_week": 5.1,
+        "current_supervised_students": 2
+      },
+      "behavioral_log": {
+        "lms_off_hours_activity_ratio": 0.077,
+        "schedule_fragmentation_index": 0.429,
+        "days_since_last_leave": 135,
+        "average_response_latency_hours": 0.94
+      },
+      "burnout_ground_truth": {
+        "snapshot_date": "2026-09-10",
+        "calculated_swu_total": 38.68,
+        "burnout_risk_score": 79.42,
+        "risk_tier": "HIGH"
+      }
+    },
+    {
+      "staff_id": "UTB-FAC-2026-107",
+      "name": "Sandrine Kayitesi",
+      "program": "Bachelor of Business Management",
+      "academic_rank": "Lecturer",
+      "contractual_max_hours_week": 18.3,
+      "primary_domain": "Human Resources",
+      "secondary_domains": "Financial Accounting",
+      "max_supervision_capacity": 9,
+      "workload_activity": {
+        "log_id": "LOG-2026-0107",
+        "semester_week": 13,
+        "assigned_teaching_hours_week": 12.7,
+        "total_students_enrolled": 262,
+        "module_preparation_count": 3,
+        "assessment_grading_backlog": 44,
+        "committee_admin_hours_week": 3.0,
+        "current_supervised_students": 9
+      },
+      "behavioral_log": {
+        "lms_off_hours_activity_ratio": 0.162,
+        "schedule_fragmentation_index": 0.122,
+        "days_since_last_leave": 72,
+        "average_response_latency_hours": 2.48
+      },
+      "burnout_ground_truth": {
+        "snapshot_date": "2026-09-10",
+        "calculated_swu_total": 33.7,
+        "burnout_risk_score": 69.69,
+        "risk_tier": "MODERATE"
+      }
+    },
+    {
+      "staff_id": "UTB-FAC-2026-108",
+      "name": "Claudine Iradukunda",
+      "program": "BA Hotel & Restaurant Management",
+      "academic_rank": "Senior Lecturer",
+      "contractual_max_hours_week": 18.0,
+      "primary_domain": "Event Operations",
+      "secondary_domains": "Hotel Asset Management",
+      "max_supervision_capacity": 9,
+      "workload_activity": {
+        "log_id": "LOG-2026-0108",
+        "semester_week": 5,
+        "assigned_teaching_hours_week": 8.5,
+        "total_students_enrolled": 93,
+        "module_preparation_count": 2,
+        "assessment_grading_backlog": 38,
+        "committee_admin_hours_week": 2.2,
+        "current_supervised_students": 9
+      },
+      "behavioral_log": {
+        "lms_off_hours_activity_ratio": 0.057,
+        "schedule_fragmentation_index": 0.35,
+        "days_since_last_leave": 31,
+        "average_response_latency_hours": 4.43
+      },
+      "burnout_ground_truth": {
+        "snapshot_date": "2026-09-10",
+        "calculated_swu_total": 25.46,
+        "burnout_risk_score": 59.25,
+        "risk_tier": "MODERATE"
+      }
+    },
+    {
+      "staff_id": "UTB-FAC-2026-109",
+      "name": "Immaculee Niyonzima",
+      "program": "BA Hotel & Restaurant Management",
+      "academic_rank": "Tutorial Assistant",
+      "contractual_max_hours_week": 22.9,
+      "primary_domain": "Event Operations",
+      "secondary_domains": "Food & Beverage Services",
+      "max_supervision_capacity": 6,
+      "workload_activity": {
+        "log_id": "LOG-2026-0109",
+        "semester_week": 1,
+        "assigned_teaching_hours_week": 13.8,
+        "total_students_enrolled": 100,
+        "module_preparation_count": 1,
+        "assessment_grading_backlog": 15,
+        "committee_admin_hours_week": 3.3,
+        "current_supervised_students": 6
+      },
+      "behavioral_log": {
+        "lms_off_hours_activity_ratio": 0.104,
+        "schedule_fragmentation_index": 0.666,
+        "days_since_last_leave": 60,
+        "average_response_latency_hours": 0.41
+      },
+      "burnout_ground_truth": {
+        "snapshot_date": "2026-09-10",
+        "calculated_swu_total": 24.19,
+        "burnout_risk_score": 49.75,
+        "risk_tier": "LOW"
+      }
+    },
+    {
+      "staff_id": "UTB-FAC-2026-110",
+      "name": "Sarah Okafor",
+      "program": "BSc Travel & Tourism Management",
+      "academic_rank": "Lecturer",
+      "contractual_max_hours_week": 20.0,
+      "primary_domain": "Destination Management",
+      "secondary_domains": "Sustainable Tourism, Eco-Tourism",
+      "max_supervision_capacity": 5,
+      "workload_activity": {
+        "log_id": "LOG-2026-0110",
+        "semester_week": 14,
+        "assigned_teaching_hours_week": 11.7,
+        "total_students_enrolled": 315,
+        "module_preparation_count": 2,
+        "assessment_grading_backlog": 154,
+        "committee_admin_hours_week": 2.8,
+        "current_supervised_students": 4
+      },
+      "behavioral_log": {
+        "lms_off_hours_activity_ratio": 0.091,
+        "schedule_fragmentation_index": 0.785,
+        "days_since_last_leave": 39,
+        "average_response_latency_hours": 5.28
+      },
+      "burnout_ground_truth": {
+        "snapshot_date": "2026-09-10",
+        "calculated_swu_total": 44.04,
+        "burnout_risk_score": 93.65,
+        "risk_tier": "HIGH"
+      }
+    },
+    {
+      "staff_id": "UTB-FAC-2026-111",
+      "name": "Alice Uwase",
+      "program": "Bachelor of Business Management",
+      "academic_rank": "Tutorial Assistant",
+      "contractual_max_hours_week": 23.9,
+      "primary_domain": "Strategic Management",
+      "secondary_domains": "Financial Accounting",
+      "max_supervision_capacity": 5,
+      "workload_activity": {
+        "log_id": "LOG-2026-0111",
+        "semester_week": 5,
+        "assigned_teaching_hours_week": 19.2,
+        "total_students_enrolled": 109,
+        "module_preparation_count": 1,
+        "assessment_grading_backlog": 35,
+        "committee_admin_hours_week": 2.3,
+        "current_supervised_students": 2
+      },
+      "behavioral_log": {
+        "lms_off_hours_activity_ratio": 0.23,
+        "schedule_fragmentation_index": 0.486,
+        "days_since_last_leave": 250,
+        "average_response_latency_hours": 0.47
+      },
+      "burnout_ground_truth": {
+        "snapshot_date": "2026-09-10",
+        "calculated_swu_total": 29.79,
+        "burnout_risk_score": 72.23,
+        "risk_tier": "MODERATE"
+      }
+    },
+    {
+      "staff_id": "UTB-FAC-2026-112",
+      "name": "Chantal Twagirayezu",
+      "program": "BA Community Development",
+      "academic_rank": "Associate Professor",
+      "contractual_max_hours_week": 14.0,
+      "primary_domain": "Social Project Management",
+      "secondary_domains": "Rural Development, Public Policy",
+      "max_supervision_capacity": 11,
+      "workload_activity": {
+        "log_id": "LOG-2026-0112",
+        "semester_week": 12,
+        "assigned_teaching_hours_week": 13.9,
+        "total_students_enrolled": 196,
+        "module_preparation_count": 1,
+        "assessment_grading_backlog": 101,
+        "committee_admin_hours_week": 1.2,
+        "current_supervised_students": 5
+      },
+      "behavioral_log": {
+        "lms_off_hours_activity_ratio": 0.353,
+        "schedule_fragmentation_index": 0.68,
+        "days_since_last_leave": 19,
+        "average_response_latency_hours": 1.24
+      },
+      "burnout_ground_truth": {
+        "snapshot_date": "2026-09-10",
+        "calculated_swu_total": 35.01,
+        "burnout_risk_score": 98.0,
+        "risk_tier": "HIGH"
+      }
+    },
+    {
+      "staff_id": "UTB-FAC-2026-113",
+      "name": "Damascene Uwizeyimana",
+      "program": "BSc Travel & Tourism Management",
+      "academic_rank": "Senior Lecturer",
+      "contractual_max_hours_week": 18.0,
+      "primary_domain": "Sustainable Tourism",
+      "secondary_domains": "Destination Management",
+      "max_supervision_capacity": 11,
+      "workload_activity": {
+        "log_id": "LOG-2026-0113",
+        "semester_week": 13,
+        "assigned_teaching_hours_week": 10.2,
+        "total_students_enrolled": 163,
+        "module_preparation_count": 2,
+        "assessment_grading_backlog": 37,
+        "committee_admin_hours_week": 1.8,
+        "current_supervised_students": 11
+      },
+      "behavioral_log": {
+        "lms_off_hours_activity_ratio": 0.128,
+        "schedule_fragmentation_index": 0.852,
+        "days_since_last_leave": 19,
+        "average_response_latency_hours": 0.07
+      },
+      "burnout_ground_truth": {
+        "snapshot_date": "2026-09-10",
+        "calculated_swu_total": 27.69,
+        "burnout_risk_score": 69.76,
+        "risk_tier": "MODERATE"
+      }
+    },
+    {
+      "staff_id": "UTB-FAC-2026-114",
+      "name": "Josiane Mutesi",
+      "program": "BA Hotel & Restaurant Management",
+      "academic_rank": "Senior Lecturer",
+      "contractual_max_hours_week": 17.6,
+      "primary_domain": "Hotel Asset Management",
+      "secondary_domains": "Hospitality Operations",
+      "max_supervision_capacity": 11,
+      "workload_activity": {
+        "log_id": "LOG-2026-0114",
+        "semester_week": 13,
+        "assigned_teaching_hours_week": 14.6,
+        "total_students_enrolled": 263,
+        "module_preparation_count": 2,
+        "assessment_grading_backlog": 100,
+        "committee_admin_hours_week": 4.1,
+        "current_supervised_students": 1
+      },
+      "behavioral_log": {
+        "lms_off_hours_activity_ratio": 0.185,
+        "schedule_fragmentation_index": 0.667,
+        "days_since_last_leave": 42,
+        "average_response_latency_hours": 0.28
+      },
+      "burnout_ground_truth": {
+        "snapshot_date": "2026-09-10",
+        "calculated_swu_total": 38.38,
+        "burnout_risk_score": 93.01,
+        "risk_tier": "HIGH"
+      }
+    },
+    {
+      "staff_id": "UTB-FAC-2026-115",
+      "name": "Sandrine Niyonzima",
+      "program": "BA Hotel & Restaurant Management",
+      "academic_rank": "Lecturer",
+      "contractual_max_hours_week": 19.7,
+      "primary_domain": "Event Operations",
+      "secondary_domains": "Hospitality Operations, Food & Beverage Services",
+      "max_supervision_capacity": 9,
+      "workload_activity": {
+        "log_id": "LOG-2026-0115",
+        "semester_week": 13,
+        "assigned_teaching_hours_week": 9.9,
+        "total_students_enrolled": 166,
+        "module_preparation_count": 1,
+        "assessment_grading_backlog": 68,
+        "committee_admin_hours_week": 1.5,
+        "current_supervised_students": 7
+      },
+      "behavioral_log": {
+        "lms_off_hours_activity_ratio": 0.118,
+        "schedule_fragmentation_index": 0.86,
+        "days_since_last_leave": 23,
+        "average_response_latency_hours": 1.55
+      },
+      "burnout_ground_truth": {
+        "snapshot_date": "2026-09-10",
+        "calculated_swu_total": 27.3,
+        "burnout_risk_score": 64.78,
+        "risk_tier": "MODERATE"
+      }
+    },
+    {
+      "staff_id": "UTB-FAC-2026-116",
+      "name": "Emile Nsengimana",
+      "program": "BA Hotel & Restaurant Management",
+      "academic_rank": "Senior Lecturer",
+      "contractual_max_hours_week": 18.0,
+      "primary_domain": "Hotel Asset Management",
+      "secondary_domains": "Food & Beverage Services",
+      "max_supervision_capacity": 15,
+      "workload_activity": {
+        "log_id": "LOG-2026-0116",
+        "semester_week": 15,
+        "assigned_teaching_hours_week": 14.8,
+        "total_students_enrolled": 123,
+        "module_preparation_count": 1,
+        "assessment_grading_backlog": 65,
+        "committee_admin_hours_week": 2.7,
+        "current_supervised_students": 7
+      },
+      "behavioral_log": {
+        "lms_off_hours_activity_ratio": 0.346,
+        "schedule_fragmentation_index": 0.525,
+        "days_since_last_leave": 114,
+        "average_response_latency_hours": 2.39
+      },
+      "burnout_ground_truth": {
+        "snapshot_date": "2026-09-10",
+        "calculated_swu_total": 32.71,
+        "burnout_risk_score": 85.79,
+        "risk_tier": "HIGH"
+      }
+    },
+    {
+      "staff_id": "UTB-FAC-2026-117",
+      "name": "Grace Garcia",
+      "program": "BSc Travel & Tourism Management",
+      "academic_rank": "Senior Lecturer",
+      "contractual_max_hours_week": 18.0,
+      "primary_domain": "Sustainable Tourism",
+      "secondary_domains": "Destination Management, Eco-Tourism",
+      "max_supervision_capacity": 6,
+      "workload_activity": {
+        "log_id": "LOG-2026-0117",
+        "semester_week": 6,
+        "assigned_teaching_hours_week": 11.1,
+        "total_students_enrolled": 183,
+        "module_preparation_count": 2,
+        "assessment_grading_backlog": 96,
+        "committee_admin_hours_week": 3.3,
+        "current_supervised_students": 6
+      },
+      "behavioral_log": {
+        "lms_off_hours_activity_ratio": 0.014,
+        "schedule_fragmentation_index": 0.758,
+        "days_since_last_leave": 44,
+        "average_response_latency_hours": 0.46
+      },
+      "burnout_ground_truth": {
+        "snapshot_date": "2026-09-10",
+        "calculated_swu_total": 36.14,
+        "burnout_risk_score": 89.3,
+        "risk_tier": "HIGH"
+      }
+    },
+    {
+      "staff_id": "UTB-FAC-2026-118",
+      "name": "John Anderson",
+      "program": "BSc Information Technology",
+      "academic_rank": "Lecturer",
+      "contractual_max_hours_week": 20.0,
+      "primary_domain": "Network Administration",
+      "secondary_domains": "E-Commerce, Database Systems",
+      "max_supervision_capacity": 6,
+      "workload_activity": {
+        "log_id": "LOG-2026-0118",
+        "semester_week": 5,
+        "assigned_teaching_hours_week": 14.0,
+        "total_students_enrolled": 204,
+        "module_preparation_count": 1,
+        "assessment_grading_backlog": 78,
+        "committee_admin_hours_week": 2.3,
+        "current_supervised_students": 5
+      },
+      "behavioral_log": {
+        "lms_off_hours_activity_ratio": 0.194,
+        "schedule_fragmentation_index": 0.616,
+        "days_since_last_leave": 22,
+        "average_response_latency_hours": 0.31
+      },
+      "burnout_ground_truth": {
+        "snapshot_date": "2026-09-10",
+        "calculated_swu_total": 32.54,
+        "burnout_risk_score": 74.48,
+        "risk_tier": "MODERATE"
+      }
+    },
+    {
+      "staff_id": "UTB-FAC-2026-119",
+      "name": "Marie Claire Karenzi",
+      "program": "BSc Transport & Logistics Management",
+      "academic_rank": "Lecturer",
+      "contractual_max_hours_week": 20.0,
+      "primary_domain": "Supply Chain Analytics",
+      "secondary_domains": "Fleet Management, Transport Economics",
+      "max_supervision_capacity": 11,
+      "workload_activity": {
+        "log_id": "LOG-2026-0119",
+        "semester_week": 10,
+        "assigned_teaching_hours_week": 14.1,
+        "total_students_enrolled": 225,
+        "module_preparation_count": 1,
+        "assessment_grading_backlog": 102,
+        "committee_admin_hours_week": 1.8,
+        "current_supervised_students": 3
+      },
+      "behavioral_log": {
+        "lms_off_hours_activity_ratio": 0.142,
+        "schedule_fragmentation_index": 0.685,
+        "days_since_last_leave": 29,
+        "average_response_latency_hours": 4.64
+      },
+      "burnout_ground_truth": {
+        "snapshot_date": "2026-09-10",
+        "calculated_swu_total": 34.84,
+        "burnout_risk_score": 84.08,
+        "risk_tier": "HIGH"
+      }
+    },
+    {
+      "staff_id": "UTB-FAC-2026-120",
+      "name": "Marie Claire Niyonzima",
+      "program": "BSc Transport & Logistics Management",
+      "academic_rank": "Tutorial Assistant",
+      "contractual_max_hours_week": 24.0,
+      "primary_domain": "Fleet Management",
+      "secondary_domains": "Transport Economics, Freight Operations",
+      "max_supervision_capacity": 6,
+      "workload_activity": {
+        "log_id": "LOG-2026-0120",
+        "semester_week": 4,
+        "assigned_teaching_hours_week": 30.9,
+        "total_students_enrolled": 130,
+        "module_preparation_count": 1,
+        "assessment_grading_backlog": 50,
+        "committee_admin_hours_week": 2.5,
+        "current_supervised_students": 2
+      },
+      "behavioral_log": {
+        "lms_off_hours_activity_ratio": 0.445,
+        "schedule_fragmentation_index": 0.204,
+        "days_since_last_leave": 35,
+        "average_response_latency_hours": 11.46
+      },
+      "burnout_ground_truth": {
+        "snapshot_date": "2026-09-10",
+        "calculated_swu_total": 43.9,
+        "burnout_risk_score": 79.23,
+        "risk_tier": "HIGH"
+      }
+    }
+  ]
+}

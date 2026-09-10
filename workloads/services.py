@@ -1,66 +1,39 @@
 import math
-from typing import Dict, List
-from ml_engine.workload_engine import StaffFeatureVector, ModelInferenceResult, RiskTier
+from typing import Dict, List, Optional
+
+from ml_engine.workload_engine import (
+    StaffFeatureVector,
+    ModelInferenceResult,
+    RiskTier,
+    AcademicRank,
+    evaluate_staff_workload,
+)
 
 
-def calculate_burnout_risk(feature_vector: StaffFeatureVector) -> ModelInferenceResult:
+def calculate_burnout_risk(
+    feature_vector: StaffFeatureVector,
+    department_colleagues: Optional[List[StaffFeatureVector]] = None,
+) -> ModelInferenceResult:
     """
-    Inference computation calculating Burnout Risk Score (BRS) from
-    workload features and behavioral metrics.
+    Executes trained ML inference model and SHAP explainer to calculate Burnout 
+    Risk Score (BRS), risk tier, drivers, and prescriptive MILP interventions.
     """
-    total_hours = (
-        feature_vector.assigned_teaching_hours_week +
-        feature_vector.committee_admin_hours_week +
-        feature_vector.research_supervision_hours_week
-    )
-
-    # Workload Ratio vs Contract Max
-    load_ratio = total_hours / max(feature_vector.contractual_max_hours_week, 1.0)
-    
-    # Risk calculation weights
-    w_hours = min(load_ratio * 35.0, 45.0)
-    w_backlog = min(feature_vector.assessment_grading_backlog_units * 0.4, 20.0)
-    w_lms_off = feature_vector.lms_off_hours_activity_ratio * 20.0
-    w_fragment = feature_vector.schedule_fragmentation_index * 15.0
-
-    raw_brs = round(w_hours + w_backlog + w_lms_off + w_fragment, 1)
-    brs = min(max(raw_brs, 5.0), 98.0)
-
-    if brs >= 75.0:
-        tier = RiskTier.HIGH
-    elif brs >= 50.0:
-        tier = RiskTier.MODERATE
-    else:
-        tier = RiskTier.LOW
-
-    # Driver factor rank
-    factors = [
-        {"factor": "Contractual Hours Overload", "weight": round(w_hours / brs, 2)},
-        {"factor": "Assessment Grading Backlog", "weight": round(w_backlog / brs, 2)},
-        {"factor": "Late Night LMS Off-Hours Activity", "weight": round(w_lms_off / brs, 2)},
-        {"factor": "Class Schedule Fragmentation Gaps", "weight": round(w_fragment / brs, 2)}
-    ]
-    factors.sort(key=lambda x: x["weight"], reverse=True)
-
-    return ModelInferenceResult(
-        staff_id=feature_vector.staff_id,
-        burnout_risk_score=brs,
-        risk_tier=tier,
-        top_contributing_factors=factors[:3],
-        action_required=(tier == RiskTier.HIGH),
-        recommended_interventions=[]
+    return evaluate_staff_workload(
+        staff_input=feature_vector,
+        department_colleagues=department_colleagues
     )
 
 
 def get_lecturer_dashboard_payload(staff_id: str) -> Dict:
     """
     GET /api/v1/dashboard/lecturer/:staff_id implementation
+    Ingests staff metrics, runs XGBoost/SHAP evaluation, and formats response.
     """
-    # Simulated Feature Ingestion for target lecturer
+    # Feature Ingestion for target lecturer (Can be mapped from Django ORM models)
     fv = StaffFeatureVector(
         staff_id=staff_id,
         department="BIT",
-        academic_rank="LECTURER",
+        academic_rank=AcademicRank.LECTURER,
         contractual_max_hours_week=20.0,
         assigned_teaching_hours_week=16.0,
         total_students_enrolled=185,
@@ -77,6 +50,7 @@ def get_lecturer_dashboard_payload(staff_id: str) -> Dict:
     )
 
     inference = calculate_burnout_risk(fv)
+
     if inference.top_contributing_factors:
         top_driver = inference.top_contributing_factors[0].factor
     else:
@@ -88,16 +62,21 @@ def get_lecturer_dashboard_payload(staff_id: str) -> Dict:
     elif inference.risk_tier == RiskTier.MODERATE:
         status_badge = "Moderate Load"
 
+    weekly_load = round(
+        fv.assigned_teaching_hours_week + fv.committee_admin_hours_week + fv.research_supervision_hours_week,
+        1
+    )
+
     return {
         "profile": {
             "staff_id": fv.staff_id,
             "name": "Dr. Eric Manirakiza",
-            "rank": "Lecturer",
+            "rank": fv.academic_rank.value.title(),
             "department": "Business Information Technology",
             "status_badge": status_badge
         },
         "kpis": {
-            "weekly_load_hours": round(fv.assigned_teaching_hours_week + fv.committee_admin_hours_week + fv.research_supervision_hours_week, 1),
+            "weekly_load_hours": weekly_load,
             "contractual_max_hours": fv.contractual_max_hours_week,
             "burnout_risk_score": inference.burnout_risk_score,
             "active_students": fv.total_students_enrolled,
@@ -109,7 +88,7 @@ def get_lecturer_dashboard_payload(staff_id: str) -> Dict:
                 {"category": "Grading", "hours": round(fv.assessment_grading_backlog_units * 0.15, 1)},
                 {"category": "Admin", "hours": fv.committee_admin_hours_week},
                 {"category": "Research", "hours": fv.research_supervision_hours_week},
-                {"category": "Prep", "hours": 4.0}
+                {"category": "Prep", "hours": round(fv.module_preparation_count * 2.5, 1)}
             ],
             "off_hours_trend": [
                 {"week": "Wk 1", "scheduled_hours": 20.0, "off_hours_lms_logs": 3},
@@ -119,7 +98,7 @@ def get_lecturer_dashboard_payload(staff_id: str) -> Dict:
             ]
         },
         "ai_advisor_message": (
-            f"Your Burnout Risk Index is currently elevated at {inference.burnout_risk_score}%. "
+            f"Your Burnout Risk Index is currently evaluated at {inference.burnout_risk_score}%. "
             f"The primary stress driver is '{top_driver}'. "
             f"Recommendation: Request a task offload of 3.5 grading hours or shift office hours to consolidate schedule gaps."
         )
@@ -129,51 +108,165 @@ def get_lecturer_dashboard_payload(staff_id: str) -> Dict:
 def get_executive_dashboard_payload(dept_id: str) -> Dict:
     """
     GET /api/v1/dashboard/executive/:dept_id implementation
+    Evaluates department faculty using the ML + MILP optimization engine.
     """
+    # Department faculty pool
+    faculty_members = [
+        StaffFeatureVector(
+            staff_id="UTB-FAC-101",
+            department=dept_id,
+            academic_rank=AcademicRank.LECTURER,
+            contractual_max_hours_week=18.0,
+            assigned_teaching_hours_week=18.0,
+            total_students_enrolled=250,
+            module_preparation_count=4,
+            assessment_grading_backlog_units=180,
+            committee_admin_hours_week=8.0,
+            research_supervision_hours_week=4.0,
+            lms_off_hours_activity_ratio=0.45,
+            schedule_fragmentation_index=0.75,
+            days_since_last_leave=120,
+            average_response_latency_hours=24.0,
+            primary_domain="Software Engineering",
+            secondary_domains=["Database Systems"]
+        ),
+        StaffFeatureVector(
+            staff_id="UTB-FAC-102",
+            department=dept_id,
+            academic_rank=AcademicRank.PROFESSOR,
+            contractual_max_hours_week=18.0,
+            assigned_teaching_hours_week=16.0,
+            total_students_enrolled=190,
+            module_preparation_count=3,
+            assessment_grading_backlog_units=120,
+            committee_admin_hours_week=6.0,
+            research_supervision_hours_week=5.0,
+            lms_off_hours_activity_ratio=0.35,
+            schedule_fragmentation_index=0.60,
+            days_since_last_leave=90,
+            average_response_latency_hours=18.0,
+            primary_domain="Database Systems",
+            secondary_domains=["Software Engineering"]
+        ),
+        StaffFeatureVector(
+            staff_id="UTB-FAC-103",
+            department=dept_id,
+            academic_rank=AcademicRank.LECTURER,
+            contractual_max_hours_week=20.0,
+            assigned_teaching_hours_week=12.0,
+            total_students_enrolled=120,
+            module_preparation_count=2,
+            assessment_grading_backlog_units=40,
+            committee_admin_hours_week=3.0,
+            research_supervision_hours_week=2.5,
+            lms_off_hours_activity_ratio=0.18,
+            schedule_fragmentation_index=0.35,
+            days_since_last_leave=45,
+            average_response_latency_hours=10.0,
+            primary_domain="Web Development",
+            secondary_domains=["Software Engineering"]
+        ),
+        StaffFeatureVector(
+            staff_id="UTB-FAC-104",
+            department=dept_id,
+            academic_rank=AcademicRank.LECTURER,
+            contractual_max_hours_week=20.0,
+            assigned_teaching_hours_week=8.0,
+            total_students_enrolled=80,
+            module_preparation_count=1,
+            assessment_grading_backlog_units=20,
+            committee_admin_hours_week=2.0,
+            research_supervision_hours_week=2.0,
+            lms_off_hours_activity_ratio=0.10,
+            schedule_fragmentation_index=0.20,
+            days_since_last_leave=15,
+            average_response_latency_hours=6.0,
+            primary_domain="Software Engineering",
+            secondary_domains=["Web Development"]
+        ),
+        StaffFeatureVector(
+            staff_id="UTB-FAC-105",
+            department=dept_id,
+            academic_rank=AcademicRank.TUTOR,
+            contractual_max_hours_week=20.0,
+            assigned_teaching_hours_week=6.0,
+            total_students_enrolled=60,
+            module_preparation_count=1,
+            assessment_grading_backlog_units=10,
+            committee_admin_hours_week=1.0,
+            research_supervision_hours_week=0.0,
+            lms_off_hours_activity_ratio=0.05,
+            schedule_fragmentation_index=0.15,
+            days_since_last_leave=10,
+            average_response_latency_hours=4.0,
+            primary_domain="Database Systems",
+            secondary_domains=["Software Engineering"]
+        ),
+    ]
+
+    staff_names = {
+        "UTB-FAC-101": "Dr. Eric Manirakiza",
+        "UTB-FAC-102": "Prof. Jean Ndayisaba",
+        "UTB-FAC-103": "Dr. Paul Kwizera",
+        "UTB-FAC-104": "Lecturer Marie Uwase",
+        "UTB-FAC-105": "Tutor Aimable Mussa",
+    }
+
+    heatmap_data = []
+    prescriptive_panel = []
+    high_risk_count = 0
+    total_brs = 0.0
+
+    # Evaluate each faculty member against whole department
+    for staff in faculty_members:
+        res = calculate_burnout_risk(staff, department_colleagues=faculty_members)
+        total_brs += res.burnout_risk_score
+
+        if res.risk_tier == RiskTier.HIGH:
+            high_risk_count += 1
+
+        workload_hours = round(
+            staff.assigned_teaching_hours_week + staff.committee_admin_hours_week + staff.research_supervision_hours_week,
+            1
+        )
+
+        heatmap_data.append({
+            "staff_id": staff.staff_id,
+            "name": staff_names.get(staff.staff_id, staff.staff_id),
+            "workload_hours": workload_hours,
+            "brs": res.burnout_risk_score,
+            "risk_zone": res.risk_tier.value
+        })
+
+        # Process prescriptive interventions generated by MILP solver
+        for idx, interv in enumerate(res.recommended_interventions, start=1):
+            for sub in interv.suggested_substitutes:
+                prescriptive_panel.append({
+                    "recommendation_id": f"REC-{dept_id}-{staff.staff_id[-3:]}-{idx}",
+                    "target_staff_id": staff.staff_id,
+                    "target_staff_name": staff_names.get(staff.staff_id, staff.staff_id),
+                    "current_brs": res.burnout_risk_score,
+                    "proposed_action": interv.task_name,
+                    "hours_to_transfer": interv.hours_to_offload,
+                    "projected_brs_after": round(max(5.0, res.burnout_risk_score - (interv.hours_to_offload * 3.5)), 1),
+                    "substitute_staff_id": sub.staff_id,
+                    "substitute_staff_name": staff_names.get(sub.staff_id, sub.name),
+                    "substitute_current_brs": sub.current_brs,
+                    "substitute_projected_brs": round(sub.current_brs + (interv.hours_to_offload * 3.5), 1),
+                    "status": "SUGGESTED"
+                })
+
+    avg_brs = round(total_brs / len(faculty_members), 1) if faculty_members else 0.0
+
     return {
         "department_summary": {
             "department_id": dept_id,
-            "department_name": "Business Information Technology (BIT)",
-            "average_burnout_risk_score": 68.4,
-            "high_risk_faculty_count": 2,
+            "department_name": f"{dept_id} Department",
+            "average_burnout_risk_score": avg_brs,
+            "high_risk_faculty_count": high_risk_count,
             "workload_imbalance_index": 0.38,
-            "pending_assistance_requests": 3
+            "pending_assistance_requests": len(prescriptive_panel)
         },
-        "heatmap_data": [
-            {"staff_id": "UTB-FAC-101", "name": "Dr. Eric Manirakiza", "workload_hours": 23.5, "brs": 84.2, "risk_zone": "HIGH"},
-            {"staff_id": "UTB-FAC-102", "name": "Prof. Jean Ndayisaba", "workload_hours": 21.0, "brs": 76.5, "risk_zone": "HIGH"},
-            {"staff_id": "UTB-FAC-103", "name": "Dr. Paul Kwizera", "workload_hours": 17.5, "brs": 52.0, "risk_zone": "MODERATE"},
-            {"staff_id": "UTB-FAC-104", "name": "Lecturer Marie Uwase", "workload_hours": 14.0, "brs": 31.8, "risk_zone": "LOW"},
-            {"staff_id": "UTB-FAC-105", "name": "Tutor Aimable Mussa", "workload_hours": 12.5, "brs": 28.0, "risk_zone": "LOW"}
-        ],
-        "prescriptive_optimization_panel": [
-            {
-                "recommendation_id": "REC-BIT-001",
-                "target_staff_id": "UTB-FAC-101",
-                "target_staff_name": "Dr. Eric Manirakiza",
-                "current_brs": 84.2,
-                "proposed_action": "Transfer BIT201 Lab Section 2 Grading",
-                "hours_to_transfer": 3.5,
-                "projected_brs_after": 66.4,
-                "substitute_staff_id": "UTB-FAC-104",
-                "substitute_staff_name": "Lecturer Marie Uwase",
-                "substitute_current_brs": 31.8,
-                "substitute_projected_brs": 42.5,
-                "status": "SUGGESTED"
-            },
-            {
-                "recommendation_id": "REC-BIT-002",
-                "target_staff_id": "UTB-FAC-102",
-                "target_staff_name": "Prof. Jean Ndayisaba",
-                "current_brs": 76.5,
-                "proposed_action": "Reassign Final Year Thesis Supervision (2 Students)",
-                "hours_to_transfer": 3.0,
-                "projected_brs_after": 61.0,
-                "substitute_staff_id": "UTB-FAC-105",
-                "substitute_staff_name": "Tutor Aimable Mussa",
-                "substitute_current_brs": 28.0,
-                "substitute_projected_brs": 37.2,
-                "status": "SUGGESTED"
-            }
-        ]
+        "heatmap_data": heatmap_data,
+        "prescriptive_optimization_panel": prescriptive_panel
     }

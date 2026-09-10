@@ -1,0 +1,121 @@
+staff_id,name,program,academic_rank,contractual_max_hours_week,primary_domain,secondary_domains,max_supervision_capacity
+UTB-FAC-2026-001,Fatima Kim,BA Community Development,Senior Lecturer,18.0,Social Project Management,Community Leadership,9
+UTB-FAC-2026-002,Sarah Wilson,BA Community Development,Tutorial Assistant,24.0,Community Leadership,Rural Development,8
+UTB-FAC-2026-003,Yvonne Twagirayezu,Bachelor of Business Management,Senior Lecturer,18.0,Marketing,"Financial Accounting, Strategic Management",10
+UTB-FAC-2026-004,John Anderson,BA Hotel & Restaurant Management,Senior Lecturer,18.0,Event Operations,Food & Beverage Services,8
+UTB-FAC-2026-005,Sandrine Uwase,BSc Information Technology,Senior Lecturer,17.7,Database Systems,"Network Administration, Information Systems",10
+UTB-FAC-2026-006,Diane Uwizeyimana,Bachelor of Business Management,Lecturer,20.0,Marketing,"Financial Accounting, Strategic Management",6
+UTB-FAC-2026-007,Innocent Kayitesi,BSc Transport & Logistics Management,Senior Lecturer,17.6,Freight Operations,"Supply Chain Analytics, Transport Economics",8
+UTB-FAC-2026-008,Immaculee Ndayisenga,BA Hotel & Restaurant Management,Tutorial Assistant,23.5,Food & Beverage Services,"Hospitality Operations, Event Operations",6
+UTB-FAC-2026-009,Bosco Habimana,BA Hotel & Restaurant Management,Associate Professor,13.1,Food & Beverage Services,Event Operations,15
+UTB-FAC-2026-010,Laura Mensah,BSc Transport & Logistics Management,Lecturer,20.0,Freight Operations,Fleet Management,6
+UTB-FAC-2026-011,John Chen,BSc Transport & Logistics Management,Senior Lecturer,17.3,Transport Economics,Freight Operations,12
+UTB-FAC-2026-012,Robert Lee,BSc Travel & Tourism Management,Senior Lecturer,18.0,Destination Management,Sustainable Tourism,13
+UTB-FAC-2026-013,Elena Kumar,BSc Computer Engineering,Senior Lecturer,16.5,Algorithms,Software Engineering,13
+UTB-FAC-2026-014,Theogene Uwimana,BSc Transport & Logistics Management,Senior Lecturer,18.0,Supply Chain Analytics,Fleet Management,11
+UTB-FAC-2026-015,Emile Nkurunziza,BA Hotel & Restaurant Management,Senior Lecturer,17.1,Food & Beverage Services,Hotel Asset Management,12
+UTB-FAC-2026-016,Jean Claude Twagirayezu,BA Community Development,Lecturer,20.0,Community Leadership,Rural Development,7
+UTB-FAC-2026-017,Valentine Ingabire,BA Community Development,Lecturer,18.6,Social Project Management,"Rural Development, Public Policy",8
+UTB-FAC-2026-018,Gloria Mukamana,BSc Information Technology,Tutorial Assistant,24.0,Information Systems,"Database Systems, E-Commerce",6
+UTB-FAC-2026-019,Alexis Uwase,BSc Information Technology,Lecturer,19.7,Network Administration,E-Commerce,6
+UTB-FAC-2026-020,Vincent Nkurunziza,BSc Information Technology,Lecturer,20.0,E-Commerce,"Network Administration, Database Systems",8
+UTB-FAC-2026-021,Emmanuel Kayitesi,BA Hotel & Restaurant Management,Tutorial Assistant,23.7,Hotel Asset Management,Hospitality Operations,5
+UTB-FAC-2026-022,Claudine Mugisha,BSc Travel & Tourism Management,Lecturer,20.0,Sustainable Tourism,"Eco-Tourism, Destination Management",7
+UTB-FAC-2026-023,Robert Anderson,BSc Information Technology,Lecturer,20.0,Network Administration,Information Systems,12
+UTB-FAC-2026-024,Bosco Rukundo,BSc Travel & Tourism Management,Lecturer,20.0,Destination Management,"Eco-Tourism, Sustainable Tourism",11
+UTB-FAC-2026-025,Marie Claire Niyonzima,BA Community Development,Senior Lecturer,17.2,Rural Development,"Community Leadership, Public Policy",12
+UTB-FAC-2026-026,Placide Uwimana,Bachelor of Business Management,Lecturer,19.1,Financial Accounting,Strategic Management,8
+UTB-FAC-2026-027,Elena Mensah,BSc Transport & Logistics Management,Senior Lecturer,16.9,Freight Operations,Fleet Management,9
+UTB-FAC-2026-028,Olivier Karenzi,BSc Computer Engineering,Lecturer,20.0,Algorithms,Software Engineering,6
+UTB-FAC-2026-029,Yvonne Mutesi,BSc Travel & Tourism Management,Senior Lecturer,17.2,Travel Operations,"Sustainable Tourism, Eco-Tourism",12
+UTB-FAC-2026-030,Aline Niyonzima,BA Community Development,Senior Lecturer,18.0,Community Leadership,Rural Development,13
+UTB-FAC-2026-031,Marie Claire Uwase,BA Hotel & Restaurant Management,Senior Lecturer,18.0,Hospitality Operations,Hotel Asset Management,12
+UTB-FAC-2026-032,Claudine Karenzi,BSc Information Technology,Senior Lecturer,18.0,Information Systems,E-Commerce,10
+UTB-FAC-2026-033,Vincent Mutesi,BSc Computer Engineering,Senior Lecturer,18.0,Software Engineering,"Embedded Systems, Algorithms",9
+UTB-FAC-2026-034,Gloria Mugisha,Bachelor of Business Management,Senior Lecturer,16.8,Financial Accounting,"Human Resources, Marketing",12
+UTB-FAC-2026-035,Jean Claude Nsengimana,BSc Transport & Logistics Management,Tutorial Assistant,24.0,Fleet Management,Transport Economics,5
+UTB-FAC-2026-036,Olivier Nsengimana,BSc Computer Engineering,Lecturer,18.7,Embedded Systems,"Algorithms, Software Engineering",9
+UTB-FAC-2026-037,David Kumar,BSc Information Technology,Senior Lecturer,18.0,Network Administration,Database Systems,12
+UTB-FAC-2026-038,Sandrine Rukundo,BSc Travel & Tourism Management,Tutorial Assistant,23.0,Travel Operations,"Sustainable Tourism, Destination Management",7
+UTB-FAC-2026-039,Immaculee Nkurunziza,BSc Travel & Tourism Management,Associate Professor,12.2,Destination Management,Travel Operations,12
+UTB-FAC-2026-040,Yvonne Karenzi,BSc Transport & Logistics Management,Lecturer,19.5,Supply Chain Analytics,"Fleet Management, Freight Operations",9
+UTB-FAC-2026-041,Innocent Nsengimana,BSc Information Technology,Tutorial Assistant,24.0,Network Administration,Database Systems,6
+UTB-FAC-2026-042,James Williams,Bachelor of Business Management,Lecturer,20.0,Financial Accounting,"Marketing, Human Resources",8
+UTB-FAC-2026-043,Alice Habimana,BSc Information Technology,Senior Lecturer,16.2,Network Administration,Information Systems,11
+UTB-FAC-2026-044,Alexis Uwase,BSc Transport & Logistics Management,Tutorial Assistant,23.4,Fleet Management,Supply Chain Analytics,5
+UTB-FAC-2026-045,Valentine Bizimana,Bachelor of Business Management,Tutorial Assistant,23.5,Financial Accounting,"Strategic Management, Marketing",6
+UTB-FAC-2026-046,Theogene Nkurunziza,BSc Transport & Logistics Management,Senior Lecturer,17.6,Freight Operations,"Supply Chain Analytics, Fleet Management",12
+UTB-FAC-2026-047,Emmanuel Ingabire,BSc Information Technology,Tutorial Assistant,24.0,Information Systems,"Network Administration, E-Commerce",6
+UTB-FAC-2026-048,Alexis Hakizimana,BSc Computer Engineering,Senior Lecturer,17.6,Hardware Architecture,Algorithms,8
+UTB-FAC-2026-049,Damascene Habimana,BSc Computer Engineering,Senior Lecturer,17.9,Hardware Architecture,"Algorithms, Software Engineering",10
+UTB-FAC-2026-050,Jean Claude Twagirayezu,Bachelor of Business Management,Tutorial Assistant,23.2,Strategic Management,"Marketing, Human Resources",9
+UTB-FAC-2026-051,Anna Wilson,Bachelor of Business Management,Tutorial Assistant,24.0,Financial Accounting,Marketing,7
+UTB-FAC-2026-052,Emile Twagirayezu,BA Hotel & Restaurant Management,Senior Lecturer,18.0,Hotel Asset Management,Event Operations,9
+UTB-FAC-2026-053,Laura Wilson,BSc Transport & Logistics Management,Tutorial Assistant,24.0,Transport Economics,"Supply Chain Analytics, Fleet Management",7
+UTB-FAC-2026-054,Emile Rukundo,BSc Transport & Logistics Management,Lecturer,19.7,Fleet Management,"Supply Chain Analytics, Transport Economics",5
+UTB-FAC-2026-055,Immaculee Uwizeyimana,BSc Transport & Logistics Management,Senior Lecturer,18.0,Transport Economics,Fleet Management,12
+UTB-FAC-2026-056,Beatrice Ndayisenga,BA Community Development,Associate Professor,14.0,Community Leadership,"Rural Development, Social Project Management",14
+UTB-FAC-2026-057,Placide Mutesi,BSc Computer Engineering,Tutorial Assistant,24.0,Algorithms,Embedded Systems,6
+UTB-FAC-2026-058,Immaculee Ntawuruhunga,Bachelor of Business Management,Tutorial Assistant,23.1,Strategic Management,"Marketing, Human Resources",5
+UTB-FAC-2026-059,Anna Wilson,Bachelor of Business Management,Senior Lecturer,17.8,Strategic Management,"Financial Accounting, Human Resources",10
+UTB-FAC-2026-060,Chantal Hakizimana,Bachelor of Business Management,Tutorial Assistant,24.0,Strategic Management,Marketing,5
+UTB-FAC-2026-061,Claudine Hakizimana,BSc Computer Engineering,Lecturer,20.0,Software Engineering,Hardware Architecture,8
+UTB-FAC-2026-062,Emile Nsengimana,BSc Information Technology,Lecturer,20.0,Information Systems,Database Systems,6
+UTB-FAC-2026-063,Diane Uwase,BSc Transport & Logistics Management,Tutorial Assistant,24.0,Fleet Management,Transport Economics,7
+UTB-FAC-2026-064,Marie Claire Niyonzima,BSc Travel & Tourism Management,Lecturer,19.5,Travel Operations,Sustainable Tourism,9
+UTB-FAC-2026-065,Diane Mutesi,BSc Computer Engineering,Associate Professor,13.6,Algorithms,"Software Engineering, Embedded Systems",14
+UTB-FAC-2026-066,Olivier Uwizeyimana,BSc Computer Engineering,Lecturer,19.2,Hardware Architecture,"Algorithms, Embedded Systems",12
+UTB-FAC-2026-067,Immaculee Mugisha,BSc Information Technology,Tutorial Assistant,24.0,E-Commerce,"Information Systems, Network Administration",6
+UTB-FAC-2026-068,Olivier Uwimana,Bachelor of Business Management,Lecturer,19.6,Strategic Management,Financial Accounting,8
+UTB-FAC-2026-069,Robert Kim,BSc Transport & Logistics Management,Lecturer,20.0,Supply Chain Analytics,Freight Operations,5
+UTB-FAC-2026-070,Sarah Johnson,BSc Travel & Tourism Management,Associate Professor,13.3,Eco-Tourism,"Sustainable Tourism, Destination Management",12
+UTB-FAC-2026-071,Alexis Uwase,BSc Information Technology,Tutorial Assistant,23.3,Database Systems,Network Administration,5
+UTB-FAC-2026-072,Grace Garcia,BA Hotel & Restaurant Management,Tutorial Assistant,24.0,Hospitality Operations,"Event Operations, Food & Beverage Services",7
+UTB-FAC-2026-073,Placide Rukundo,BA Community Development,Lecturer,20.0,Social Project Management,"Public Policy, Community Leadership",6
+UTB-FAC-2026-074,Vincent Bizimana,BSc Transport & Logistics Management,Associate Professor,14.0,Supply Chain Analytics,"Fleet Management, Freight Operations",13
+UTB-FAC-2026-075,Olivier Uwimana,BSc Computer Engineering,Tutorial Assistant,23.5,Hardware Architecture,Embedded Systems,5
+UTB-FAC-2026-076,David Lee,BA Hotel & Restaurant Management,Lecturer,19.9,Event Operations,Hospitality Operations,9
+UTB-FAC-2026-077,Chantal Mutesi,BSc Computer Engineering,Lecturer,20.0,Algorithms,Hardware Architecture,5
+UTB-FAC-2026-078,Marie Claire Nkurunziza,BSc Information Technology,Senior Lecturer,16.1,Information Systems,Network Administration,11
+UTB-FAC-2026-079,Aline Nkurunziza,BA Hotel & Restaurant Management,Tutorial Assistant,23.9,Hospitality Operations,Event Operations,7
+UTB-FAC-2026-080,Damascene Karenzi,Bachelor of Business Management,Associate Professor,13.9,Financial Accounting,"Marketing, Strategic Management",12
+UTB-FAC-2026-081,Fabrice Uwizeyimana,BSc Information Technology,Lecturer,20.0,E-Commerce,Network Administration,7
+UTB-FAC-2026-082,Aline Uwimana,Bachelor of Business Management,Tutorial Assistant,24.0,Financial Accounting,Human Resources,5
+UTB-FAC-2026-083,Vincent Ingabire,BSc Information Technology,Lecturer,19.5,Network Administration,Information Systems,9
+UTB-FAC-2026-084,Anna Anderson,BSc Information Technology,Tutorial Assistant,24.0,Information Systems,"Database Systems, E-Commerce",5
+UTB-FAC-2026-085,Patrick Twagirayezu,BA Community Development,Tutorial Assistant,24.0,Public Policy,Social Project Management,10
+UTB-FAC-2026-086,Fabrice Bizimana,BSc Computer Engineering,Senior Lecturer,18.0,Hardware Architecture,Embedded Systems,13
+UTB-FAC-2026-087,Grace Uwizeyimana,BSc Transport & Logistics Management,Lecturer,19.0,Freight Operations,"Supply Chain Analytics, Transport Economics",9
+UTB-FAC-2026-088,Yvonne Uwimana,Bachelor of Business Management,Lecturer,18.8,Marketing,"Human Resources, Strategic Management",5
+UTB-FAC-2026-089,Grace Twagirayezu,BSc Travel & Tourism Management,Senior Lecturer,18.0,Travel Operations,Destination Management,8
+UTB-FAC-2026-090,Sarah Wilson,BSc Computer Engineering,Lecturer,20.0,Algorithms,"Hardware Architecture, Embedded Systems",9
+UTB-FAC-2026-091,Daniel Lee,BA Hotel & Restaurant Management,Lecturer,20.0,Event Operations,Food & Beverage Services,5
+UTB-FAC-2026-092,Theogene Mugisha,BSc Travel & Tourism Management,Lecturer,18.2,Sustainable Tourism,"Destination Management, Travel Operations",10
+UTB-FAC-2026-093,James Mensah,BSc Information Technology,Lecturer,20.0,E-Commerce,Network Administration,8
+UTB-FAC-2026-094,Bosco Habimana,Bachelor of Business Management,Tutorial Assistant,23.9,Strategic Management,"Human Resources, Financial Accounting",5
+UTB-FAC-2026-095,Solange Rukundo,BA Hotel & Restaurant Management,Lecturer,19.4,Hotel Asset Management,Event Operations,7
+UTB-FAC-2026-096,George Kumar,BA Hotel & Restaurant Management,Tutorial Assistant,24.0,Hotel Asset Management,Hospitality Operations,6
+UTB-FAC-2026-097,Claudine Kayitesi,Bachelor of Business Management,Senior Lecturer,18.0,Strategic Management,"Financial Accounting, Marketing",11
+UTB-FAC-2026-098,Emile Mukamana,BSc Information Technology,Senior Lecturer,18.0,E-Commerce,"Information Systems, Network Administration",12
+UTB-FAC-2026-099,Beatrice Ntawuruhunga,Bachelor of Business Management,Lecturer,19.1,Marketing,Human Resources,7
+UTB-FAC-2026-100,Olivier Mugisha,BSc Travel & Tourism Management,Senior Lecturer,18.0,Eco-Tourism,Sustainable Tourism,9
+UTB-FAC-2026-101,James Martin,BSc Travel & Tourism Management,Senior Lecturer,18.0,Travel Operations,"Eco-Tourism, Destination Management",13
+UTB-FAC-2026-102,Immaculee Niyonzima,Bachelor of Business Management,Lecturer,20.0,Strategic Management,Human Resources,11
+UTB-FAC-2026-103,Diane Ndayisenga,BSc Computer Engineering,Lecturer,18.1,Software Engineering,"Hardware Architecture, Algorithms",9
+UTB-FAC-2026-104,Jean Nkurunziza,BSc Travel & Tourism Management,Tutorial Assistant,23.4,Sustainable Tourism,"Travel Operations, Eco-Tourism",5
+UTB-FAC-2026-105,Olivier Bizimana,BA Hotel & Restaurant Management,Tutorial Assistant,24.0,Event Operations,Hospitality Operations,5
+UTB-FAC-2026-106,Emile Mutesi,Bachelor of Business Management,Lecturer,20.0,Strategic Management,Human Resources,8
+UTB-FAC-2026-107,Sandrine Kayitesi,Bachelor of Business Management,Lecturer,18.3,Human Resources,Financial Accounting,9
+UTB-FAC-2026-108,Claudine Iradukunda,BA Hotel & Restaurant Management,Senior Lecturer,18.0,Event Operations,Hotel Asset Management,9
+UTB-FAC-2026-109,Immaculee Niyonzima,BA Hotel & Restaurant Management,Tutorial Assistant,22.9,Event Operations,Food & Beverage Services,6
+UTB-FAC-2026-110,Sarah Okafor,BSc Travel & Tourism Management,Lecturer,20.0,Destination Management,"Sustainable Tourism, Eco-Tourism",5
+UTB-FAC-2026-111,Alice Uwase,Bachelor of Business Management,Tutorial Assistant,23.9,Strategic Management,Financial Accounting,5
+UTB-FAC-2026-112,Chantal Twagirayezu,BA Community Development,Associate Professor,14.0,Social Project Management,"Rural Development, Public Policy",11
+UTB-FAC-2026-113,Damascene Uwizeyimana,BSc Travel & Tourism Management,Senior Lecturer,18.0,Sustainable Tourism,Destination Management,11
+UTB-FAC-2026-114,Josiane Mutesi,BA Hotel & Restaurant Management,Senior Lecturer,17.6,Hotel Asset Management,Hospitality Operations,11
+UTB-FAC-2026-115,Sandrine Niyonzima,BA Hotel & Restaurant Management,Lecturer,19.7,Event Operations,"Hospitality Operations, Food & Beverage Services",9
+UTB-FAC-2026-116,Emile Nsengimana,BA Hotel & Restaurant Management,Senior Lecturer,18.0,Hotel Asset Management,Food & Beverage Services,15
+UTB-FAC-2026-117,Grace Garcia,BSc Travel & Tourism Management,Senior Lecturer,18.0,Sustainable Tourism,"Destination Management, Eco-Tourism",6
+UTB-FAC-2026-118,John Anderson,BSc Information Technology,Lecturer,20.0,Network Administration,"E-Commerce, Database Systems",6
+UTB-FAC-2026-119,Marie Claire Karenzi,BSc Transport & Logistics Management,Lecturer,20.0,Supply Chain Analytics,"Fleet Management, Transport Economics",11
+UTB-FAC-2026-120,Marie Claire Niyonzima,BSc Transport & Logistics Management,Tutorial Assistant,24.0,Fleet Management,"Transport Economics, Freight Operations",6

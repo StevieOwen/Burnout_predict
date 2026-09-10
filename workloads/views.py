@@ -12,8 +12,12 @@ from django.views.decorators.http import require_http_methods, require_POST
 
 from .models import WorkloadLog, PrivacyConsent, UserProfile
 from .forms import WorkloadLogForm, PrivacyConsentForm
-from ml_engine.services import predict_workload_risk
-from .services import get_lecturer_dashboard_payload, get_executive_dashboard_payload
+from ml_engine.workload_engine import StaffFeatureVector, AcademicRank
+from .services import (
+    calculate_burnout_risk,
+    get_lecturer_dashboard_payload,
+    get_executive_dashboard_payload,
+)
 
 
 # ==========================================
@@ -80,11 +84,39 @@ def submit_log(request):
             log = form.save(commit=False)
             log.user = request.user
             
-            # Predict risk using ML engine service
-            risk, confidence, driver = predict_workload_risk(log)
-            log.predicted_risk_level = risk
-            log.confidence_score = confidence
-            log.primary_risk_driver = driver
+            # Construct StaffFeatureVector from form submission and profile data
+            staff_id = getattr(request.user, 'staff_id', None) or f"UTB-FAC-{request.user.id}"
+            dept = getattr(request.user, 'department', None) or getattr(getattr(request.user, 'profile', None), 'department', "BIT")
+            
+            feature_vector = StaffFeatureVector(
+                staff_id=staff_id,
+                department=str(dept),
+                academic_rank=AcademicRank.LECTURER,
+                contractual_max_hours_week=getattr(log, 'contractual_hours', 20.0),
+                assigned_teaching_hours_week=getattr(log, 'teaching_hours', 0.0),
+                total_students_enrolled=getattr(log, 'students_count', 100),
+                module_preparation_count=getattr(log, 'modules_count', 2),
+                assessment_grading_backlog_units=getattr(log, 'marking_hours', 0.0) * 10,  # Map hours to backlog units
+                committee_admin_hours_week=getattr(log, 'admin_hours', 0.0),
+                research_supervision_hours_week=getattr(log, 'supervision_hours', 0.0),
+                lms_off_hours_activity_ratio=0.25,
+                schedule_fragmentation_index=0.40,
+                days_since_last_leave=60,
+                average_response_latency_hours=12.0,
+                primary_domain="Software Engineering",
+                secondary_domains=["Database Systems"]
+            )
+            
+            # Predict risk using ML engine via services module
+            inference = calculate_burnout_risk(feature_vector)
+            
+            log.predicted_risk_level = inference.risk_tier.value
+            log.confidence_score = float(inference.burnout_risk_score)
+            
+            if inference.top_contributing_factors:
+                log.primary_risk_driver = inference.top_contributing_factors[0].factor
+            else:
+                log.primary_risk_driver = "Balanced Workload"
             
             log.save()
             consent_form.save()
@@ -207,7 +239,7 @@ def accept_reallocation_api(request):
         if not recommendation_id:
             return HttpResponseBadRequest(JsonResponse({'error': 'Missing recommendation_id'}))
 
-        # Here you can record the reallocation in your database if needed
+        # Record or process the reallocation in your database
         return JsonResponse({
             'status': 'success',
             'message': f'Reallocation {recommendation_id} successfully applied.',
